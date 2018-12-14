@@ -8,11 +8,11 @@ country_event = {
 		NOT = {
 			year = 1913
 		}
-		
+
 	}
-	
+
 	fire_only_once = yes
- 
+
 	mean_time_to_happen =  {
 		months = 5
 
@@ -33,7 +33,7 @@ country_event = {
 	picture = "theatre"
 
 	option = {
-		name = "EVTOPTA35300" 
+		name = "EVTOPTA35300"
 		prestige = 2
 	}
 }
@@ -48,11 +48,11 @@ country_event = {
 		NOT = {
 			year = 1905
 			}
-		
+
 	}
-	
+
 	fire_only_once = yes
- 
+
 	mean_time_to_happen =  {
 		months = 5
 
@@ -73,7 +73,7 @@ country_event = {
 	picture = "theatre"
 
 	option = {
-		name = "EVTOPTA35301" 
+		name = "EVTOPTA35301"
 		prestige = 3
 	}
 }
@@ -84,7 +84,7 @@ country_event = {
 	title = "EVTNAME35700"
 	desc = "EVTDESC35700"
 	picture = "pope"
-	
+
 	trigger = {
 		tag = ITA
 		year = 1891
@@ -94,9 +94,9 @@ country_event = {
 			has_global_flag = RerumNovarum
 		}
 	}
-	
+
 	fire_only_once = yes
- 
+
 	mean_time_to_happen =  {
 		months = 5
 
@@ -113,7 +113,7 @@ country_event = {
 	}
 
 	option = {
-		name = "EVTOPTA35700" 
+		name = "EVTOPTA35700"
 		prestige = 5
 		labourers = {
 			consciousness = 1
@@ -127,7 +127,7 @@ country_event = {
 		soldiers = {
 			consciousness = 1
 		}
-		set_global_flag = RerumNovarum		
+		set_global_flag = RerumNovarum
 	}
 }
 
@@ -136,9 +136,9 @@ country_event = {
 	title = "EVTNAME35305" #the Guerra di Libia
 	desc = "EVTDESC35305"
 	picture = "deliberation"
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = ITA
 		war = no
@@ -161,7 +161,7 @@ country_event = {
 		}
 		NOT = { has_country_modifier = no_more_war }
 	}
-	
+
 	mean_time_to_happen = {
 		months = 25
 		modifier = {
@@ -169,7 +169,7 @@ country_event = {
 			TUR = { war = yes }
 		}
 	}
-	
+
 	option = {
 		name = "EVT35305OPTA"
 		set_country_flag = guerra_di_libia
@@ -258,7 +258,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "EVT35305OPTB"
 		any_pop = {
@@ -285,7 +285,7 @@ country_event = {
 		}
 	}
 }
-	
+
 
 country_event = {
 
@@ -348,7 +348,7 @@ country_event = {
 				NOT = { alliance_with = THIS }
 			}
 			create_alliance = THIS
-		}		
+		}
 		random_country = {
 			limit = {
 				tag = AUS
@@ -471,18 +471,18 @@ country_event = {
 					call_ally = yes
 				}
 			}
-		}	
+		}
 		random_country = {
 			limit = {
 				tag = AUS
-				OR = { 
-					AND = { 
+				OR = {
+					AND = {
 						owns = 726
 						owns = 727
 						owns = 728
 					}
-					AND = { 
-						NOT = { 
+					AND = {
+						NOT = {
 							owns = 726
 							owns = 727
 							owns = 728
@@ -520,14 +520,14 @@ country_event = {
 		random_country = {
 			limit = {
 				tag = KUK
-				OR = { 
-					AND = { 
+				OR = {
+					AND = {
 						owns = 726
 						owns = 727
 						owns = 728
 					}
-					AND = { 
-						NOT = { 
+					AND = {
+						NOT = {
 							owns = 726
 							owns = 727
 							owns = 728
@@ -565,14 +565,14 @@ country_event = {
 		random_country = {
 			limit = {
 				tag = AUS
-				OR = { 
-					AND = { 
+				OR = {
+					AND = {
 						owns = 726
 						owns = 727
 						owns = 728
 					}
-					AND = { 
-						NOT = { 
+					AND = {
+						NOT = {
 							owns = 726
 							owns = 727
 							owns = 728
@@ -610,14 +610,14 @@ country_event = {
 		random_country = {
 			limit = {
 				tag = KUK
-				OR = { 
-					AND = { 
+				OR = {
+					AND = {
 						owns = 726
 						owns = 727
 						owns = 728
 					}
-					AND = { 
-						NOT = { 
+					AND = {
+						NOT = {
 							owns = 726
 							owns = 727
 							owns = 728
@@ -658,12 +658,12 @@ country_event = {
 		}
 		ai_chance = {
 			factor = 95
-			
+
 			modifier = {
 				factor = 2
 				has_country_modifier = louis_napoleon_iii
 			}
-			
+
 			modifier = {
 				factor = 0.5
 				NOT = { has_country_modifier = louis_napoleon_iii }
@@ -688,7 +688,7 @@ country_event = {
 		}
 		ai_chance = {
 			factor = 5
-			
+
 			modifier = {
 				factor = 10
 				NOT = { has_country_modifier = louis_napoleon_iii }
@@ -796,12 +796,12 @@ country_event = {
 }
 
 country_event = {
-	
+
 	id = 96161
 	title = "EVTNAME96161"
 	desc = "EVTDESC96161"
 	picture = "pact_of_piombieres"
-	
+
 	trigger = {
 		OR = {
 			tag = SAR
@@ -816,16 +816,16 @@ country_event = {
 			owns = 727
 			owns = 728
 		}
-		OR = { 
+		OR = {
 			FRA = { exists = yes war = no }
 			BOR = { exists = yes war = no }
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 3
 	}
-	
+
 	option = {
 		name = "EVT96161OPTA"
 		set_global_flag = plombieres_refused
@@ -836,7 +836,7 @@ country_event = {
 				466 = { add_core = FRA }
 				472 = { add_core = FRA }
 			}
-		}	
+		}
 		random_owned = {
 			limit = { exists = BOR }
 			owner = {
@@ -844,8 +844,8 @@ country_event = {
 				466 = { add_core = BOR }
 				472 = { add_core = BOR }
 			}
-		}	
-		
+		}
+
 		PAP_741 = { add_core = THIS }
 		#MOD_739 = { add_core = THIS }
 		TUS_744 = { add_core = THIS }
@@ -865,14 +865,14 @@ country_event = {
 		name = "EVT96165OPTA"
 		set_country_flag = objects_to_italy
 		relation = { who = ITA value = -100 }
-		
+
 		random_owned = {
 			limit = { owner = { is_greater_power = yes } }
 			owner = { diplomatic_influence = { who = ITA value = -200 } }
 		}
-		
+
 		leave_alliance = ITA
-		
+
 		casus_belli = {
 			target = ITA
 			type = humiliate
@@ -885,7 +885,7 @@ country_event = {
 			}
 			add_casus_belli = { target = THIS type = free_peoples months = 36 }
 		}
-		
+
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -1022,13 +1022,12 @@ country_event = {
 				}
 			}
 			AND = {
-				ai = yes
 				tag = SAR
 				owns = 748
 				SIC = {
 					ai = yes
 					exists = yes
-				}	
+				}
 				PAP = {
 					ai = yes
 					exists = yes
@@ -1060,7 +1059,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 40
+		months = 36
 		modifier = {
 			factor = 0.25
 			has_country_flag = made_the_call_to_union
@@ -1098,7 +1097,7 @@ country_event = {
 		}
 	}
 
-	option = {				
+	option = {
 		name = "EVTOPTA11103" #Accept inheritance
 		clr_country_flag = made_the_call_to_union
 		prestige = 10
@@ -1108,26 +1107,26 @@ country_event = {
 		}
 		add_accepted_culture = south_italian
 		add_accepted_culture = north_italian
-		random_owned = { 
+		random_owned = {
 			limit = { owner = { is_culture_group = italian accepted_culture = french } }
 			owner = { remove_accepted_culture = french }
 		}
-		random_owned = { 
+		random_owned = {
 			limit = { owner = { is_culture_group = italian accepted_culture = south_german } }
 			owner = { remove_accepted_culture = south_german }
 		}
-		random_owned = { 
+		random_owned = {
 			limit = { owner = { is_culture_group = italian accepted_culture = british } }
 			owner = { remove_accepted_culture = british }
 		}
-		
+
 		random_owned = {
 			limit = { owner = { ai = yes } }
 			owner = { war_exhaustion = -20 }
 		}
-		
+
 		change_tag = culture
-		
+
 		any_country = {
 			limit = {
 				NOT = {
@@ -1142,7 +1141,7 @@ country_event = {
 			}
 			country_event = 11101
 		}
-		
+
 		random_country = {
 			limit = {
 				tag = PAP
@@ -1181,17 +1180,17 @@ country_event = {
 			}
 			country_event = { id = 96165 days = 20 }
 		}
-		
+
 		random_owned = {
 			limit = { owner = { capital = 720 } }
 			SAR = { all_core = { remove_core = SAR } }
 		}
-		
+
 		ai_chance = {
 			factor = 99
 		}
 	}
-	
+
 	option = {
 		name = "EVTOPTB11103" #Refuse inheritance
 		prestige = 5
@@ -1228,23 +1227,23 @@ country_event = {
 			tag = SAR
 			LUC = { in_sphere = SAR }
 			}
-		
+
 		AND = {
 			tag = SIC
 			LUC = { in_sphere = SIC }
 			}
 		}
-		
+
 		LUC = {
 			exists = yes
 			ai = yes
 			}
 		}
-	
+
 	fire_only_once = yes
 	mean_time_to_happen = { months = 12 }
 
-	option = {				
+	option = {
 		name = "EVTOPTA96171" #Accept inheritance
 		prestige = 5
 		inherit = LUC
@@ -1264,11 +1263,11 @@ country_event = {
 		has_country_flag = altar_built
 		NOT = { has_country_modifier = monument_under_construction }
 		}
-		
+
 	fire_only_once = yes
 	mean_time_to_happen = { days = 1 }
 
-	option = {				
+	option = {
 		name = "EVTOPTA96172"
 		prestige = 15
 		war_exhaustion = -20
@@ -1289,7 +1288,7 @@ country_event = {
 		year = 1844
 		NOT = { year = 1855 }
 		any_owned_province = {
-			is_core = SYC 
+			is_core = SYC
 			OR = {
 				average_militancy = 6
 				average_consciousness = 8
@@ -1297,10 +1296,10 @@ country_event = {
 			}
 		}
 	}
-		
+
 	fire_only_once = yes
 	mean_time_to_happen = { months = 4 }
-	
+
 	immediate = { political_reform = unitary }
 
 	option = {
@@ -1313,7 +1312,7 @@ country_event = {
 				war = {
 					target = SYC
 					attacker_goal = { casus_belli = conquest_any }
-					defender_goal = { casus_belli = status_quo	}		
+					defender_goal = { casus_belli = status_quo	}
 				}
 			}
 			10 = {
@@ -1322,7 +1321,7 @@ country_event = {
 				war = {
 					target = SYC
 					attacker_goal = { casus_belli = conquest_any }
-					defender_goal = { casus_belli = status_quo	}		
+					defender_goal = { casus_belli = status_quo	}
 				}
 			}
 			10 = {
@@ -1333,7 +1332,7 @@ country_event = {
 				war = {
 					target = SYC
 					attacker_goal = { casus_belli = conquest_any }
-					defender_goal = { casus_belli = status_quo	}		
+					defender_goal = { casus_belli = status_quo	}
 				}
 			}
 			5 = {
@@ -1358,21 +1357,21 @@ country_event = {
 		diplomatic_influence = { who = SYC value = -400 }
 		ai_chance = { factor = 0.98 }
 	}
-	
+
 	option = {
 		name = "EVTOPTB96173"
 		prestige = -10
-		762 = { 
-			secede_province = SYC 
+		762 = {
+			secede_province = SYC
 			remove_core = SIC
 		}
 		764 = {
-			secede_province = SYC 
+			secede_province = SYC
 			remove_core = SIC
 			}
 		ai_chance = { factor = 0.02 }
 		}
-		
+
 		option = {
 		name = "EVTOPTC96173"
 			762 = { secede_province = SYC }
@@ -1384,7 +1383,7 @@ country_event = {
 			war = {
 				target = SYC
 				attacker_goal = { casus_belli = conquest_any }
-				defender_goal = { casus_belli = status_quo	}		
+				defender_goal = { casus_belli = status_quo	}
 				}
 			}
 			ai_chance = { factor = 0 }
@@ -1411,7 +1410,7 @@ country_event = {
 	mean_time_to_happen = {
 		months = 36
 	}
-	
+
 	fire_only_once = yes
 
 	option = {

@@ -1,11 +1,10 @@
 owner = USA
-
 controller = USA
-
 add_core = USA
 trade_goods = iron
 life_rating = 35
 terrain = philadelphia
+naval_base = 2
 railroad = 1
 party_loyalty = {
 	ideology = conservative

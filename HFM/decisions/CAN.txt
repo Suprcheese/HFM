@@ -1,4 +1,4 @@
-political_decisions = {	
+political_decisions = {
 	canadian_dominion = {
 	picture = canadian_dominion
 		potential = {
@@ -26,7 +26,7 @@ political_decisions = {
 			factor = 1
 		}
 	}
-	
+
 	vive_le_quebec = {
 		picture = vive_le_quebec
 		potential = {
@@ -65,7 +65,7 @@ political_decisions = {
 			factor = 1
 		}
 	}
-		
+
 	organize_british_columbia = {
 	picture = organize_british_columbia
 		potential = {
@@ -113,9 +113,9 @@ political_decisions = {
 				add_core = COL
 				add_core = CAN
 				remove_core = RPL
-			}	
+			}
 			#Remove RPL & USA Cores, if owned
-			RPL = {			
+			RPL = {
 				any_owned = {
 					limit = {
 						OR = {
@@ -219,7 +219,7 @@ political_decisions = {
 			}
 		}
 	}
-	
+
 	form_the_rcmp = {
 	picture = form_the_rcmp
 		potential = {
@@ -240,13 +240,14 @@ political_decisions = {
 			factor = 1
 		}
 	}
-	
+
 	build_the_cnr = {
 		picture = whistlestop_tour
 		potential = {
 			OR = {
 				tag = CAN
 				tag = FCA
+				tag = USA
 			}
 			owns = 52
 			owns = 36
@@ -282,8 +283,8 @@ political_decisions = {
 		}
 		ai_will_do = { factor = 1 }
 	}
-	
-	
+
+
 	build_the_cnr1 = {
 		news = yes
 		news_title = "EVTNAME44355_NEWS_TITLE"
@@ -292,16 +293,17 @@ political_decisions = {
 		news_desc_short = "EVTDESC44355_NEWS_SHORT"
 		picture = whistlestop_tour
 		potential = {
-			OR = { 
+			OR = {
 				tag = CAN
 				tag = FCA
+				tag = USA
 			}
 			early_railroad = 1
 			has_country_flag = build_the_cnr
 			NOT = { has_country_flag = build_the_cnr1 }
 			NOT = { has_country_flag = build_the_cnr3 }
 		}
-		
+
 		allow = {
 			war = no
 			money = 10000
@@ -314,7 +316,7 @@ political_decisions = {
 				has_country_modifier = monument_under_construction
 			}
 		}
-		
+
 		effect = {
 			add_country_modifier = { name = monument_under_construction duration = 730 }
 			set_country_flag = build_the_cnr1
@@ -351,19 +353,23 @@ political_decisions = {
 		}
 		ai_will_do = { factor = 1 }
 	}
-	
-	
+
+
 	build_the_cnr2 = {
 		picture = whistlestop_tour
 		potential = {
-			tag = CAN
+			OR = {
+				tag = CAN
+				tag = FCA
+				tag = USA
+			}
 			early_railroad = 1
 			has_country_flag = build_the_cnr
 			has_country_flag = build_the_cnr1
 			NOT = { has_country_flag = build_the_cnr2 }
 			NOT = { has_country_flag = build_the_cnr3 }
 		}
-		
+
 		allow = {
 			war = no
 			money = 15000
@@ -376,7 +382,7 @@ political_decisions = {
 				has_country_modifier = monument_under_construction
 			}
 		}
-		
+
 		effect = {
 			add_country_modifier = { name = monument_under_construction duration = 730 }
 			set_country_flag = build_the_cnr2
@@ -416,23 +422,23 @@ political_decisions = {
 				}
 				infrastructure = 1 owner = { treasury = -2000 }
 			}
-			25 = { 
+			25 = {
 				change_province_name = "Calgary"
 				life_rating = 15
 				add_province_modifier = { name = gateway_to_america duration = 720 }
 				any_pop = { limit = { location = { province_id = 26 } is_culture_group = british } reduce_pop = 3 }
 				any_pop = { limit = { location = { province_id = 26 } is_culture_group = neo_european_cultures } reduce_pop = 3 }
-				
+
 			}
 			27 = {
 				life_rating = 10
 				add_province_modifier = { name = gateway_to_america duration = 720 }
 				any_pop = { limit = { location = { province_id = 27 } is_culture_group = british } reduce_pop = 3 }
-				any_pop = { limit = { location = { province_id = 27 } is_culture_group = neo_european_cultures } reduce_pop = 3 }			
+				any_pop = { limit = { location = { province_id = 27 } is_culture_group = neo_european_cultures } reduce_pop = 3 }
 			}
-			69 = { change_province_name = "Edmundston" }
+			random_owned = { limit = { owner = { primary_culture = anglo_canadian } } 69 = { change_province_name = "Edmundston" } }
 			41 = { change_province_name = "Brandon" }
-			30 = { change_province_name = "Regina" }
+			random_owned = { limit = { owner = { primary_culture = anglo_canadian } } 30 = { change_province_name = "Regina" } }
 			34 = { change_province_name = "Saskatoon" }
 			35 = { change_province_name = "Maple Creek" }
 			22 = { change_province_name = "Bonnyville" }
@@ -441,18 +447,22 @@ political_decisions = {
 		}
 		ai_will_do = { factor = 1 }
 	}
-	
+
 	build_the_cnr3 = {
 		picture = whistlestop_tour
 		potential = {
-			tag = CAN
+			OR = {
+				tag = CAN
+				tag = FCA
+				tag = USA
+			}
 			early_railroad = 1
 			has_country_flag = build_the_cnr
 			has_country_flag = build_the_cnr1
 			has_country_flag = build_the_cnr2
 			NOT = { has_country_flag = build_the_cnr3 }
 		}
-		
+
 		allow = {
 			war = no
 			money = 15000
@@ -465,7 +475,7 @@ political_decisions = {
 				has_country_modifier = monument_under_construction
 			}
 		}
-		
+
 		effect = {
 			set_country_flag = build_the_cnr3
 			clr_country_flag = build_the_cnr
@@ -501,18 +511,18 @@ political_decisions = {
 				}
 				infrastructure = 1 owner = { treasury = -2000 }
 			}
-			13 = { 
+			13 = {
 				add_province_modifier = { name = gateway_to_america duration = 365 }
 				life_rating = 3
 			}
-			52 = { change_province_name = "Sudbury" }
+			random_owned = { limit = { owner = { primary_culture = anglo_canadian } } 52 = { change_province_name = "Sudbury" } }
 			49 = { change_province_name = "Kenora" }
 			2594 = { change_province_name = "Osnaburgh" }
 			6 = { change_province_name = "Whitehorse" }
 		}
 		ai_will_do = { factor = 1 }
 	}
-	
+
 	claim_the_north = {
 		picture = whistlestop_tour
 		potential = {
@@ -528,10 +538,10 @@ political_decisions = {
 				2599 = { empty = no }
 			}
 		}
-		
+
 		allow = {
 		}
-		
+
 		effect = {
 			6 = { secede_province = THIS any_pop = { literacy = -0.99 } }
 			random_owned = {
@@ -551,7 +561,7 @@ political_decisions = {
 		}
 		ai_will_do = { factor = 1 }
 	}
-	
+
 	found_ottawa = {
 		picture = bytown_1853
 		potential = {
@@ -559,17 +569,17 @@ political_decisions = {
 			57 = { NOT = { life_rating = 36 } }
 			57 = { NOT = { has_province_modifier = genocide } }
 		}
-		
+
 		allow = {
 			war = no
 			early_railroad = 1
 			year = 1850
 		}
-		
+
 		effect = {
-			57 = { 
-				change_province_name = "Ottawa" 
-				life_rating = 5 
+			57 = {
+				change_province_name = "Ottawa"
+				life_rating = 5
 				add_province_modifier = {
 					name = recently_built_city
 					duration = 730
@@ -578,12 +588,12 @@ political_decisions = {
 		}
 		ai_will_do = { factor = 1 }
 	}
-	
+
 	alaskan_frontier = {
 		picture = fort_selkirk
 		potential = {
 			OR = {
-				AND = { 
+				AND = {
 					owns = 17
 					tag = ENG
 				}
@@ -597,12 +607,12 @@ political_decisions = {
 			}
 			6 = { empty = yes }
 		}
-		
+
 		allow = {
 			war = no
 			invention = mission_to_civilize
 		}
-		
+
 		effect = {
 			6 = {
 				secede_province = THIS
@@ -614,7 +624,7 @@ political_decisions = {
 		}
 		ai_will_do = { factor = 1 }
 	}
-	
+
 	rupert_land_act = {
 		picture = canadian_dominion
 		potential = {
@@ -623,7 +633,7 @@ political_decisions = {
 				tag = ENG
 				tag = ENL
 			}
-			NOT = { 
+			NOT = {
 				government = proletarian_dictatorship
 				government = presidential_dictatorship
 				government = fascist_dictatorship
@@ -659,12 +669,12 @@ political_decisions = {
 			}
 			NOT = { has_country_flag = rupert_land_act }
 		}
-		
+
 		allow = {
 			war = no
 			money = 101000
 		}
-		
+
 		effect = {
 			badboy = -3
 			set_country_flag = rupert_land_act
@@ -694,10 +704,10 @@ political_decisions = {
 			}
 			CAN = { country_event = 44321 }
 		}
-		
+
 		ai_will_do = { factor = 1 }
 	}
-	
+
 	rupert_land_act_alternate = {
 		picture = canadian_dominion
 		potential = {
@@ -706,7 +716,7 @@ political_decisions = {
 				tag = ENG
 				tag = ENL
 			}
-			NOT = { 
+			NOT = {
 				government = proletarian_dictatorship
 				government = presidential_dictatorship
 				government = fascist_dictatorship
@@ -735,12 +745,12 @@ political_decisions = {
 			has_country_flag = CAN_independence_refused
 			NOT = { has_country_flag = rupert_land_act }
 		}
-		
+
 		allow = {
 			war = no
 			money = 101000
 		}
-		
+
 		effect = {
 			treasury = -100000
 			#ENG_6 = { remove_core = THIS }
@@ -774,8 +784,8 @@ political_decisions = {
 			}
 			set_country_flag = rupert_land_act
 		}
-		
+
 		ai_will_do = { factor = 1 }
 	}
-	
+
 }

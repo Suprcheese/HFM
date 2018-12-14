@@ -14,7 +14,7 @@ country_event = {
 	news_desc_long = "EVTDESC160001_NEWS_LONG"
 	news_desc_medium = "EVTDESC160001_NEWS_MEDIUM"
 	news_desc_short = "EVTDESC160001_NEWS_SHORT"
-	major = yes	
+	major = yes
 
 
 
@@ -30,7 +30,7 @@ country_event = {
 			value = 5
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 12
 		modifier = {
@@ -53,7 +53,7 @@ country_event = {
 			year = 1860
 		}
 	}
-	
+
 	option = {
 		name = "EVT160001OPTA"
 		remove_country_modifier = the_female_shortage
@@ -69,7 +69,7 @@ country_event = {
 			}
 			country_event = { id=99931 days=120 }
 		}
-		
+
 		any_owned = {
 			limit = {
 				is_core = TPG
@@ -134,7 +134,7 @@ country_event = {
 			}
 		}
 		set_global_flag = taiping_has_happened
-		
+
 		TPG = {
 			grain = 250
 			treasury = 100000
@@ -148,119 +148,119 @@ country_event = {
 				name = no_more_war
 				duration = 90
 			}
-			
+
 			add_country_modifier = { name = fanatic_army duration = 1825 }
-			
+
 			define_general = {
 				name = "Li Xiucheng"
 				personality = stout
 				background = innovative_tactician
 			}
-			
+
 			define_general = {
 				name = "Feng Yunshan"
 				personality = spirited
 				background = gifted_administrator
 			}
-			
+
 			define_general = {
 				name = "Xiao Chaogui"
 				personality = deeply_religious
 				background = incompetent
 			}
-			
+
 			define_general = {
 				name = "Shi Dakai"
 				personality = audacious
 				background = expert_raider
 			}
 		}
-		
+
 		random_owned = {
 			limit = { owner = { land_reform = yes_land_reform } }
 			TPG = { economic_reform = yes_land_reform }
 		}
-		
+
 		random_owned = {
 			limit = { owner = { admin_reform = yes_admin_reform } }
 			TPG = { economic_reform = yes_admin_reform }
 		}
-		
+
 		random_owned = {
 			limit = { owner = { finance_reform = yes_finance_reform } }
 			TPG = { economic_reform = yes_finance_reform }
 		}
-		
+
 		random_owned = {
 			limit = { owner = { finance_reform = finance_reform_two } }
 			TPG = { economic_reform = finance_reform_two }
 		}
-		
+
 		random_owned = {
 			limit = { owner = { monetary_reform = yes_monetary_reform } }
 			TPG = { economic_reform = yes_monetary_reform }
 		}
-		
+
 		random_owned = {
 			limit = { owner = { monetary_reform = monetary_reform_two } }
 			TPG = { economic_reform = monetary_reform_two activate_technology = no_standard }
 		}
-		
+
 		random_owned = {
 			limit = { owner = { education_reform = yes_education_reform } }
 			TPG = { economic_reform = yes_education_reform }
 		}
-		
+
 		random_owned = {
 			limit = { owner = { research_reform = yes_research_reform } }
 			TPG = { economic_reform = yes_research_reform activate_technology = late_enlightenment_philosophy }
 		}
-		
+
 		random_owned = {
 			limit = { owner = { foreign_training = yes_foreign_training } }
 			TPG = { military_reform = yes_foreign_training }
 		}
-		
+
 		random_owned = {
 			limit = { owner = { foreign_weapons = yes_foreign_weapons } }
 			TPG = { military_reform = yes_foreign_weapons activate_technology = flintlock_rifles }
 		}
-		
+
 		random_owned = {
 			limit = { owner = { foreign_officers = yes_foreign_officers } }
 			TPG = { military_reform = yes_foreign_officers activate_technology = military_staff_system }
 		}
-		
+
 		random_owned = {
 			limit = { owner = { army_schools = yes_army_schools } }
 			TPG = { military_reform = yes_army_schools }
 		}
-		
+
 		random_owned = {
 			limit = { owner = { foreign_naval_officers = yes_foreign_naval_officers } }
 			TPG = { military_reform = yes_foreign_naval_officers }
 		}
-		
+
 		random_owned = {
 			limit = { owner = { naval_schools = yes_naval_schools } }
 			TPG = { military_reform = yes_naval_schools }
 		}
-		
+
 		random_owned = {
 			limit = { owner = { foreign_navies = yes_foreign_navies } }
 			TPG = { military_reform = yes_foreign_navies activate_technology = clipper_design activate_technology = steamers }
 		}
-		
+
 		random_owned = {
 			limit = { owner = { western_shipyards = yes_western_shipyards } }
 			TPG = { military_reform = yes_western_shipyards activate_technology = post_nelsonian_thought }
 		}
-		
+
 		random_owned = {
 			limit = { owner = { foreign_artillery = yes_foreign_artillery } }
 			TPG = { military_reform = yes_foreign_artillery activate_technology = bronze_muzzle_loaded_artillery }
 		}
-		
+
 		XBI = {
 			add_country_modifier = {
 				name = qing_substate_boost
@@ -278,16 +278,16 @@ country_event = {
 
 		release_vassal = LAN
 		leave_alliance = LAN
-		
+
 		random_owned = {
 			limit = { owner = { ai = yes } }
 			owner = { grain = 250 }
 		}
 		grain = 250
-		
+
 		ai_chance = { factor = 100 }
 	}
-	
+
 	option = {
 		name = "EVT160001OPTB"
 		remove_country_modifier = the_female_shortage
@@ -295,7 +295,7 @@ country_event = {
 			remove_province_modifier = christian_pamphlets
 			remove_province_modifier = christian_repression
 		}
-		
+
 		any_owned = {
 			limit = {
 				is_core = TPG
@@ -364,134 +364,134 @@ country_event = {
 			target = TPG
 			attacker_goal = {
 				casus_belli = civil_war
-			}		
+			}
 			defender_goal = {
 				casus_belli = civil_war
 			}
 		}
 		set_global_flag = taiping_has_happened
-		
+
 		TPG = {
 			capital = 2221
 			any_pop = {
 				consciousness = -5
 				militancy = -5
 			}
-			
+
 			add_country_modifier = { name = fanatic_army duration = 1825 }
-			
+
 			define_general = {
 				name = "Li Xiucheng"
 				personality = stout
 				background = innovative_tactician
 			}
-			
+
 			define_general = {
 				name = "Feng Yunshan"
 				personality = spirited
 				background = gifted_administrator
 			}
-			
+
 			define_general = {
 				name = "Xiao Chaogui"
 				personality = deeply_religious
 				background = incompetent
 			}
-			
+
 			define_general = {
 				name = "Shi Dakai"
 				personality = audacious
 				background = expert_raider
 			}
 		}
-		
+
 		random_owned = {
 			limit = { owner = { land_reform = yes_land_reform } }
 			TPG = { economic_reform = yes_land_reform }
 		}
-		
+
 		random_owned = {
 			limit = { owner = { admin_reform = yes_admin_reform } }
 			TPG = { economic_reform = yes_admin_reform }
 		}
-		
+
 		random_owned = {
 			limit = { owner = { finance_reform = yes_finance_reform } }
 			TPG = { economic_reform = yes_finance_reform }
 		}
-		
+
 		random_owned = {
 			limit = { owner = { finance_reform = finance_reform_two } }
 			TPG = { economic_reform = finance_reform_two }
 		}
-		
+
 		random_owned = {
 			limit = { owner = { monetary_reform = yes_monetary_reform } }
 			TPG = { economic_reform = yes_monetary_reform }
 		}
-		
+
 		random_owned = {
 			limit = { owner = { monetary_reform = monetary_reform_two } }
 			TPG = { economic_reform = monetary_reform_two activate_technology = no_standard }
 		}
-		
+
 		random_owned = {
 			limit = { owner = { education_reform = yes_education_reform } }
 			TPG = { economic_reform = yes_education_reform }
 		}
-		
+
 		random_owned = {
 			limit = { owner = { research_reform = yes_research_reform } }
 			TPG = { economic_reform = yes_research_reform activate_technology = late_enlightenment_philosophy }
 		}
-		
+
 		random_owned = {
 			limit = { owner = { foreign_training = yes_foreign_training } }
 			TPG = { military_reform = yes_foreign_training }
 		}
-		
+
 		random_owned = {
 			limit = { owner = { foreign_weapons = yes_foreign_weapons } }
 			TPG = { military_reform = yes_foreign_weapons activate_technology = flintlock_rifles }
 		}
-		
+
 		random_owned = {
 			limit = { owner = { foreign_officers = yes_foreign_officers } }
 			TPG = { military_reform = yes_foreign_officers activate_technology = military_staff_system }
 		}
-		
+
 		random_owned = {
 			limit = { owner = { army_schools = yes_army_schools } }
 			TPG = { military_reform = yes_army_schools }
 		}
-		
+
 		random_owned = {
 			limit = { owner = { foreign_naval_officers = yes_foreign_naval_officers } }
 			TPG = { military_reform = yes_foreign_naval_officers }
 		}
-		
+
 		random_owned = {
 			limit = { owner = { naval_schools = yes_naval_schools } }
 			TPG = { military_reform = yes_naval_schools }
 		}
-		
+
 		random_owned = {
 			limit = { owner = { foreign_navies = yes_foreign_navies } }
 			TPG = { military_reform = yes_foreign_navies activate_technology = clipper_design activate_technology = steamers }
 		}
-		
+
 		random_owned = {
 			limit = { owner = { western_shipyards = yes_western_shipyards } }
 			TPG = { military_reform = yes_western_shipyards activate_technology = post_nelsonian_thought }
 		}
-		
+
 		random_owned = {
 			limit = { owner = { foreign_artillery = yes_foreign_artillery } }
 			TPG = { military_reform = yes_foreign_artillery activate_technology = bronze_muzzle_loaded_artillery }
 		}
-		
+
 		change_tag_no_core_switch = TPG
-		
+
 		ai_chance = { factor = 0 }
 	}
 }
@@ -509,9 +509,9 @@ country_event = {
 		NOT = { exists = TPG }
 		NOT = { has_global_flag = taiping_has_been_defeated }
 	}
-	
+
 	mean_time_to_happen = { days = 1 }
-	
+
 	immediate = {
 		war_exhaustion = 45
 		plurality = -5
@@ -538,7 +538,7 @@ country_event = {
 				value = liberal
 				}
 			}
-		any_pop = {	
+		any_pop = {
 			militancy = -7
 			reduce_pop = 0.95
 		}
@@ -555,7 +555,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "EVT160002OPTA"
 		set_global_flag = taiping_has_been_defeated
@@ -582,14 +582,14 @@ country_event = {
 			limit = {
 				tag = IMG
 				substate_of = QNG
-			}	
+			}
 			annex_to = QNG
 		}
 		random_country = {
 			limit = {
 				tag = MCK
 				substate_of = QNG
-			}	
+			}
 			annex_to = QNG
 		}
 	}
@@ -603,7 +603,7 @@ country_event = {
 	picture = "hong_xiuquan"
 
 	fire_only_once = yes
-	
+
 	trigger = {
 		has_global_flag = taiping_has_happened
 		tag = QNG
@@ -614,7 +614,7 @@ country_event = {
 	mean_time_to_happen = {
 		months = 1
 	}
-	
+
 	option = {
 		name = "EVT160003OPTA"
 		set_global_flag = truce_with_taiping
@@ -653,7 +653,7 @@ country_event = {
 	picture = "hong_xiuquan"
 
 	fire_only_once = yes
-	
+
 	trigger = {
 		has_global_flag = taiping_has_happened
 		tag = TPG
@@ -699,15 +699,17 @@ country_event = {
 	title = "EVTNAME160006"
 	desc = "EVTDESC160006"
 	picture = "taiping_attack"
-	
+
 	trigger = {
 		tag = QNG
 		war = no
 		has_global_flag = truce_with_taiping
 		exists = TPG
 		NOT = { num_of_revolts = 1 }
+		NOT = { has_global_flag = taiping_has_been_defeated }
+		NOT = { has_global_flag = taiping_victorious }
 	}
-	
+
 	mean_time_to_happen = {
 		months = 12
 		modifier = {
@@ -719,7 +721,7 @@ country_event = {
 			TPG = { brigades_compare = 2 }
 		}
 	}
-	
+
 	option = {
 		name = "EVT160006OPTA"
 		prestige = 5
@@ -764,7 +766,7 @@ country_event = {
 			factor = 95
 		}
 	}
-	
+
 	option = {
 		name = "EVT160006OPTB"
 		prestige = -5
@@ -777,7 +779,7 @@ country_event = {
 				issue = jingoism
 				factor = 3
 			}
-		}	
+		}
 		ai_chance = {
 			factor = 5
 		}
@@ -790,17 +792,19 @@ country_event = {
 	title = "EVTNAME160007"
 	desc = "EVTDESC160007"
 	picture = "taiping_attack"
-	
+
 	trigger = {
 		tag = TPG
 		war = no
 		has_global_flag = truce_with_taiping
+		NOT = { has_global_flag = taiping_has_been_defeated }
+		NOT = { has_global_flag = taiping_victorious }
 		exists = QNG
 		NOT = {
 			num_of_revolts = 1
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 12
 		modifier = {
@@ -812,7 +816,7 @@ country_event = {
 			QNG = { brigades_compare = 2 }
 		}
 	}
-	
+
 	option = {
 		name = "EVT160006OPTA"
 		prestige = 5
@@ -852,7 +856,7 @@ country_event = {
 			factor = 95
 		}
 	}
-	
+
 	option = {
 		name = "EVT160007OPTB"
 		prestige = -5
@@ -865,7 +869,7 @@ country_event = {
 				issue = jingoism
 				factor = 3
 			}
-		}	
+		}
 		ai_chance = {
 			factor = 5
 		}
@@ -883,7 +887,7 @@ country_event = {
 	news_desc_short = "EVTDESC160008_NEWS_SHORT"
 	picture = "taiping"
 	fire_only_once = yes
-	
+
 	trigger = {
 		has_global_flag = taiping_has_happened
 		tag = TPG
@@ -894,11 +898,11 @@ country_event = {
 	mean_time_to_happen = {
 		days = 5
 	}
-	
+
 	immediate = {
 		war_exhaustion = 25
 	}
-	
+
 	option = {
 		name = "EVT160002OPTA"
 		set_global_flag = taiping_victorious
@@ -907,7 +911,7 @@ country_event = {
 			limit = { has_pop_culture = manchu }
 			reduce_pop = 0.90
 		}
-		any_pop = {	
+		any_pop = {
 			limit = { NOT = { has_pop_culture = manchu } }
 			militancy = -7
 			reduce_pop = 0.95
@@ -976,7 +980,7 @@ country_event = {
 				duration = 730
 			}
 		}
-		
+
 		any_owned = {
 			limit = { NOT = { is_core = CHI } }
 			add_province_modifier = {
@@ -984,7 +988,7 @@ country_event = {
 				duration = 3650
 			}
 		}
-		
+
 		random_country = {
 			limit = {
 				tag = NIA
@@ -1021,7 +1025,7 @@ country_event = {
 			}
 			annex_to = TPG
 		}
-		
+
 		country_event = 160027
 	}
 }
@@ -1067,23 +1071,23 @@ country_event = {
 	title = "EVTNAME160011" #The Female Shortage
 	desc = "EVTDESC160011"
 	picture = "shortage_of_women"
-	
+
 	trigger = {
 		OR = {
 			tag = QNG
 			tag = TPG
 		}
 		NOT = {
-			has_country_modifier = the_female_shortage 
+			has_country_modifier = the_female_shortage
 			has_global_flag = taiping_has_happened
 		}
-		year = 1840 
+		year = 1840
 	}
-	
+
 	mean_time_to_happen = {
 		months = 18
 	}
-	
+
 	option = {
 		name = "EVTOPTA16001"
 		add_country_modifier = {
@@ -1094,12 +1098,12 @@ country_event = {
 }
 
 
-#Christian Pamphlets 
+#Christian Pamphlets
 province_event = {
 	id = 160012
 	title = "EVTNAME160012" #Taiping Missionaries in $STATENAME$
 	desc = "EVTDESC160012"
-	
+
 	trigger = {
 		owner = {
 			has_country_flag = heavenly_kingdom
@@ -1116,7 +1120,7 @@ province_event = {
 			has_global_flag = taiping_has_happened
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 40
 		modifier = {
@@ -1129,7 +1133,7 @@ province_event = {
 		}
 		modifier = {
 			factor = 0.7
-			has_province_modifier = western_presence		
+			has_province_modifier = western_presence
 		}
 		modifier = {
 			factor = 0.7
@@ -1168,7 +1172,7 @@ province_event = {
 			NOT = { culture = nanfaren }
 		}
 	}
-	
+
 	option = {
 		name = "EVT160012OPTA"
 		any_pop = {
@@ -1189,7 +1193,7 @@ province_event = {
 			factor = 25
 		}
 	}
-	
+
 	option = {
 		name = "EVT160012OPTB"
 		state_scope = {
@@ -1212,7 +1216,7 @@ province_event = {
 	id = 160013
 	title = "EVTNAME160013" #Anti-Manchu Sentiment
 	desc = "EVTDESC160013"
-	
+
 	trigger = {
 		owner = {
 			has_country_flag = heavenly_kingdom
@@ -1228,7 +1232,7 @@ province_event = {
 			has_global_flag = taiping_has_happened
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 180
 		modifier = {
@@ -1249,7 +1253,7 @@ province_event = {
 		}
 		modifier = {
 			factor = 0.7
-			has_province_modifier = western_presence		
+			has_province_modifier = western_presence
 		}
 		modifier = {
 			factor = 0.7
@@ -1280,7 +1284,7 @@ province_event = {
 			any_neighbor_province = { has_province_modifier = christian_pamphlets }
 		}
 	}
-	
+
 	option = {
 		name = "EVT160013OPTA"
 		state_scope = {
@@ -1316,7 +1320,7 @@ country_event = {
 			value = 1
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 50
 		modifier = {
@@ -1338,7 +1342,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "EVT160015OPTA"
 		set_global_flag = hong
@@ -1358,7 +1362,7 @@ country_event = {
 	title = "EVTNAME160016"
 	desc = "EVTDESC160016"
 	picture = "yang_xiuqing"
-	
+
 	trigger = {
 		tag = QNG
 		year = 1845
@@ -1406,7 +1410,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "EVT160015OPTA"
 		set_global_flag = yang
@@ -1425,7 +1429,7 @@ province_event = {
 	id = 160017
 	title = "EVTNAME160017" #Pro-Christian Riots in $STATENAME$!
 	desc = "EVTDESC160017"
-	
+
 	trigger = {
 		owner = { tag = QNG }
 		is_core = TPG
@@ -1434,7 +1438,7 @@ province_event = {
 			average_militancy = 6
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 200
 		modifier = {
@@ -1451,7 +1455,7 @@ province_event = {
 		}
 		modifier = {
 			factor = 0.7
-			has_province_modifier = western_presence		
+			has_province_modifier = western_presence
 		}
 		modifier = {
 			factor = 0.7
@@ -1478,7 +1482,7 @@ province_event = {
 			NOT = { culture = nanfaren }
 		}
 	}
-	
+
 	option = {
 		name = "EVT160017OPTA"
 		owner = { prestige = -2 }
@@ -1498,7 +1502,7 @@ province_event = {
 	id = 160020
 	title = "EVTNAME160020" #The Taiping Sect Spreads!
 	desc = "EVTDESC160020"
-	
+
 	trigger = {
 		owner = {
 			tag = QNG
@@ -1530,7 +1534,7 @@ province_event = {
 		average_consciousness = 4
 		any_neighbor_province = { is_core = TPG }
 	}
-	
+
 	mean_time_to_happen = {
 		months = 50
 		modifier = {
@@ -1581,7 +1585,7 @@ province_event = {
 		}
 		modifier = {
 			factor = 0.7
-			has_province_modifier = western_presence		
+			has_province_modifier = western_presence
 		}
 		modifier = {
 			factor = 0.7
@@ -1612,7 +1616,7 @@ province_event = {
 			NOT = { culture = nanfaren }
 		}
 	}
-	
+
 	option = {
 		name = "EVT160020OPTA"
 		state_scope = {
@@ -1643,9 +1647,9 @@ country_event = {
 	news_desc_short = "EVTDESC160025_NEWS_SHORT"
 	picture = "hong_xiuquan"
 	major = yes
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = TPG
 		civilized = no
@@ -1653,11 +1657,11 @@ country_event = {
 		has_global_flag = taiping_victorious
 		war = no
 	}
-	
+
 	mean_time_to_happen = {
 		months = 120
 	}
-	
+
 	option = {
 		name = "EVT160025OPTA"
 		government = absolute_monarchy
@@ -1691,7 +1695,7 @@ country_event = {
 				duration = 600
 			}
 		}
-		
+
 		any_owned = {
 			limit = { NOT = { is_core = CHI } }
 			add_province_modifier = {
@@ -1699,7 +1703,7 @@ country_event = {
 				duration = 1095
 			}
 		}
-		
+
 		any_pop = {
 			limit = {
 				OR = {
@@ -1730,7 +1734,7 @@ country_event = {
 			factor = 50
 		}
 	}
-	
+
 	option = {
 		name = "EVT160025OPTC"
 		add_country_modifier = {
@@ -1803,7 +1807,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "EVT160025OPTD"
 		add_country_modifier = {
@@ -1862,7 +1866,7 @@ country_event = {
 		}
 	}
 }
-	
+
 country_event = {
 	id = 160026
 	title = "EVTNAME160026" #Retreat to Formosa
@@ -1873,7 +1877,7 @@ country_event = {
 	news_desc_short = "EVTDESC160026_NEWS_SHORT"
 	picture = "panthay_rebellion"
 	major = yes
-	
+
 	trigger = {
 		NOT = { tag = KMT }
 		is_culture_group = east_asian
@@ -1916,11 +1920,11 @@ country_event = {
 			has_global_flag = retreated_to_taiwan
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 7
 	}
-	
+
 	option = {
 		name = "EVT160026OPTA"
 		clr_country_flag = kuomintang_faction
@@ -1972,7 +1976,7 @@ country_event = {
 				money = 100
 				reduce_pop = 0.5
 				move_pop = 2681
-			}			
+			}
 		}
 		random_owned = {
 			limit = {
@@ -2104,7 +2108,7 @@ country_event = {
 	picture = "panthay_rebellion"
 	major = yes
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "EVT160026OPTA"
 		clr_country_flag = kuomintang_faction
@@ -2161,7 +2165,7 @@ country_event = {
 				money = 100
 				reduce_pop = 0.8
 				move_pop = 2681
-			}			
+			}
 		}
 		QNG = {
 			government = absolute_monarchy
@@ -2181,10 +2185,10 @@ country_event = {
 			add_accepted_culture = nanfaren
 			remove_country_modifier = uncivilized_isolationism
 		}
-		
+
 		random_country = {
-			limit = { 
-				tag = ENG 
+			limit = {
+				tag = ENG
 				owns = 1496
 				OR = {
 					war_with = THIS

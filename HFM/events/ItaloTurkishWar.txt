@@ -6,7 +6,7 @@ country_event = {
 	title = "EVTNAME900000"
 	desc = "EVTDESC900000"
 	picture = "italoturk"
-	
+
 	trigger = {
 		tag = ITA
 		invention = the_dark_continent
@@ -22,7 +22,7 @@ country_event = {
 			AND = {
 				is_greater_power = yes
 				war = no
-				OR = { 
+				OR = {
 					has_global_flag = ottomans_supported
 					TUR = { has_country_flag = lost_russo_turkish_war }
 				}
@@ -30,9 +30,9 @@ country_event = {
 			war = no
 			has_global_flag = balkans_supported
 		}
-		
+
 		LBY = { exists = no }
-		
+
 		TUR = {
 			NOT = { truce_with = THIS }
 			is_greater_power = no
@@ -53,8 +53,8 @@ country_event = {
 	option = {
 	name = "EVT900000OPTA"
 		set_global_flag = italian_ultimatum_sent
-		TUR = {country_event = 900001}			
-		ai_chance = { 
+		TUR = {country_event = 900001}
+		ai_chance = {
 			factor = 0.95
 			modifier = {
 				factor = 0.6
@@ -69,10 +69,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 	name = "EVT900000OPTB"
-		ai_chance = { 
+		ai_chance = {
 			factor = 0.05
 			modifier = {
 				factor = 0.4
@@ -91,12 +91,12 @@ country_event = {
 
 country_event = {
 	id = 900001
-	title = "EVTNAME900001" #Initial Turkish response 
+	title = "EVTNAME900001" #Initial Turkish response
 	desc = "EVTDESC900001"
 	picture = "italoturk"
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 	name = "EVT900001OPTA"
 		prestige = -10
@@ -120,7 +120,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 	name = "EVT900001OPTB"
 		prestige = 5
@@ -150,36 +150,36 @@ country_event = {
 	picture = "italoturk"
 
 	is_triggered_only = yes
-	
+
 	option = {
 	name = "EVT900002OPTA"
 		TUR = {country_event = 900005}
 		ai_chance = {
-			factor = 10 
+			factor = 10
 			modifier = {
 				factor = 0
 				is_sphere_leader_of = FROM
 			}
 		}
 	}
-	
+
 	option = {
 	name = "EVT900002OPTB"
 		prestige = 5
 		badboy = 3
 		TUR = {country_event = 900006}
-		ai_chance = { 
-			factor = 90 
+		ai_chance = {
+			factor = 90
 			modifier = {
 				factor = 0
 				badboy = 0.9
 			}
-			
+
 			modifier = {
 				factor = 100
 				is_sphere_leader_of = FROM
 			}
-			
+
 			modifier = {
 				factor = 0.5
 				OR = {
@@ -196,9 +196,9 @@ country_event = {
 	title = "EVTNAME900005"
 	desc = "EVTDESC900005"
 	picture = "italoturk_peace"
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 	name = "EVT900005OPTA"
 		set_global_flag = libya_organized
@@ -215,7 +215,7 @@ country_event = {
 		random_owned = { limit = { province_id = 1740 owned_by = TUR } secede_province = LBY }
 		random_owned = { limit = { province_id = 1741 owned_by = TUR } secede_province = LBY }
 		random_owned = { limit = { province_id = 1742 owned_by = TUR } secede_province = LBY }
-		random_owned = { limit = { province_id = 1743 owned_by = TUR } secede_province = LBY }
+		#random_owned = { limit = { province_id = 1743 owned_by = TUR } secede_province = LBY }
 		random_owned = { limit = { province_id = 1744 owned_by = TUR } secede_province = LBY }
 		TUR = { create_vassal = LBY }
 		CYR = { all_core = { add_core = LBY } }
@@ -256,7 +256,7 @@ picture = "italoturk2"
 			}
 		}
 	}
-	
+
 	option = {
 	name = "EVT900006OPTB"
 		prestige = -25
@@ -274,7 +274,7 @@ picture = "italoturk2"
 		random_owned = { limit = { province_id = 1740 owned_by = TUR } secede_province = ITA }
 		random_owned = { limit = { province_id = 1741 owned_by = TUR } secede_province = ITA }
 		random_owned = { limit = { province_id = 1742 owned_by = TUR } secede_province = ITA }
-		random_owned = { limit = { province_id = 1743 owned_by = TUR } secede_province = ITA }
+		#random_owned = { limit = { province_id = 1743 owned_by = TUR } secede_province = ITA }
 		random_owned = { limit = { province_id = 1744 owned_by = TUR } secede_province = ITA }
 		ai_chance = {
 			factor = 0.1
@@ -301,7 +301,7 @@ country_event = {
 	picture = "italoturk2"
 
 	is_triggered_only = yes
-	
+
 	option = {
 	name = "EVT900007OPTA"
 		set_global_flag = italy_fights_turk
@@ -313,20 +313,20 @@ country_event = {
 			target = TUR
 			attacker_goal = { casus_belli = liberate_country country = LBY }
 		}
-		
+
 		ai_chance = {
 			factor = 90
 			modifier = {
 				factor = 0.2
 				OR = {
 					TUR = { part_of_sphere = yes }
-					any_greater_power = { alliance_with = TUR }	
+					any_greater_power = { alliance_with = TUR }
 				}
 			}
 		}
 	}
 }
-	
+
 #	option = {
 #		name = "EVT900007OPTB"
 #		set_global_flag = italy_fights_turk
@@ -353,14 +353,14 @@ country_event = {
 #				factor = 8
 #				OR = {
 #					TUR = { part_of_sphere = yes }
-#					any_greater_power = { alliance_with = TUR }	
+#					any_greater_power = { alliance_with = TUR }
 #				}
 #			}
 #		}
 #	}
 #}
 
-	
+
 country_event = {
 
 	id = 900008
@@ -379,7 +379,7 @@ country_event = {
 		prestige = 5
 		ai_chance = { factor = 0.05 }
 	}
-	
+
 	option = {
 		name = "EVT900008OPTB"
 		prestige = 5
@@ -404,10 +404,10 @@ country_event = {
 	news_desc_short = "EVTDESC900009_NEWS_SHORT"
 
 	is_triggered_only = yes
-	
+
 	mean_time_to_happen = {months = 1}
 	fire_only_once = yes
-	
+
 	option = {
 		name = "EVT900009OPTA"
 		set_global_flag = italian_vic_turk
@@ -425,7 +425,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "EVT900009OPTB"
 		set_global_flag = italian_vic_turk

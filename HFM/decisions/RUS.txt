@@ -75,7 +75,7 @@ political_decisions = {
 		}
 		ai_will_do = { factor = 1 }
 	}
-	
+
 	establish_the_sovnarkom = {
 		picture = establish_the_sovnarkom
 		potential = {
@@ -88,7 +88,7 @@ political_decisions = {
 		allow = {
 			mass_politics = 1
 		}
-		
+
 		effect = {
 			plurality = -10
 			any_pop = {
@@ -98,7 +98,7 @@ political_decisions = {
 					value = socialist
 					factor = 0.05
 				}
-				
+
 				ideology = {
 					value = communist
 					factor = 0.05
@@ -108,7 +108,7 @@ political_decisions = {
 			set_country_flag = big_brother_is_watching
 		}
 	}
-	
+
 	manifesto_on_unshakable_autocracy = {
 		potential = {
 			tag = RUS
@@ -119,9 +119,9 @@ political_decisions = {
 			NOT = { has_country_flag = the_manifesto }
 			nationalism_n_imperialism = 1
 		}
-		
+
 		allow = { revolution_n_counterrevolution = 1 }
-		
+
 		effect = {
 			prestige = 5
 			badboy = 2
@@ -133,31 +133,31 @@ political_decisions = {
 			political_reform = state_controlled
 			political_reform = underground_parties
 			political_reform = mandatory_service
-			government = absolute_monarchy	
+			government = absolute_monarchy
 
 			any_pop = {
 				militancy = -1
-			
+
 				scaled_militancy  = {
 					ideology = reactionary
 					factor = -3
 				}
-				
+
 				scaled_militancy  = {
 					ideology = conservative
 					factor = -1
 				}
-				
+
 				scaled_consciousness  = {
 					ideology = conservative
 					factor = -2
 				}
-				
+
 				scaled_consciousness  = {
 					ideology = reactionary
 					factor = -4
 				}
-				
+
 				scaled_consciousness  = {
 					ideology = liberal
 					factor = 2
@@ -179,14 +179,14 @@ political_decisions = {
 			set_country_flag = the_manifesto
 		}
 		ai_will_do = {
-			factor = 1 
+			factor = 1
 			modifier = {
 				factor = 0
 				badboy = 0.7
 			}
 		}
 	}
-	
+
 	promulgate_the_ems_ukaz = {
 		potential = {
 			tag = RUS
@@ -199,7 +199,7 @@ political_decisions = {
 			}
 			owns = 958
 			phenomenalism = 1
-			OR = { 
+			OR = {
 				AND = {
 					exists = GER
 					GER = {
@@ -214,11 +214,11 @@ political_decisions = {
 				}
 			}
 		}
-		
+
 		allow = {
 			biologism = 1
 		}
-		
+
 		effect = {
 			any_pop = {
 				limit = {
@@ -250,7 +250,7 @@ political_decisions = {
 				OR = {
 					has_global_flag = taiping_has_been_defeated
 					has_country_flag = arrow_incident
-					has_global_flag = ever_victorious_army 
+					has_global_flag = ever_victorious_army
 					war_exhaustion = 20
 				}
 				exists = yes
@@ -261,7 +261,7 @@ political_decisions = {
 			}
 			NOT = { has_global_flag = convention_of_peking }
 		}
-		
+
 		allow = {
 			war = no
 			NOT = { truce_with = QNG }
@@ -279,7 +279,7 @@ political_decisions = {
 				}
 			}
 		}
-		
+
 		effect = {
 			set_global_flag = convention_of_peking
 			1081 = { add_core = RUS }
@@ -292,7 +292,7 @@ political_decisions = {
 			QNG = { country_event = 80110 }
 		}
 	}
-	
+
 	mongolian_protectorate = {
 		picture = unequal_treaty
 		potential = {
@@ -309,7 +309,7 @@ political_decisions = {
 			}
 			NOT = { has_country_flag = mongolian_protectorate }
 		}
-		
+
 		allow = {
 			war = no
 			nationalism_n_imperialism = 1
@@ -327,45 +327,45 @@ political_decisions = {
 					}
 				}
 			}
-		
+
 		effect = {
 			set_country_flag = mongolian_protectorate
 			MGL = { country_event = 80115 }
 		}
 	}
-	
-	peking_convention_TPG = {
-		picture = peking_convention
-		potential = {
-			tag = RUS
-			is_greater_power = yes
-			TPG = { owns = 1082 }
-			NOT = { has_global_flag = convention_of_peking }
-			has_global_flag = taiping_has_happened
-		}
-		
-		allow = {
-			war = no
-			NOT = { truce_with = TPG }
-			TPG = {
-				war = no
-				OR = {
-					part_of_sphere = no
-					in_sphere = RUS
-				}
-			}
-		}
-		
-		effect = {
-			set_global_flag = convention_of_peking
-			CHI_1082 = {
-				add_core = RUS
-			}
-			TPG = {
-				country_event = 80110
-			}
-		}
-	}
+
+	# peking_convention_TPG = {
+		# picture = peking_convention
+		# potential = {
+			# tag = RUS
+			# is_greater_power = yes
+			# TPG = { owns = 1082 }
+			# NOT = { has_global_flag = convention_of_peking }
+			# has_global_flag = taiping_has_happened
+		# }
+
+		# allow = {
+			# war = no
+			# NOT = { truce_with = TPG }
+			# TPG = {
+				# war = no
+				# OR = {
+					# part_of_sphere = no
+					# in_sphere = RUS
+				# }
+			# }
+		# }
+
+		# effect = {
+			# set_global_flag = convention_of_peking
+			# CHI_1082 = {
+				# add_core = RUS
+			# }
+			# TPG = {
+				# country_event = 80110
+			# }
+		# }
+	# }
 
 	russian_vladivostok = {
 		potential = {
@@ -379,9 +379,9 @@ political_decisions = {
 			owns = 2697
 			NOT = { has_global_flag = russian_vladivostok }
 		}
-		
+
 		allow = { state_n_government = 1 }
-		
+
 		effect = {
 			random_owned = { limit = { province_id = 1082 NOT = { life_rating = 39 } } life_rating = 8 }
 			1081 = {
@@ -448,7 +448,7 @@ political_decisions = {
 			clr_global_flag = binhai_bianjiangqu
 		}
 	}
-	
+
 	japanese_outer_manchuria = {
 		picture = outer_manchuria_map
 		potential = {
@@ -464,9 +464,9 @@ political_decisions = {
         	owns = 1082
 			NOT = { has_global_flag = japanese_enkaishu }
 		}
-		
+
 		allow = { state_n_government = 1 }
-		
+
 		effect = {
 			random_owned = { limit = { province_id = 1082 NOT = { life_rating = 39 } } life_rating = 8 }
 			1085 = { change_province_name = "Bushi" }
@@ -481,7 +481,7 @@ political_decisions = {
 			clr_global_flag = binhai_bianjiangqu
 		}
 	}
-	
+
 	chinese_outer_manchuria = {
 		picture = outer_manchuria_map
 		potential = {
@@ -502,9 +502,9 @@ political_decisions = {
 			}
 			NOT = { has_global_flag = binhai_bianjiangqu }
 		}
-		
+
 		allow = { state_n_government = 1 }
-		
+
 		effect = {
 			random_owned = { limit = { province_id = 1082 NOT = { life_rating = 39 } } life_rating = 8 }
 			1085 = { change_province_name = "Ulusamudan" }
@@ -519,10 +519,10 @@ political_decisions = {
 			clr_global_flag = japanese_enkaishu
 		}
 	}
-	
+
 	expel_manchu_from_primorye = {
 		picture = russian_vladivostok
-		
+
 		potential = {
 			owns = 1082
 			owns = 1083
@@ -543,9 +543,9 @@ political_decisions = {
 				}
 			}
 		}
-		
+
 		allow = { war = no nationalism_n_imperialism = 1 citizenship_policy = residency }
-		
+
 		effect = {
 			set_global_flag = trying_to_expel_the_manchus
 			set_country_flag = country_trying_to_expel_the_manchus
@@ -564,7 +564,7 @@ political_decisions = {
 		}
 		ai_will_do = { factor = 1 }
 	}
-	
+
 	move_capital_to_moscow = {
 		potential = {
 			tag = RUS
@@ -595,7 +595,7 @@ political_decisions = {
 				NOT = { owns = 946 } # Polotsk
 			}
 		}
-		
+
 		effect = {
 			capital = 1008
 			1008 = {
@@ -607,7 +607,7 @@ political_decisions = {
 			factor = 1
 		}
 	}
-	
+
 	treaty_of_tartu = {
 		picture = treaty_signing
 		potential = {
@@ -616,7 +616,7 @@ political_decisions = {
 			owns = 339 #Viipuri
 			NOT = { has_country_flag = treaty_of_tartu }
 		}
-		
+
 		allow = {
 			war = no
 			is_vassal = no
@@ -628,15 +628,15 @@ political_decisions = {
 				war = no
 			}
 		}
-		
+
 		effect = {
 			set_country_flag = treaty_of_tartu
 			RUS = { country_event = 32515 }
 		}
-		
+
 		ai_will_do = { factor = 1 }
 	}
-	
+
 	reclaim_poland_RUS = {
 		picture = become_poland
 		potential = {
@@ -666,7 +666,7 @@ political_decisions = {
 				government = proletarian_dictatorship
 			}
 		}
-		
+
 		allow = {
 			war = no
 			is_disarmed = no
@@ -694,7 +694,7 @@ political_decisions = {
 				government = proletarian_dictatorship
 			}
 		}
-		
+
 		effect = {
 			set_country_flag = poland_is_russian
 			badboy = 8
@@ -737,9 +737,9 @@ political_decisions = {
 				}
 				relation = { who = THIS value = -100 }
 				leave_alliance = THIS
-			}	
+			}
 		}
-		
+
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -748,7 +748,7 @@ political_decisions = {
 			}
 		}
 	}
-	
+
 	establish_panslavism = {
 	picture = establish_panslavism
 		potential = {
@@ -757,7 +757,7 @@ political_decisions = {
 			exists = TUR
 			NOT = { has_global_flag = panslavism }
 		}
-		
+
 		allow = {
 			year = 1845
 			NOT = {
@@ -767,15 +767,15 @@ political_decisions = {
 				}
 			}
 		}
-		
+
 		effect = {
 			set_global_flag = panslavism
 			TUR = {
-				any_pop = { 
+				any_pop = {
 					limit = { has_pop_religion = orthodox }
 					militancy = 8
 				}
-				casus_belli = {	
+				casus_belli = {
 					target = THIS
 					type = humiliate
 					months = 12
@@ -802,7 +802,7 @@ political_decisions = {
 				ai = yes
 			}
 		}
-		
+
 		allow = {
 			BUK = {
 				OR = {
@@ -811,7 +811,7 @@ political_decisions = {
 				}
 			}
 		}
-		
+
 		effect = {
 			BUK = { annex_to = THIS }
 		}
@@ -835,7 +835,7 @@ political_decisions = {
 				ai = yes
 			}
 		}
-		
+
 		allow = {
 			KOK = {
 				OR = {
@@ -844,7 +844,7 @@ political_decisions = {
 				}
 			}
 		}
-		
+
 		effect = {
 			KOK = { annex_to = THIS }
 		}
@@ -868,7 +868,7 @@ political_decisions = {
 				ai = yes
 			}
 		}
-		
+
 		allow = {
 			KHI = {
 				OR = {
@@ -877,12 +877,12 @@ political_decisions = {
 				}
 			}
 		}
-		
+
 		effect = {
 			KHI = { annex_to = THIS }
 		}
 	}
-	
+
 	claim_sakhalin = {
 		picture = map_yellow_sea
 		potential = {
@@ -911,13 +911,13 @@ political_decisions = {
 				has_country_flag = fought_for_sakhalin
 			}
 		}
-		
+
 		allow = {
 			is_greater_power = yes
 			nationalism_n_imperialism = 1
 			war = no
 		}
-		
+
 		effect = {
 			any_owned = {
 				limit = { region = JAP_1086 }
@@ -929,7 +929,7 @@ political_decisions = {
 			factor = 1
 		}
 	}
-	
+
 	names_of_the_revolution = {
 		picture = names_of_the_rev
 		potential = {
@@ -945,7 +945,7 @@ political_decisions = {
 			owns = 1039
 			owns = 1058
 		}
-		
+
 		allow = {
 			owns = 996
 			owns = 994
@@ -956,7 +956,7 @@ political_decisions = {
 			owns = 1039
 			owns = 1058
 		}
-		
+
 		effect = {
 			set_country_flag = names_of_the_revolution
 			996 = { change_province_name = "Petrogradsky" }
@@ -971,7 +971,7 @@ political_decisions = {
 		}
 		ai_will_do = { factor = 1 }
 	}
-	
+
 	remove_names_of_the_revolution = {
 		picture = names_of_the_rev
 		potential = {
@@ -987,7 +987,7 @@ political_decisions = {
 			owns = 1039
 			owns = 1058
 		}
-		
+
 		allow = {
 			owns = 996
 			owns = 994
@@ -998,7 +998,7 @@ political_decisions = {
 			owns = 1039
 			owns = 1058
 		}
-		
+
 		effect = {
 			clr_country_flag = names_of_the_revolution
 			996 = { change_province_name = "Luga" }
@@ -1015,7 +1015,7 @@ political_decisions = {
 			factor = 1
 		}
 	}
-	
+
 	names_of_the_revolution_ukraine = {
 		picture = names_of_the_rev
 		potential = {
@@ -1027,14 +1027,14 @@ political_decisions = {
 			owns = 976
 			owns = 980
 		}
-		
+
 		allow = {
 			owns = 972
 			owns = 975
 			owns = 976
 			owns = 980
 		}
-		
+
 		effect = {
 			set_global_flag = names_of_the_revolution_ukraine
 			972 = { change_province_name = "Sicheslav" }
@@ -1046,7 +1046,7 @@ political_decisions = {
 			factor = 1
 		}
 	}
-	
+
 	remove_names_of_the_revolution_ukraine = {
 		picture = names_of_the_rev
 		potential = {
@@ -1057,14 +1057,14 @@ political_decisions = {
 			owns = 976
 			owns = 980
 		}
-		
+
 		allow = {
 			owns = 972
 			owns = 975
 			owns = 976
 			owns = 980
 			}
-		
+
 		effect = {
 			clr_global_flag = names_of_the_revolution_ukraine
 			975 = { change_province_name = "Yuzovka" }
@@ -1075,7 +1075,7 @@ political_decisions = {
 			factor = 1
 		}
 	}
-	
+
 	expel_the_poles_GLM = {
 		picture = polish_expelled
 		potential = {
@@ -1088,7 +1088,7 @@ political_decisions = {
 			}
 			NOT = { has_global_flag = poles_expelled }
 		}
-		
+
 		allow = {
 			war = no
 			owns = 951
@@ -1104,26 +1104,26 @@ political_decisions = {
 				government = bourgeois_dictatorship
 			}
 		}
-		
+
 		effect = {
 			set_global_flag = poles_expelled
 			952 = { change_province_name = "Ternopil" }
 			953 = { change_province_name = "Frankivsk" }
 			702 = { change_province_name = "Lviv" }
-			
+
 			702 = { remove_core = POL }
 			702 = { remove_core = GLM }
-			
+
 			951 = { remove_core = POL }
 			951 = { remove_core = GLM }
-			
+
 			952 = { remove_core = POL }
 			952 = { remove_core = GLM }
-			
+
 			953 = { remove_core = POL }
 			953 = { remove_core = RUT }
 			953 = { remove_core = GLM }
-			
+
 			702 = { any_pop = { limit = { has_pop_culture = polish } move_pop = 715 } }
 			952 = { any_pop = { limit = { has_pop_culture = polish } move_pop = 706 } }
 			953 = { any_pop = { limit = { has_pop_culture = polish } move_pop = 716 } }
@@ -1131,7 +1131,7 @@ political_decisions = {
 		}
 		ai_will_do = { factor = 1 }
 	}
-	
+
 	russify_baltic_states = {
 		picture = russify_baltic_states
 		potential = {
@@ -1140,7 +1140,7 @@ political_decisions = {
 			is_our_vassal = UBD
 			UBD = { ai = yes }
 		}
-		
+
 		allow = {
 			war = no
 			OR = {
@@ -1151,18 +1151,18 @@ political_decisions = {
 				is_greater_power = no
 			}
 		}
-		
+
 		effect = {
 			set_country_flag = russification_of_the_baltic_states
-			remove_accepted_culture = volga_german
+			# remove_accepted_culture = volga_german
 			release = UBD
-			UBD = { 
+			UBD = {
 				remove_accepted_culture = russian
 				clr_country_flag = ubd_substate
 				#all_core = { remove_core = UBD }
 				government = absolute_monarchy
-			}		
-			1037 = { 
+			}
+			1037 = {
 				add_core = VLG
 				add_province_modifier = { name = russoification duration = -1 }
 			}
@@ -1184,7 +1184,7 @@ political_decisions = {
 		}
 		ai_will_do = { factor = 1 }
 	}
-	
+
 	establish_caucasus_viceroyalty = {
 		picture = caucasus_viceroyalty
 		potential = {
@@ -1206,8 +1206,8 @@ political_decisions = {
 				}
 			}
 		}
-		
-		allow = { 
+
+		allow = {
 			OR = {
 				revolution_n_counterrevolution = 1
 				is_greater_power = no
@@ -1218,11 +1218,11 @@ political_decisions = {
 			}
 			war = no
 		}
-		
+
 		effect = {
 			set_country_flag = caucasus_viceroyalty_established
 			TCA = {
-				any_pop = { militancy = 2 } 
+				any_pop = { militancy = 2 }
 				remove_accepted_culture = russian
 				all_core = { remove_core = TCA }
 				government = absolute_monarchy
@@ -1240,8 +1240,8 @@ political_decisions = {
 		}
 		ai_will_do = { factor = 1 }
 	}
-	
-	
+
+
 	integrate_abkhazia = {
 		picture = integrate_abkhazia
 		potential = {
@@ -1265,7 +1265,7 @@ political_decisions = {
 				year = 1870
 			}
 		}
-		
+
 		allow = {
 			war = no
 			OR = {
@@ -1274,7 +1274,7 @@ political_decisions = {
 				has_global_flag = 2nd_caucasian_war
 			}
 		}
-		
+
 		effect = {
 			badboy = 0.5
 			set_country_flag = integrated_abkhazia
@@ -1303,7 +1303,7 @@ political_decisions = {
 		}
 		ai_will_do = { factor = 1 }
 	}
-	
+
 	drain_the_pinsk_marshes = {
 		picture = drain_the_pinsk_marshes
 		potential = {
@@ -1323,12 +1323,12 @@ political_decisions = {
 				}
 			}
 		}
-		
+
 		allow = {
 			steam_turbine = 1
 			money = 5500
 		}
-		
+
 		effect = {
 			treasury = -5000
 			set_country_flag = marshes_ready
@@ -1357,23 +1357,23 @@ political_decisions = {
 			tag = RUS
 			NOT = { has_country_flag = colonize_uriankhai }
 		}
-		
+
 		allow = {
 			nationalism_n_imperialism = 1
 			owns = 1063
 			is_greater_power = yes
 			war = no
 		}
-		
+
 		effect = {
 			set_country_flag = colonize_uriankhai
 			prestige = 2
 			1469 = { change_province_name = "Kyzyl" }
 			1469 = { add_core = RUS }
 			1068 = { add_core = RUS }
-			
+
 			random_country = {
-				limit = { 
+				limit = {
 					exists = yes
 					OR = {
 						tag = CHI
@@ -1386,7 +1386,7 @@ political_decisions = {
 		}
 		ai_will_do = { factor = 1 }
 	}
-		
+
 	integrate_uriankhai = {
 		picture = uriankhai_colony
 		potential = {
@@ -1395,7 +1395,7 @@ political_decisions = {
 			NOT = { has_country_flag = tannu_integrated }
 			TNT = {	exists = yes }
 		}
-		
+
 		allow = {
 			nationalism_n_imperialism = 1
 			war = no
@@ -1407,8 +1407,8 @@ political_decisions = {
 						in_sphere = THIS
 						part_of_sphere = no
 					}
-					OR = { 
-						vassal_of = THIS 
+					OR = {
+						vassal_of = THIS
 						is_vassal = no
 						AND = {
 							mass_politics = 1
@@ -1427,20 +1427,20 @@ political_decisions = {
 				}
 			}
 		}
-		
+
 		effect = {
 			set_country_flag = tannu_integrated
-			
+
 			random_country = {
 				limit = { is_our_vassal = TNT }
 				release = TNT
 				casus_belli = { target = RUS type = liberate_country months = 60 }
 			}
-			
+
 			inherit = TNT
 
 			random_country = {
-				limit = { 
+				limit = {
 					exists = yes
 					OR = {
 						tag = CHI
@@ -1470,7 +1470,7 @@ political_decisions = {
 				government = hms_government
 			}
 		}
-		
+
 		allow = {
 			war = no
 			average_militancy = 1
@@ -1484,7 +1484,7 @@ political_decisions = {
 				}
 			}
 		}
-		
+
 		effect = {
 			set_country_flag = alexander_reforms
 			war_exhaustion = -5
@@ -1493,12 +1493,12 @@ political_decisions = {
 				limit = { owner = { NOT = { border_policy = open_borders } } }
 				owner = { political_reform = open_borders }
 			}
-			
+
 			random_owned = {
 				limit = { owner = { NOT = { conscription = mandatory_service } } }
 				owner = { political_reform = mandatory_service }
 			}
-			
+
 			random_owned = {
 				limit = { owner = { citizens_rights = primary_culture_only } }
 				owner = { political_reform = culture_voting_only }
@@ -1507,35 +1507,35 @@ political_decisions = {
 				limit = { owner = { penal_system = capital_punishment } }
 				owner = { social_reform = colonial_transportation }
 			}
-			
+
 			random_owned = {
 				limit = { owner = { school_reforms = low_schools } }
 				owner = { social_reform = acceptable_schools }
 			}
-			
+
 			random_owned = {
 				limit = { owner = { school_reforms = no_schools } }
 				owner = { social_reform = low_schools }
 			}
-			
+
 			random_owned = {
 				limit = { owner = { press_rights = state_press } }
 				owner = { political_reform = censored_press }
 			}
-			
+
 			random_owned = {
 				limit = { owner = { public_meetings = no_meeting } }
 				owner = { political_reform = yes_meeting }
 			}
-			
+
 			any_pop = {
 				militancy = -2
 				consciousness = -4
 			}
-			
+
 			add_country_modifier = { name = total_reform duration = 2920 }
 			any_owned = {
-				limit = { 
+				limit = {
 					is_core = RUS
 					NOT = { OR = { is_core = POL is_core = UKR is_core = LAT is_core = FIN is_core = LIT is_core = TUR is_core = BYE } }
 					OR = {
@@ -1552,7 +1552,7 @@ political_decisions = {
 
 		ai_will_do = { factor = 1 }
 	}
-		
+
 	petrograd_renaming_act = {
 		picture = petrograd_city
 		potential = {
@@ -1568,11 +1568,11 @@ political_decisions = {
 				}
 			}
 		}
-		
+
 		allow = {
 			mass_politics = 1
 		}
-		
+
 		effect = {
 			set_country_flag = peters_city_renamed
 			994 = { change_province_name = "Petrograd" }
@@ -1585,14 +1585,14 @@ political_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 1 
+			factor = 1
 				modifier = {
 					factor = 0
 					NOT = { war_exhaustion = 20 }
 				}
 			}
 		}
-		
+
 	integrate_kazakhstan = {
 		picture = unite_turkestan
 		potential = {
@@ -1606,12 +1606,12 @@ political_decisions = {
 			owns = 1190
 			owns = 1188
 		}
-		
+
 		allow = {
 			nationalism_n_imperialism = 1
 			is_sphere_leader_of = KAZ
 		}
-		
+
 		effect = {
 			set_country_flag = kazakhstan_integrated
 			inherit = KAZ
@@ -1626,7 +1626,7 @@ political_decisions = {
 			}
 		}
 	}
-	
+
 	russification_of_finland = {
 		picture = suomineito
 		potential = {
@@ -1638,13 +1638,13 @@ political_decisions = {
 			NOT = { has_country_flag = Conceded_Finland }
 			NOT = { has_country_flag = finland_is_recognized }
 		}
-		
+
 		allow = {
 			war = no
 			mass_politics = 1
 			is_our_vassal = FIN
 		}
-		
+
 		effect = {
 			set_country_flag = finland_russification
 			badboy = 1
@@ -1660,7 +1660,7 @@ political_decisions = {
 			}
 		}
 	}
-	
+
 	liaodong_lease = {
 		picture = port_arthur
 		potential = {
@@ -1670,7 +1670,7 @@ political_decisions = {
 			exists = yes
 			NOT = { is_culture_group = east_asian }
 		}
-		
+
 		allow = {
 			war = no
 			OR = {
@@ -1690,7 +1690,7 @@ political_decisions = {
 				}
 			}
 		}
-		
+
 		effect = {
 			set_country_flag = demanded_port_arthur
 			badboy = 1
@@ -1705,14 +1705,14 @@ political_decisions = {
 			}
 		}
 	}
-	
+
 	break_the_treaty_of_tartu = {
 		picture = treaty_signing
 		potential = {
 			has_country_flag = treaty_of_tartu
 			NOT = { has_country_flag = tartu_treaty_broke }
 		}
-		
+
 		allow = {
 			NOT = { is_disarmed = yes }
 			NOT = { has_recently_lost_war = yes }
@@ -1734,7 +1734,7 @@ political_decisions = {
 				}
 			}
 		}
-		
+
 		effect = {
 			set_country_flag = tartu_treaty_broke
 			random_country = { limit = { exists = yes neighbour = THIS tag = FIN } THIS = { badboy = 5 } }
@@ -1747,15 +1747,15 @@ political_decisions = {
 			modifier = { factor = 0 badboy = 0.7 }
 		}
 	}
-	
-	
+
+
 	tea_in_georgia = {
 		picture = tea_production
 		potential = {
 			owns = 1094
 			NOT = { has_global_flag = georgian_tea }
 		}
-		
+
 		allow = {
 			war = no
 			money = 10000
@@ -1767,7 +1767,7 @@ political_decisions = {
 				}
 			}
 		}
-		
+
 		effect = {
 			set_global_flag = georgian_tea
 			money = -10000
@@ -1778,7 +1778,7 @@ political_decisions = {
 
 		ai_will_do = { factor = 1 }
 	}
-	
+
 	#Treaty of Akhal
 	treaty_of_akhal = {
 		picture = treaty_of_turkmanchay
@@ -1792,8 +1792,8 @@ political_decisions = {
 			}
 			NOT = { owns = 1204 }
 			NOT = { has_global_flag = treaty_of_akhal }
-			1204 = { 
-				owner = { 
+			1204 = {
+				owner = {
 					is_greater_power = no
 					NOT = { is_our_vassal = THIS }
 				}
@@ -1801,7 +1801,7 @@ political_decisions = {
 			is_vassal = no
 			capital_scope = { continent = europe }
 		}
-		
+
 		allow = {
 			war = no
 			1204 = { owner = { NOT = { truce_with = THIS military_score = THIS is_our_vassal = THIS } } }
@@ -1827,7 +1827,7 @@ political_decisions = {
 				ai = yes
 			}
 		}
-		
+
 		effect = {
 			set_global_flag = treaty_of_akhal
 			1204 = { owner = { country_event = 100019 } }
@@ -1835,8 +1835,8 @@ political_decisions = {
 
 		ai_will_do = { factor = 1 }
 	}
-	
-	
+
+
 	afghan_northern_borders = {
 		picture = treaty_of_turkmanchay
 		potential = {
@@ -1848,7 +1848,7 @@ political_decisions = {
 			civilized = yes
 			any_owned_province = { is_core = BDK }
 		}
-		
+
 		allow = {
 			war = no
 			revolution_n_counterrevolution = 1
@@ -1856,13 +1856,13 @@ political_decisions = {
 			1210 = { owner = { war = no } }
 			BDK = { exists = no }
 		}
-		
+
 		effect = {
 			prestige = 5
 			BDK = { all_core = { remove_core = BDK } }
 			random_owned = {
 				limit = { owner = { owns = 1210 } }
-				owner = { 1208 = { remove_core = AFG } 208 = { remove_core = BUK } 208 = { remove_core = UZB } 1211 = { remove_core = BUK } } 
+				owner = { 1208 = { remove_core = AFG } 208 = { remove_core = BUK } 208 = { remove_core = UZB } 1211 = { remove_core = BUK } }
 			}
 			random_owned = { limit = { owner = { NOT = { owns = 1210 } } } 1210 = { owner = { country_event = 325461 } } }
 		}

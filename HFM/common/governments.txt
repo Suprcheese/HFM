@@ -6,7 +6,7 @@
 proletarian_dictatorship = {
 	#which ideology of parties.
 	communist = yes
-	
+
 	election = no
 	appoint_ruling_party = yes
 	flagType = communist
@@ -17,7 +17,7 @@ presidential_dictatorship = {
 	reactionary = yes
 	fascist = yes
 	conservative = yes
-	
+
 	election = no
 	appoint_ruling_party = yes
 	flagType = republic
@@ -29,7 +29,7 @@ colonial_company = {
 	socialist = yes
 	conservative = yes
 	reactionary = yes
-	
+
 	election = no
 	appoint_ruling_party = yes
 }
@@ -42,17 +42,17 @@ dominion = {
 	communist = yes
 	anarcho_liberal = yes
 	fascist = yes
-	
+
 	election = yes
 	duration = 48
 	appoint_ruling_party = yes
 }
 
- 
+
 bourgeois_dictatorship = {
 	#which ideology of parties.
 	anarcho_liberal = yes
-	
+
 	election = no
 	appoint_ruling_party = yes
 	flagType = republic
@@ -61,30 +61,30 @@ bourgeois_dictatorship = {
 fascist_dictatorship = {
 	#which ideology of parties.
 	fascist = yes
-	
+
 	election = no
 	appoint_ruling_party = yes
 	flagType = fascist
 }
- 
+
 absolute_monarchy = {
 	liberal = yes
 	conservative = yes
 	reactionary = yes
-	
-	
+
+
 	election = no
 	appoint_ruling_party = yes
 	flagType = monarchy
 }
- 
+
 prussian_constitutionalism = {
 	liberal = yes
 	socialist = yes
 	conservative = yes
 	reactionary = yes
-	
-	
+
+
 	election = yes
 	duration = 48
 	appoint_ruling_party = yes
@@ -99,11 +99,11 @@ hms_government = {
 	communist = yes
 	anarcho_liberal = yes
 	fascist = yes
-	
-	
+
+
 	election = yes
 	duration = 48
-	appoint_ruling_party = yes
+	appoint_ruling_party = no
 	flagType = monarchy
 }
 
@@ -115,8 +115,8 @@ democracy = {
 	communist = yes
 	anarcho_liberal = yes
 	fascist = yes
-	
-	
+
+
 	election = yes
 	duration = 48
 	appoint_ruling_party = no
@@ -131,7 +131,7 @@ federal_democracy = {
 	communist = yes
 	anarcho_liberal = yes
 	fascist = yes
-	
+
 	election = yes
 	duration = 48
 	appoint_ruling_party = no
@@ -142,11 +142,11 @@ theocracy = {
 	#which ideology of parties.
 	reactionary = yes
 	conservative = yes
-	
+
 	election = no
 	appoint_ruling_party = yes
 }
- 
+
 french_bourbon = {
 	liberal = yes
 	socialist = yes
@@ -155,8 +155,8 @@ french_bourbon = {
 	communist = yes
 	anarcho_liberal = yes
 	fascist = yes
-	
-	
+
+
 	election = yes
 	duration = 48
 	appoint_ruling_party = yes

@@ -1,7 +1,7 @@
 political_decisions = {
 	adopt_western_calendar = {
 		picture = "japanese_calendar"
-		potential = { 
+		potential = {
 			tag = JAP
 			OR = {
 				is_greater_power = yes
@@ -11,13 +11,13 @@ political_decisions = {
 				has_country_flag = western_calendar
 			}
 		}
-		
+
 		allow = {
 			analytic_philosophy = 1
 			state_n_government = 1
 			war = no
 		}
-		
+
 		effect = {
 			prestige = 10
 			any_pop = {
@@ -29,13 +29,13 @@ political_decisions = {
 			}
 			set_country_flag = western_calendar
 		}
-		
+
 		ai_will_do = { factor = 1 }
 	}
 
 	repeal_ban_on_christianity = {
 		picture = "repeal_ban_christianity"
-		potential = { 
+		potential = {
 			tag = JAP
 			OR = {
 				is_greater_power = yes
@@ -45,13 +45,13 @@ political_decisions = {
 				has_country_flag = christianity_ban_repealed
 			}
 		}
-		
+
 		allow = {
 			analytic_philosophy = 1
 			state_n_government = 1
 			war = no
 		}
-		
+
 		effect = {
 			any_greater_power = {
 				limit = {
@@ -73,13 +73,13 @@ political_decisions = {
 			}
 			set_country_flag = christianity_ban_repealed
 		}
-		
+
 		ai_will_do = { factor = 1 }
-	}	
-	
+	}
+
 	technical_fine_arts_school = {
 		picture = "technical_fine_arts_school"
-		potential = { 
+		potential = {
 			tag = JAP
 			OR = {
 				is_greater_power = yes
@@ -100,13 +100,13 @@ political_decisions = {
 			years_of_research = 0.2
 			set_country_flag = technical_fine_arts_school
 		}
-		
+
 		ai_will_do = { factor = 1 }
-	}	
+	}
 
 	sino_japanese_war = {
 		picture = "sino_japanese_war"
-		
+
 		potential = {
 			tag = JAP
 			year = 1890
@@ -129,11 +129,11 @@ political_decisions = {
 			}
 			NOT = { has_country_flag = taiwan_line_of_advantage }
 		}
-		
+
 		allow = {
 			war = no
 		}
-	
+
 		effect = {
 			set_country_flag = taiwan_line_of_advantage
 			random_country = {
@@ -142,10 +142,10 @@ political_decisions = {
 				country_event = 97679
 			}
 		}
-		
+
 		ai_will_do = { factor = 1 }
 	}
-	
+
 	japan_fruits = {
 		picture = "japan_fruits"
 		potential = {
@@ -154,37 +154,37 @@ political_decisions = {
 			has_country_flag = enacted_meiji_constitution
 			NOT = { has_country_flag = japan_fruits }
 		}
-		
+
 		allow = {
 			war = no
 		}
-	
+
 		effect = {
 			set_country_flag = japan_fruits
 			1672 = { trade_goods = fruit }
 		}
-		
+
 		ai_will_do = { factor = 1 }
 	}
-	
+
 	imperial_japanese_navy = {
 		picture = "imperial_japanese_navy"
-		potential = { 
+		potential = {
 			tag = JAP
 			is_greater_power = yes
 			has_country_flag = has_line_of_advantage
 			NOT = { has_country_flag = imperial_japanese_navy }
 		}
-		
+
 		allow = {
 			money = 80001
-			OR = { 
+			OR = {
 				year = 1880
 				raider_group_doctrine = 1
 				invention = ironclads
 			}
 		}
-		
+
 		effect = {
 			treasury = -80000
 			prestige = 15
@@ -192,7 +192,7 @@ political_decisions = {
 			relation = {
 				who = ENG
 				value = 50
-			}	
+			}
 			1649 = {
 				sub_unit = { type = ironclad value = current }
 				sub_unit = { type = ironclad value = current }
@@ -226,16 +226,16 @@ political_decisions = {
 						sub_unit = { type = steam_transport value = current }
 						sub_unit = { type = steam_transport value = current }
 						sub_unit = { type = steam_transport value = current }
-				
+
 					}
 				}
 			}
 			set_country_flag = imperial_japanese_navy
 		}
-		
+
 		ai_will_do = { factor = 1 }
 	}
-		
+
 	japanese_mck = {
 		picture = "puyi_mck"
 		potential = {
@@ -303,7 +303,7 @@ political_decisions = {
 
 		ai_will_do = {
 			factor = 1
-		}	
+		}
 	}
 
 	japanese_img = {
@@ -351,9 +351,9 @@ political_decisions = {
 
 		ai_will_do = {
 			factor = 1
-		}	
+		}
 	}
-	
+
 	reconquer_taiwan = {
 		picture = panthay
 		potential = {
@@ -367,11 +367,11 @@ political_decisions = {
 			NOT = { has_country_flag = reconquer_taiwan }
 			NOT = { war_exhaustion = 10 }
 		}
-		
+
 		allow = {
 			war = no
 		}
-		
+
 		effect = {
 			war = {
 				target = TAI
@@ -379,57 +379,61 @@ political_decisions = {
 				defender_goal = { casus_belli = status_quo }
 				call_ally = no
 			}
-			set_country_flag = reconquer_taiwan 
+			set_country_flag = reconquer_taiwan
 		}
-		
+
 		ai_will_do = { factor = 1 }
 	}
-	
+
 	establish_karafuto_prefecture = {
 		picture = japanese_sakhalin
 		potential = {
 			primary_culture = japanese
 			is_greater_power = yes
 			revolution_n_counterrevolution = 1
-			OR = { 
-				AND = { 
+			OR = {
+				AND = {
 					owns = 1087
 					1087 = { NOT = { total_pops = 75000 } is_colonial = no }
 				}
-				AND = { 
+				AND = {
 					owns = 1086
 					1086 = { NOT = { culture = japanese } }
 				}
 			}
 			has_country_flag = establish_the_kaitakushi
+			NOT = {
+				has_country_flag = established_karafuto
+			}
 		}
-		
+
 		allow = {
 			colonial_policy = settlement
-			OR = { 
-				AND = { 
+			OR = {
+				AND = {
 					owns = 1087
 					1087 = { NOT = { total_pops = 75000 } }
 				}
-				AND = { 
+				AND = {
 					owns = 1086
 					1086 = { NOT = { culture = japanese } }
 				}
 			}
 		}
-		
+
 		effect = {
+			set_country_flag = established_karafuto
 			random_owned = {
 				limit = {
 					province_id = 1087
 					NOT = { total_pops = 55000 }
 				}
 				1087 = {
-					add_province_modifier = { name = population_resettlement duration = 720 } 
+					add_province_modifier = { name = population_resettlement duration = 720 }
 					add_province_modifier = { name = baby_boom duration = 720 }
 				}
 			}
-			
+
 			random_owned = {
 				limit = {
 					province_id = 1086
@@ -439,7 +443,7 @@ political_decisions = {
 				THIS = { inherit = UTI }
 			}
 
-						
+
 			random_owned = {
 				limit = {
 					province_id = 1086
@@ -447,7 +451,7 @@ political_decisions = {
 					owner = { ai = yes }
 				}
 				1086 = {
-					add_province_modifier = { name = population_resettlement duration = 1825 } 
+					add_province_modifier = { name = population_resettlement duration = 1825 }
 					add_province_modifier = { name = baby_boom duration = 1825 }
 					state_scope = {
 						any_pop = {
@@ -457,7 +461,7 @@ political_decisions = {
 					}
 				}
 			}
-			
+
 			random_owned = {
 				limit = {
 					province_id = 1086
@@ -466,7 +470,7 @@ political_decisions = {
 				1086 = { add_province_modifier = { name = population_resettlement duration = 1095 } }
 			}
 		}
-		
+
 		ai_will_do = { factor = 1 }
 	}
 }

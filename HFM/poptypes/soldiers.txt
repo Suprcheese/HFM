@@ -52,7 +52,7 @@ everyday_needs = {
 }
 
 #Total cash needed: 136.78 - Vanilla value: 125.995
-luxury_needs = {	
+luxury_needs = {
 	regular_clothes = 3
 	furniture = 3
 	liquor = 1.5
@@ -68,7 +68,7 @@ luxury_needs = {
 
 country_migration_target = {
 	factor = 1
-	
+
 	modifier = {
 		factor = 0
 		border_policy = quota_immigration
@@ -102,13 +102,13 @@ country_migration_target = {
 			is_accepted_culture = THIS
 		}
 	}
-	
+
 	modifier = {
 		factor = 1.5
 		OR = {
 			AND = {
 				THIS = { is_culture_group = germanic }
-				OR = { 
+				OR = {
 					is_culture_group = american_cultures
 					AND = {
 						primary_culture = dutch
@@ -116,14 +116,14 @@ country_migration_target = {
 					}
 				}
 			}
-			
+
 			AND = {
 				THIS = { is_culture_group = polish_culture_group }
 				is_culture_group = french
 			}
 		}
 	}
-	
+
 	modifier = {
 		factor = 2.81
 		OR = {
@@ -141,7 +141,7 @@ country_migration_target = {
 					THIS = { is_culture_group = french }
 					THIS = { has_pop_culture = wallonian }
 				}
-				OR = { 
+				OR = {
 					primary_culture = french_canadian
 					primary_culture = neo_zelandais
 					primary_culture = french_australian
@@ -162,10 +162,10 @@ country_migration_target = {
 			}
 			AND = {
 				THIS = { is_culture_group = polish_culture_group }
-				OR = { 
+				OR = {
 					is_culture_group = polish_culture_group
 					primary_culture = french
-				}	
+				}
 			}
 			AND = {
 				THIS = { is_culture_group = germanic }
@@ -177,7 +177,7 @@ country_migration_target = {
 			}
 		}
 	}
-	
+
 	modifier = {
 		factor = 4.0
 		number_of_states = 2
@@ -198,7 +198,7 @@ country_migration_target = {
 			government = colonial_company
 		}
 	}
-	
+
 	modifier = {
 		factor = 3.1
 		NOT = { total_pops = 500000 }
@@ -219,7 +219,7 @@ country_migration_target = {
 			government = colonial_company
 		}
 	}
-	
+
 	modifier = {
 		factor = 0.1
 		NOT = {
@@ -241,32 +241,32 @@ country_migration_target = {
 				}
 			}
 		}
-	}	
+	}
 }
 
 migration_target = {
 	factor = 0.01
-	
+
 	modifier = {
 		factor = 1.2
 		NOT = { total_pops = 5000 }
 		year = 1850
-		OR = { 
+		OR = {
 			continent = north_america
 			continent = south_america
 		}
 	}
-	
+
 	modifier = {
 		factor = 5.0
 		NOT = { total_pops = 500 }
 	}
-	
-	
+
+
 	modifier = {
 		factor = 1.5
 		year = 1880
-		OR = { 
+		OR = {
 			continent = north_america
 			continent = south_america
 		}
@@ -287,13 +287,13 @@ migration_target = {
 		factor = 1.2
 		total_pops = 750000
 	}
-	
+
 	modifier = {
 		factor = 0
 		is_overseas = yes
 		country = { border_policy = closed_borders }
 	}
-	
+
 	modifier = {
 		factor = 1.2
 		has_pop_culture = THIS
@@ -302,7 +302,7 @@ migration_target = {
     	factor = 0.25
     	has_culture_core = no
 	}
-	
+
 	modifier = {
 		factor = 0
 		NOT = { state_scope = {	work_available = { worker = craftsmen } } }
@@ -312,7 +312,7 @@ migration_target = {
 			unemployment_by_type = { type = labourers value = 0.1  }
 		}
 	}
-	
+
 	modifier = {
 		factor = 2
 		any_core = {
@@ -341,7 +341,7 @@ migration_target = {
 	modifier = {
 		factor = 20000
 		is_state_capital = yes
-	}		
+	}
 	modifier = {
 		factor = 1.5
 		is_capital = yes
@@ -350,7 +350,7 @@ migration_target = {
 		factor = 1.05
 		is_coastal = yes
 	}
-		
+
 	modifier = {
 		factor = 0.8
 		terrain = steppe
@@ -360,37 +360,37 @@ migration_target = {
 		factor = 0.7
 		terrain = savanna
 	}
-	
+
 	modifier = {
 		factor = 0.8
 		terrain = dryhills
 	}
-	
+
 	modifier = {
 		factor = 0.5
 		terrain = jungle
 	}
-	
+
 	modifier = {
 		factor = 0.6
 		terrain = mountain
 	}
-	
+
 	modifier = {
 		factor = 0.6
 		terrain = montane_forest
 	}
-	
+
 	modifier = {
 		factor = 0.6
 		terrain = marsh
 	}
-	
+
 	modifier = {
 		factor = 0.5
 		terrain = semidesert
 	}
-	
+
 	modifier = {
 		factor = 0.5
 		terrain = boreal
@@ -400,33 +400,33 @@ migration_target = {
 		factor = 0.1
 		terrain = small_island
 	}
-	
+
 	modifier = {
 		factor = 0.01
 		terrain = coral_island
 	}
-	
+
 	modifier = {
 		factor = 0.05
 		terrain = desert
 	}
-	
+
 	modifier = {
 		factor = 0.01
 		terrain = desert
 		continent = africa
 	}
-	
+
 	modifier = {
 		factor = 0.05
 		terrain = arctic
 	}
-	
+
 	modifier = {
 		factor = 0.05
 		terrain = montane_tundra
 	}
-	
+
 modifier = {
 		factor = 0.5
 		OR = {
@@ -436,11 +436,11 @@ modifier = {
 			continent = south_west_africa
 		}
 	}
-	
+
 	modifier = {
 		factor = 0.01
-		OR = { 
-			continent = west_africa 
+		OR = {
+			continent = west_africa
 			continent = east_africa
 			continent = central_africa
 			continent = africa
@@ -448,12 +448,12 @@ modifier = {
 		}
 		country = { primary_culture = russian }
 	}
-	
+
 	modifier = {
 		factor = 0
 		is_overseas = yes
-		OR = { 
-			continent = west_africa 
+		OR = {
+			continent = west_africa
 			continent = east_africa
 			continent = central_africa
 			continent = oceania #Near East
@@ -462,16 +462,16 @@ modifier = {
 		}
 		country = { colonial_policy = settlement primary_culture = russian }
 	}
-	
+
 	modifier = {
 		factor = 2.5
 		continent = europe
 		country = { primary_culture = russian }
 	}
-	
+
 	modifier = {
 		factor = 2.5
-		OR = { 
+		OR = {
 			state_id = 409
 			state_id = 411
 			state_id = 354
@@ -483,10 +483,10 @@ modifier = {
 		}
 		country = { has_country_flag = prussian_settlement_commission }
 	}
-	
+
 	modifier = {
 		factor = 1.1
-		OR = { 
+		OR = {
 			state_id = 354
 			state_id = 350
 			state_id = 690
@@ -497,28 +497,28 @@ modifier = {
 		}
 		country = { is_culture_group = germanic }
 	}
-	
+
 	modifier = {
 		factor = -0.5
-		OR = { 
+		OR = {
 			continent = indochina
 			continent = east_indies
 		}
 		country = { primary_culture = japanese }
 	}
-	
+
 	modifier = {
 		factor = 2.0
-		OR = { 
+		OR = {
 			is_core = KOR
 			is_core = KAM
 		}
 		country = { primary_culture = japanese }
 	}
-	
+
 	modifier = {
 		factor = 2.5
-		OR = { 
+		OR = {
 			is_core = MEX
 			is_core = CAN
 			is_core = COL
@@ -526,10 +526,10 @@ modifier = {
 		}
 		country = { is_culture_group = american_cultures }
 	}
-	
+
 	modifier = {
 		factor = -2.81
-		OR = { 
+		OR = {
 			is_core = HND
 			continent = indochina
 			is_core = SRI
@@ -553,7 +553,7 @@ modifier = {
 		}
 		country = { primary_culture = british }
 	}
-	
+
 	modifier = {
 		factor = 5.01
 		OR = {
@@ -566,10 +566,10 @@ modifier = {
 		}
 		country = { primary_culture = british }
 	}
-	
+
 	modifier = {
 		factor = 3.5
-		OR = { 
+		OR = {
 			continent = africa
 			state_id = 2033
 			state_id = 2028
@@ -579,19 +579,19 @@ modifier = {
 		}
 		country = { primary_culture = british }
 	}
-	
+
 	modifier = {
 		factor = -2.0
-		OR = { 
+		OR = {
 			is_core = SAF
 		}
 		NOT = { year = 1855 }
 		country = { primary_culture = british }
 	}
-	
+
 	modifier = {
 		factor = 3.0
-		OR = { 
+		OR = {
 			is_core = RHI
 			is_core = WAL
 			is_core = LUX
@@ -604,10 +604,10 @@ modifier = {
 		}
 		country = { primary_culture = french }
 	}
-	
+
 	modifier = {
 		factor = 3.0
-		OR = { 
+		OR = {
 			continent = africa
 			continent = east_africa
 			is_core = SWI
@@ -623,7 +623,7 @@ modifier = {
 		}
 		country = { is_culture_group = italian }
 	}
-	
+
 	modifier = {
 		factor = 2.5
 		OR = {
@@ -641,13 +641,13 @@ modifier = {
 		}
 		country = { is_culture_group = east_asian }
 	}
-	
+
 	modifier = {
 		factor = 2.0
 		continent = east_indies
 		country = { is_culture_group = east_asian }
 	}
-	
+
 	modifier = {
 		factor = 1.05
 		country = { colonial_nation = no }
@@ -696,7 +696,7 @@ promote_to = {
 			factor = -100
 			state_scope = { officers = 0.002 }
 		}
-		
+
 		modifier = {
 			factor = -100
 			location = { is_colonial = yes }
@@ -723,7 +723,7 @@ promote_to = {
 			}
 		}
 	}
-	
+
 	farmers = { #and labourers
 		factor = 0.01
 		modifier = {
@@ -744,18 +744,18 @@ promote_to = {
 				}
 			}
 		}
-		
+
 		modifier = {
 			factor = 100
 			soldiers = 0.008
 			OR = {
 				location = { is_colonial = yes is_overseas = yes }
-				AND = { 
-					location = { 
-						is_colonial = yes 
-						OR = { 
+				AND = {
+					location = {
+						is_colonial = yes
+						OR = {
 							continent = central_africa
-							continent = west_africa 
+							continent = west_africa
 							continent = east_africa
 							continent = asia
 							continent = africa
@@ -763,7 +763,7 @@ promote_to = {
 					}
 					country = {
 						OR = {
-							government = colonial_company 
+							government = colonial_company
 							government = dominion
 						}
 					}
@@ -775,7 +775,7 @@ promote_to = {
 			NOT = { country = { has_country_flag = colonial_armies } }
 		}
 	}
-#	labourers = 
+#	labourers =
 #	{
 #		factor = 0.01
 #		modifier = {
@@ -786,6 +786,17 @@ promote_to = {
 
 	craftsmen = {
 		factor = 0.01
+		modifier = {
+			factor = -100
+			NOT = { is_accepted_culture = yes }
+			NOT = { is_primary_culture = yes }
+			NOT = { state_scope = { craftsmen = 0.001 } }
+		}
+		modifier = {
+			factor = -20
+			NOT = { is_primary_culture = yes }
+			NOT = { state_scope = { craftsmen = 0.001 } }
+		}
 		group = {
 			modifier = {
 				factor = -5
@@ -861,25 +872,25 @@ promote_to = {
 
 
 ideologies = {
-	
+
 	fascist = {
 		factor = 1
-		
+
 		modifier = {
 			factor = 0.25
 			country = { has_country_flag = international_zone }
 		}
-		
+
 		modifier = {
 			factor = 1.1
 		 	is_disarmed = yes
 		}
-		
+
 		modifier = {
 			factor = 0.5
 			not = { militancy = 6 }
 		}
-		
+
 		modifier = {
 			factor = 2
 			country = { government = fascist_dictatorship }
@@ -889,7 +900,7 @@ ideologies = {
 				nationalvalue = nv_tradition
 			}
 		}
-		
+
 		modifier = {
 			factor = 1.1
 		 	revanchism = 0.01
@@ -973,7 +984,7 @@ ideologies = {
 		modifier = {
 			factor = 1.1
 			NOT = { political_reform_want = 0.10 }
-		}	
+		}
 		modifier = {
 			factor = 2
 			ruling_party_ideology = fascist
@@ -995,7 +1006,7 @@ ideologies = {
 			poor_strata_militancy = 8
 		}
 	}
-	
+
 	reactionary = {
 		factor = 1.1
 		modifier = {
@@ -1014,7 +1025,7 @@ ideologies = {
 			factor = 1.2
 			country = { NOT = { plurality = 30 } }
 		}
-		
+
 		modifier = {
 			factor = 1.2
 			NOT = { country = { government = fascist_dictatorship } }
@@ -1029,7 +1040,7 @@ ideologies = {
 				}
 			}
 		}
-		
+
 		modifier = {
 			factor = 1.5
 			country = { government = presidential_dictatorship }
@@ -1042,11 +1053,11 @@ ideologies = {
 				}
 			}
 		}
-		
+
 		modifier = {
 			factor = 0.5
 			consciousness = 6
-		}		
+		}
 		modifier = {
 			factor = 1.1
 			NOT = { political_reform_want = 0.15}
@@ -1058,7 +1069,7 @@ ideologies = {
 		modifier = {
 			factor = 1.1
 			NOT = { political_reform_want = 0.10 }
-		}		
+		}
 		modifier = {
 			factor = 1.1
 			militancy = 6
@@ -1099,12 +1110,12 @@ ideologies = {
 
 	conservative = {
 		factor = 1
-		
+
 		modifier = {
 			factor = 10
 			country = { has_country_flag = international_zone }
 		}
-		
+
 		modifier = {
 			factor = 1.5
 			location = { is_colonial = yes }
@@ -1132,8 +1143,8 @@ ideologies = {
 				is_primary_culture = yes
 				has_pop_culture = boer
 			}
-			country = { 
-				OR = { 
+			country = {
+				OR = {
 					primary_culture = british
 					primary_culture = boer
 				}
@@ -1142,10 +1153,10 @@ ideologies = {
 
 		modifier = {
 			factor = 1.5
-			location = { 
-				OR = { 
+			location = {
+				OR = {
 					continent = central_africa
-					continent = west_africa 
+					continent = west_africa
 					continent = east_africa
 					continent = asia
 					continent = africa
@@ -1158,14 +1169,14 @@ ideologies = {
 			}
 			country = {  capital_scope = { continent = europe } }
 		}
-		
+
 		modifier = {
 			factor = 4
 			country = { civilized = yes }
 			has_pop_religion = animist
 			NOT = { literacy = 0.5 }
 		}
-		
+
 		modifier = {
 			factor = 3
 			country = { civilized = yes }
@@ -1174,7 +1185,7 @@ ideologies = {
 			is_primary_culture = no
 			NOT = { literacy = 0.5 }
 		}
-		
+
 		modifier = {
 			factor = 0.5
 			militancy = 6
@@ -1217,11 +1228,11 @@ ideologies = {
 			state_scope = { is_slave = yes }
 			luxury_needs = 1
 			}
-		}		
+		}
 		modifier = {
 			factor = 1.1
 			luxury_needs = 0.1
-		}	
+		}
 		modifier = {
 			factor = 2
 			state_scope = { poor_strata_everyday_needs = 1 }
@@ -1235,7 +1246,7 @@ ideologies = {
 			nationalvalue = nv_order
 			OR = { is_accepted_culture = yes is_primary_culture = yes }
 		}
-		
+
 		modifier = {
 			factor = 1.5
 			NOT = { country = { government = fascist_dictatorship } }
@@ -1250,7 +1261,7 @@ ideologies = {
 				}
 			}
 		}
-		
+
 		modifier = {
 			factor = 1.1
 			country = { civilized = yes }
@@ -1266,7 +1277,7 @@ ideologies = {
 				has_pop_religion = shinto
 			}
 		}
-		
+
 		modifier = {
 			factor = 0.9
 			poor_strata_militancy = 5
@@ -1297,7 +1308,7 @@ ideologies = {
 			NOT = { ruling_party_ideology = communist }
 			OR = { is_accepted_culture = yes is_primary_culture = yes }
 		}
-		
+
 		modifier = {
 			factor = 0.75
 			location = { is_colonial = yes }
@@ -1325,8 +1336,8 @@ ideologies = {
 				is_primary_culture = yes
 				has_pop_culture = boer
 			}
-			country = { 
-				OR = { 
+			country = {
+				OR = {
 					primary_culture = british
 					primary_culture = boer
 				}
@@ -1335,10 +1346,10 @@ ideologies = {
 
 		modifier = {
 			factor = 0.5
-			location = { 
-				OR = { 
+			location = {
+				OR = {
 					continent = central_africa
-					continent = west_africa 
+					continent = west_africa
 					continent = east_africa
 					continent = asia
 					continent = africa
@@ -1356,12 +1367,12 @@ ideologies = {
 			factor = 0
 			NOT = { literacy = 0.05 }
 		}
-		
+
 		modifier = {
 			factor = 0.35
 			militancy = 6
 		}
-		
+
 		modifier = {
 			factor = 1.1
 			social_reform_want = 0.02
@@ -1375,7 +1386,7 @@ ideologies = {
 			social_reform_want = 0.06
 		}
 		modifier = {
-			factor = 1.1	
+			factor = 1.1
 			social_reform_want = 0.08
 		}
 		modifier = {
@@ -1391,7 +1402,7 @@ ideologies = {
 			social_reform_want = 0.14
 		}
 		modifier = {
-			factor = 1.1	
+			factor = 1.1
 			social_reform_want = 0.16
 		}
 		modifier = {
@@ -1416,7 +1427,7 @@ ideologies = {
 		}
 		modifier = {
 			factor = 1.1
-			OR = { 
+			OR = {
 			poor_strata_militancy = 5
 			middle_strata_militancy = 5
 			}
@@ -1444,7 +1455,7 @@ ideologies = {
 		}
 		modifier = {
 			factor = 1.05
-			consciousness = 9 
+			consciousness = 9
 		}
 		modifier = {
 			factor = 1.05
@@ -1458,12 +1469,12 @@ ideologies = {
 
 	communist = {
 		factor = 1
-		
+
 		modifier = {
 			factor = 0.25
 			country = { has_country_flag = international_zone }
 		}
-		
+
 		modifier = {
 			factor = 1.5
 			country = { government = proletarian_dictatorship }
@@ -1473,14 +1484,14 @@ ideologies = {
 				nationalvalue = nv_tradition
 			}
 		}
-		
+
 		modifier = {
 			factor = 0.1
 			NOT = { militancy = 6 }
 		}
 		modifier = {
 			factor = 2
-			ruling_party_ideology = communist 
+			ruling_party_ideology = communist
 		}
 		modifier = {
 			factor = 1.1
@@ -1513,7 +1524,7 @@ ideologies = {
 			}
 		}
 		modifier = {
-			factor = 1.1	
+			factor = 1.1
 			social_reform_want = 0.4
 			OR = {
 				is_accepted_culture = yes
@@ -1553,7 +1564,7 @@ ideologies = {
 			}
 		}
 		modifier = {
-			factor = 1.1	
+			factor = 1.1
 			social_reform_want = 0.8
 			OR = {
 				is_accepted_culture = yes
@@ -1601,7 +1612,7 @@ ideologies = {
 		}
 		modifier = {
 			factor = 1.2
-			consciousness = 9 
+			consciousness = 9
 		}
 		modifier = {
 			factor = 0.5
@@ -1682,7 +1693,7 @@ ideologies = {
 		}
 		modifier = {
 			factor = 1.1
-			OR = { 
+			OR = {
 			poor_strata_militancy = 5
 			middle_strata_militancy = 5
 			}
@@ -1711,12 +1722,12 @@ ideologies = {
 	}
 	anarcho_liberal = {
 		factor = 1
-		
+
 		modifier = {
 			factor = 0.25
 			country = { has_country_flag = international_zone }
 		}
-		
+
 		modifier = {
 			factor = 2
 			ruling_party_ideology = anarcho_liberal
@@ -1725,7 +1736,7 @@ ideologies = {
 			factor = 0.1
 			NOT = { militancy = 6 }
 		}
-		
+
 		modifier = {
 			factor = 0.3
 			NOT = { country = { government = bourgeois_dictatorship } }
@@ -1735,7 +1746,7 @@ ideologies = {
 			}
 			OR = { is_accepted_culture = yes is_primary_culture = yes }
 		}
-		
+
 		modifier = {
 			factor = 1.3
 			country = { government = bourgeois_dictatorship }
@@ -1745,7 +1756,7 @@ ideologies = {
 			}
 			OR = { is_accepted_culture = yes is_primary_culture = yes }
 		}
-		
+
 		modifier = {
 			factor = 1.1
 			political_reform_want = 0.60
@@ -1864,7 +1875,7 @@ issues =
 			everyday_needs = 0.75
 			country = { economic_policy = laissez_faire }
 		}
-	} 
+	}
 	interventionism = {
 		factor = 1
 		modifier = {
@@ -1896,7 +1907,7 @@ issues =
 			everyday_needs = 0.75
 			country = { economic_policy = interventionism }
 		}
-	} 
+	}
 	state_capitalism = {
 		factor = 1
 		modifier = {
@@ -1928,7 +1939,7 @@ issues =
 			everyday_needs = 0.75
 			country = { economic_policy = state_capitalism }
 		}
-	} 
+	}
 	planned_economy = {
 		factor = 1
 		modifier = {
@@ -1960,7 +1971,7 @@ issues =
 			everyday_needs = 0.75
 			country = { economic_policy = planned_economy }
 		}
-	} 
+	}
 	jingoism = {
 		factor = 1.1
 		modifier = {
@@ -2069,7 +2080,7 @@ issues =
 			NOT = {
 				war_exhaustion = 50
 			}
-		}	
+		}
 		modifier = {
 			factor = 1.1
 			war = no
@@ -2313,7 +2324,7 @@ issues =
 		modifier = {
 			factor = 0.5
 			not = { consciousness = 9 }
-		}	
+		}
 	}
 	secularized = {
 		factor = 1
@@ -2369,7 +2380,7 @@ issues =
 		modifier = {
 			factor = 0.9
 			consciousness = 9
-		}	
+		}
 	}
 	moralism = {
 		factor = 1
@@ -2381,7 +2392,7 @@ issues =
 		modifier = {
 			factor = 1.1
 			not = { consciousness = 4 }
-		}	
+		}
 		modifier = {
 			factor = 0
 			NOT = { is_state_religion = yes }
@@ -2389,15 +2400,15 @@ issues =
 		modifier = {
 			factor = 1.1
 			not = { consciousness = 3 }
-		}	
+		}
 		modifier = {
 			factor = 1.1
 			not = { consciousness = 2 }
-		}	
+		}
 		modifier = {
 			factor = 1.1
 			not = { consciousness = 1 }
-		}			
+		}
 		modifier = {
 			factor = 0.9
 			consciousness = 6
@@ -2418,13 +2429,13 @@ issues =
 	residency = {
 		factor = 1
 		modifier = {
-			factor = 0 
+			factor = 0
 			NOT = { consciousness = 5}
 		}
 		modifier = {
-			factor = 0 
+			factor = 0
 			NOT = { is_primary_culture = yes }
-		}		
+		}
 		modifier = {
 			factor = 1.1
 			nationalvalue = nv_order
@@ -2462,19 +2473,19 @@ issues =
 		modifier = {
 			factor = 1.1
 			consciousness = 9
-		}	
+		}
 	}
 	limited_citizenship = {
 		factor = 1
 		modifier = {
-			factor = 0 
+			factor = 0
 			NOT = { consciousness   = 5}
 		}
 		modifier = {
-			factor = 0 
+			factor = 0
 			NOT = { is_accepted_culture = yes }
 			NOT = { is_primary_culture = yes }
-		}		
+		}
 		modifier = {
 			factor = 1.1
 			nationalvalue = nv_equality
@@ -2515,38 +2526,38 @@ issues =
 		}
 	}
 	full_citizenship = {
-		factor = 1 
+		factor = 1
 		modifier = {
-			factor = 0 
+			factor = 0
 			NOT = { consciousness  = 5}
 		}
 		modifier = {
 			factor = 1.1
-			nationalvalue = nv_equality 
+			nationalvalue = nv_equality
 			OR = { is_accepted_culture = yes is_primary_culture = yes }
 			consciousness = 5
 		}
 		modifier = {
 			factor = 1.1
-			nationalvalue = nv_equality 
+			nationalvalue = nv_equality
 			OR = { is_accepted_culture = yes is_primary_culture = yes }
 			consciousness = 6
 		}
 		modifier = {
 			factor = 1.1
-			nationalvalue = nv_equality 
+			nationalvalue = nv_equality
 			OR = { is_accepted_culture = yes is_primary_culture = yes }
 			consciousness = 7
 		}
 		modifier = {
 			factor = 1.1
-			nationalvalue = nv_equality 
+			nationalvalue = nv_equality
 			OR = { is_accepted_culture = yes is_primary_culture = yes }
 			consciousness = 8
 		}
 		modifier = {
 			factor = 1.1
-			nationalvalue = nv_equality 
+			nationalvalue = nv_equality
 			OR = { is_accepted_culture = yes is_primary_culture = yes }
 			consciousness = 9
 		}
@@ -2595,7 +2606,7 @@ issues =
 	yes_slavery = {
 		factor = 1
 		modifier = {
-			factor = 0 
+			factor = 0
 			OR = {
 				country = { slavery = no_slavery }
 				country = { civilized = no }
@@ -2621,7 +2632,7 @@ issues =
 	freedom_of_womb = {
 		factor = 1
 		modifier = {
-			factor = 0 
+			factor = 0
 			OR = {
 				NOT = { is_next_reform = freedom_of_womb }
 				country = { civilized = no }
@@ -2681,24 +2692,24 @@ issues =
 			factor = 0.5
 			state_scope = { is_slave = yes }
 		}
-		
-		
+
+
 		modifier = {
 			factor = 1.1
 			state_scope = { is_slave = yes }
 			NOT = { everyday_needs = 0.5 }
 			}
-			
+
 		modifier = {
 			factor = 1.2
 			pop_majority_ideology = liberal
-		} 
-		
+		}
+
 		modifier = {
 			factor = 0.8
 			pop_majority_ideology = reactionary
 		}
-			
+
 		modifier = {
 			factor = 1.25
 			OR = {
@@ -2707,7 +2718,7 @@ issues =
 				location = { continent = europe }
 			}
 		}
-		
+
 		modifier = {
 			factor = 1.05
 			OR = {
@@ -2716,7 +2727,7 @@ issues =
 			}
 			OR = { is_accepted_culture = yes is_primary_culture = yes }
 		}
-		
+
 		modifier = {
 			factor = 1.1
 			NOT = { state_scope = { is_slave = yes } }
@@ -2754,7 +2765,7 @@ issues =
 			literacy = 0.7
 		}
 	}
-	
+
 	landed_voting = {
 		factor = 1.1
 		modifier = {
@@ -2886,7 +2897,7 @@ issues =
 			factor = 1.25
 			consciousness = 9
 		}
-	}			
+	}
 	wealth_voting = {
 		factor = 1.1
 		modifier = {
@@ -3102,7 +3113,7 @@ issues =
 				AND = {
 					NOT = { vote_franschise = universal_weighted_voting }
 					NOT = { vote_franschise = universal_voting }
-				}				
+				}
 				location = { is_colonial = yes }
 			}
 		}
@@ -3178,7 +3189,7 @@ issues =
 			NOT = { agree_with_ruling_party = 0.80 }
 		}
 	}
-	
+
 	harassment = {
 		factor = 1
 		modifier = {
@@ -3434,11 +3445,11 @@ issues =
 			factor = 1.25
 			consciousness = 9
 		}
-	}	
+	}
 	yes_meeting = {
 		factor = 1
 		modifier = {
-			factor = 0 
+			factor = 0
 			OR = {
 				public_meetings = yes_meeting
 				NOT = { consciousness = 4 }
@@ -3506,7 +3517,7 @@ issues =
 	censored_press = {
 		factor = 1
 		modifier = {
-			factor = 0 
+			factor = 0
 			OR = {
 				NOT = { is_next_reform = censored_press }
 				NOT = { consciousness = 5 }
@@ -3572,7 +3583,7 @@ issues =
 	free_press = {
 		factor = 1
 		modifier = {
-			factor = 0 
+			factor = 0
 			OR = {
 				NOT = { is_next_reform = free_press }
 				NOT = { consciousness = 5 }
@@ -3636,23 +3647,23 @@ issues =
 			OR = { is_primary_culture = yes is_accepted_culture = yes }
 		}
 	}
-	trinket_wage = { 
+	trinket_wage = {
 		factor = 1
 		modifier = {
-			factor = 0 
+			factor = 0
 			OR = {
 				luxury_needs = 1.0
 				NOT = { consciousness = 6 }
 				NOT = { is_next_reform = trinket_wage }
 				NOT = { is_ideology_enabled = socialist }
 				country = { civilized = no }
-			}	
+			}
 		}
 
 		modifier = {
 			factor = 1.25
 			not = { life_needs = 0.25 }
-		}	
+		}
 		modifier = {
 			factor = 1.25
 			not = { life_needs = 0.50 }
@@ -3664,7 +3675,7 @@ issues =
 		modifier = {
 			factor = 1.25
 			not = { everyday_needs = 0.25 }
-		}	
+		}
 		modifier = {
 			factor = 1.25
 			not = { everyday_needs = 0.50 }
@@ -3680,9 +3691,9 @@ issues =
 		modifier = {
 			factor = 0.25
 			luxury_needs = 0.25
-		}	
+		}
 		modifier = {
-			factor = 0.25 
+			factor = 0.25
 			luxury_needs = 0.50
 		}
 		modifier = {
@@ -3701,14 +3712,14 @@ issues =
 			factor = 1.25
 			consciousness = 9
 		}
-		modifier = {	
-			factor = 1.25		
+		modifier = {
+			factor = 1.25
 			state_scope = {
 				not = { poor_strata_everyday_needs = 1 }
 			}
-		}		
-		modifier = {	
-			factor = 1.25		
+		}
+		modifier = {
+			factor = 1.25
 			state_scope = {
 				not = { poor_strata_everyday_needs = 0.75 }
 			}
@@ -3721,28 +3732,28 @@ issues =
 		}
 		modifier = {
 			factor = 1.25
-			state_scope = { 
+			state_scope = {
 				not = { poor_strata_everyday_needs = 0.25 }
 			}
-		}		
+		}
 	}
-	low_minimum_wage = { 
+	low_minimum_wage = {
 		factor = 1
 		modifier = {
-			factor = 0 
+			factor = 0
 			OR = {
-				luxury_needs = 1.0 
+				luxury_needs = 1.0
 				NOT = { consciousness = 6 }
 				NOT = { is_next_reform = low_minimum_wage }
 				NOT = { is_ideology_enabled = socialist }
 				country = { civilized = no }
-			}	
+			}
 		}
 
 		modifier = {
 			factor = 1.25
 			not = { life_needs = 0.25 }
-		}	
+		}
 		modifier = {
 			factor = 1.25
 			not = { life_needs = 0.50 }
@@ -3754,7 +3765,7 @@ issues =
 		modifier = {
 			factor = 1.25
 			not = { everyday_needs = 0.25 }
-		}	
+		}
 		modifier = {
 			factor = 1.25
 			not = { everyday_needs = 0.50 }
@@ -3770,9 +3781,9 @@ issues =
 		modifier = {
 			factor = 0.25
 			luxury_needs = 0.25
-		}	
+		}
 		modifier = {
-			factor = 0.25 
+			factor = 0.25
 			luxury_needs = 0.50
 		}
 		modifier = {
@@ -3791,14 +3802,14 @@ issues =
 			factor = 1.25
 			consciousness = 9
 		}
-		modifier = {	
-			factor = 1.25		
+		modifier = {
+			factor = 1.25
 			state_scope = {
 				not = { poor_strata_everyday_needs = 1 }
 			}
-		}		
-		modifier = {	
-			factor = 1.25		
+		}
+		modifier = {
+			factor = 1.25
 			state_scope = {
 				not = { poor_strata_everyday_needs = 0.75 }
 			}
@@ -3811,28 +3822,28 @@ issues =
 		}
 		modifier = {
 			factor = 1.25
-			state_scope = { 
+			state_scope = {
 				not = { poor_strata_everyday_needs = 0.25 }
 			}
-		}		
+		}
 	}
-	acceptable_minimum_wage = { 
+	acceptable_minimum_wage = {
 		factor = 1
 		modifier = {
-			factor = 0 
+			factor = 0
 			OR = {
-				luxury_needs = 1.0 
+				luxury_needs = 1.0
 				NOT = { consciousness = 6 }
 				NOT = { is_next_reform = acceptable_minimum_wage }
 				NOT = { is_ideology_enabled = socialist }
 				country = { civilized = no }
-			}	
+			}
 		}
 
 		modifier = {
 			factor = 1.25
 			not = { life_needs = 0.25 }
-		}	
+		}
 		modifier = {
 			factor = 1.25
 			not = { life_needs = 0.50 }
@@ -3844,7 +3855,7 @@ issues =
 		modifier = {
 			factor = 1.25
 			not = { everyday_needs = 0.25 }
-		}	
+		}
 		modifier = {
 			factor = 1.25
 			not = { everyday_needs = 0.50 }
@@ -3860,9 +3871,9 @@ issues =
 		modifier = {
 			factor = 0.25
 			luxury_needs = 0.25
-		}	
+		}
 		modifier = {
-			factor = 0.25 
+			factor = 0.25
 			luxury_needs = 0.50
 		}
 		modifier = {
@@ -3881,14 +3892,14 @@ issues =
 			factor = 1.25
 			consciousness = 9
 		}
-		modifier = {	
-			factor = 1.25	
+		modifier = {
+			factor = 1.25
 			state_scope = {
 				not = { poor_strata_everyday_needs = 1 }
 			}
-		}		
-		modifier = {	
-			factor = 1.25		
+		}
+		modifier = {
+			factor = 1.25
 			state_scope = {
 				not = { poor_strata_everyday_needs = 0.75 }
 			}
@@ -3901,28 +3912,28 @@ issues =
 		}
 		modifier = {
 			factor = 1.25
-			state_scope = { 
+			state_scope = {
 				not = { poor_strata_everyday_needs = 0.25 }
 			}
-		}		
+		}
 	}
-	good_minimum_wage = { 
+	good_minimum_wage = {
 		factor = 1
 		modifier = {
-			factor = 0 
+			factor = 0
 			OR = {
 				luxury_needs = 0.9
 				NOT = { consciousness = 6 }
 				NOT = { is_next_reform = good_minimum_wage }
 				NOT = { is_ideology_enabled = socialist }
 				country = { civilized = no }
-			}	
+			}
 		}
 
 		modifier = {
 			factor = 1.25
 			not = { life_needs = 0.25 }
-		}	
+		}
 		modifier = {
 			factor = 1.25
 			not = { life_needs = 0.50 }
@@ -3934,7 +3945,7 @@ issues =
 		modifier = {
 			factor = 1.25
 			not = { everyday_needs = 0.25 }
-		}	
+		}
 		modifier = {
 			factor = 1.25
 			not = { everyday_needs = 0.50 }
@@ -3950,9 +3961,9 @@ issues =
 		modifier = {
 			factor = 0.25
 			luxury_needs = 0.25
-		}	
+		}
 		modifier = {
-			factor = 0.25 
+			factor = 0.25
 			luxury_needs = 0.50
 		}
 		modifier = {
@@ -3971,14 +3982,14 @@ issues =
 			factor = 1.25
 			consciousness = 9
 		}
-		modifier = {	
-			factor = 1.25		
+		modifier = {
+			factor = 1.25
 			state_scope = {
 				not = { poor_strata_everyday_needs = 1 }
 			}
-		}		
-		modifier = {	
-			factor = 1.25	
+		}
+		modifier = {
+			factor = 1.25
 			state_scope = {
 				not = { poor_strata_everyday_needs = 0.75 }
 			}
@@ -3991,23 +4002,23 @@ issues =
 		}
 		modifier = {
 			factor = 1.25
-			state_scope = { 
+			state_scope = {
 				not = { poor_strata_everyday_needs = 0.25 }
 			}
-		}		
+		}
 	}
-	
-	trinket_safety = { 
+
+	trinket_safety = {
 		factor = 1
 		modifier = {
-			factor = 0 
+			factor = 0
 			OR = {
 				NOT = { life_needs = 1.0 }
 				NOT = { consciousness = 6 }
 				NOT = { is_next_reform = trinket_safety }
 				NOT = { is_ideology_enabled = socialist }
 				country = { civilized = no }
-			}	
+			}
 		}
 
 		modifier = {
@@ -4017,7 +4028,7 @@ issues =
 		modifier = {
 			factor = 1.25
 			consciousness = 7
-		}	
+		}
 		modifier = {
 			factor = 1.25
 			consciousness = 8
@@ -4029,7 +4040,7 @@ issues =
 		modifier = {
 			factor = 1.25
 			everyday_needs = 0.25
-		}	
+		}
 		modifier = {
 			factor = 1.25
 			everyday_needs = 0.50
@@ -4045,7 +4056,7 @@ issues =
 		modifier = {
 			factor = 1.25
 			luxury_needs = 0.25
-		}	
+		}
 		modifier = {
 			factor = 1.25
 			luxury_needs = 0.50
@@ -4059,17 +4070,17 @@ issues =
 			luxury_needs = 1
 		}
 	}
-	low_safety = { 
+	low_safety = {
 		factor = 1
 		modifier = {
-			factor = 0 
+			factor = 0
 			OR = {
 				NOT = { life_needs = 1.0 }
 				NOT = { consciousness = 6 }
 				NOT = { is_next_reform = low_safety }
 				NOT = { is_ideology_enabled = socialist }
 				country = { civilized = no }
-			}	
+			}
 		}
 
 		modifier = {
@@ -4079,7 +4090,7 @@ issues =
 		modifier = {
 			factor = 1.25
 			consciousness = 7
-		}	
+		}
 		modifier = {
 			factor = 1.25
 			consciousness = 8
@@ -4091,7 +4102,7 @@ issues =
 		modifier = {
 			factor = 1.25
 			everyday_needs = 0.25
-		}	
+		}
 		modifier = {
 			factor = 1.25
 			everyday_needs = 0.50
@@ -4107,7 +4118,7 @@ issues =
 		modifier = {
 			factor = 1.25
 			luxury_needs = 0.25
-		}	
+		}
 		modifier = {
 			factor = 1.25
 			luxury_needs = 0.50
@@ -4121,17 +4132,17 @@ issues =
 			luxury_needs = 1
 		}
 	}
-	acceptable_safety = { 
+	acceptable_safety = {
 		factor = 1
 		modifier = {
-			factor = 0 
+			factor = 0
 			OR = {
 				NOT = { life_needs = 1.0 }
 				NOT = { consciousness = 6 }
 				NOT = { is_next_reform = acceptable_safety }
 				NOT = { is_ideology_enabled = socialist }
 				country = { civilized = no }
-			}	
+			}
 		}
 
 		modifier = {
@@ -4141,7 +4152,7 @@ issues =
 		modifier = {
 			factor = 1.25
 			consciousness = 7
-		}	
+		}
 		modifier = {
 			factor = 1.25
 			consciousness = 8
@@ -4153,7 +4164,7 @@ issues =
 		modifier = {
 			factor = 1.25
 			everyday_needs = 0.25
-		}	
+		}
 		modifier = {
 			factor = 1.25
 			everyday_needs = 0.50
@@ -4169,7 +4180,7 @@ issues =
 		modifier = {
 			factor = 1.25
 			luxury_needs = 0.25
-		}	
+		}
 		modifier = {
 			factor = 1.25
 			luxury_needs = 0.50
@@ -4184,17 +4195,17 @@ issues =
 		}
 
 	}
-	good_safety  = { 
+	good_safety  = {
 		factor = 1
 		modifier = {
-			factor = 0 
+			factor = 0
 			OR = {
 				NOT = { life_needs = 1.0 }
 				NOT = { consciousness = 6 }
 				NOT = { is_next_reform = good_safety }
 				NOT = { is_ideology_enabled = socialist }
 				country = { civilized = no }
-			}	
+			}
 		}
 
 		modifier = {
@@ -4204,7 +4215,7 @@ issues =
 		modifier = {
 			factor = 1.25
 			consciousness = 7
-		}	
+		}
 		modifier = {
 			factor = 1.25
 			consciousness = 8
@@ -4216,7 +4227,7 @@ issues =
 		modifier = {
 			factor = 1.25
 			everyday_needs = 0.25
-		}	
+		}
 		modifier = {
 			factor = 1.25
 			everyday_needs = 0.50
@@ -4232,7 +4243,7 @@ issues =
 		modifier = {
 			factor = 1.25
 			luxury_needs = 0.25
-		}	
+		}
 		modifier = {
 			factor = 1.25
 			luxury_needs = 0.50
@@ -4246,12 +4257,12 @@ issues =
 			luxury_needs = 1
 		}
 	}
-	trinket_subsidies = { 
+	trinket_subsidies = {
 		factor = 1
 		modifier = {
-			factor = 0 
+			factor = 0
 			OR = {
-				poor_strata_luxury_needs = 1.0 
+				poor_strata_luxury_needs = 1.0
 				state_scope = { NOT = { unemployment = 0.01 } }
 				NOT = { consciousness = 6 }
 				NOT = { is_next_reform = trinket_subsidies }
@@ -4260,14 +4271,14 @@ issues =
 			}
 		}
 
-		modifier = {	
-			factor = 1.25	
+		modifier = {
+			factor = 1.25
 			state_scope = {
 				not = { poor_strata_life_needs = 1 }
 			}
-		}		
-		modifier = {	
-			factor = 1.25	
+		}
+		modifier = {
+			factor = 1.25
 			state_scope = {
 				not = { poor_strata_life_needs = 0.75 }
 			}
@@ -4280,33 +4291,33 @@ issues =
 		}
 		modifier = {
 			factor = 1.25
-			state_scope = { 
+			state_scope = {
 				not = { poor_strata_life_needs = 0.25 }
 			}
-		}		
+		}
 
 		modifier = {
 			factor = 1.25
 			state_scope = {
-				unemployment = 0.1 
+				unemployment = 0.1
 			}
 		}
 		modifier = {
 			factor = 1.25
 			state_scope = {
-				unemployment = 0.2 
+				unemployment = 0.2
 			}
 		}
 		modifier = {
 			factor = 1.25
 			state_scope = {
-				unemployment = 0.3 
+				unemployment = 0.3
 			}
 		}
 		modifier = {
 			factor = 1.25
 			state_scope = {
-				unemployment = 0.4 
+				unemployment = 0.4
 			}
 		}
 		modifier = {
@@ -4318,7 +4329,7 @@ issues =
 		modifier = {
 			factor = 1.25
 			consciousness = 7
-		}	
+		}
 		modifier = {
 			factor = 1.25
 			consciousness = 8
@@ -4328,27 +4339,27 @@ issues =
 			consciousness = 9
 		}
 	}
-	low_subsidies = { 
+	low_subsidies = {
 		factor = 1
 		modifier = {
-			factor = 0 
+			factor = 0
 			OR = {
-				poor_strata_luxury_needs = 1.0 
+				poor_strata_luxury_needs = 1.0
 				state_scope = { NOT = { unemployment = 0.01 } }
 				NOT = { consciousness = 6 }
 				NOT = { is_next_reform = low_subsidies }
 				NOT = { is_ideology_enabled = socialist }
 				country = { civilized = no }
-			}	
+			}
 		}
-		modifier = {	
-			factor = 1.25	
+		modifier = {
+			factor = 1.25
 			state_scope = {
 				not = { poor_strata_life_needs = 1 }
 			}
-		}		
-		modifier = {	
-			factor = 1.25	
+		}
+		modifier = {
+			factor = 1.25
 			state_scope = {
 				not = { poor_strata_life_needs = 0.75 }
 			}
@@ -4361,33 +4372,33 @@ issues =
 		}
 		modifier = {
 			factor = 1.25
-			state_scope = { 
+			state_scope = {
 				not = { poor_strata_life_needs = 0.25 }
 			}
-		}		
-		
+		}
+
 		modifier = {
 			factor = 1.25
 			state_scope = {
-				unemployment = 0.1 
+				unemployment = 0.1
 			}
 		}
 		modifier = {
 			factor = 1.25
 			state_scope = {
-				unemployment = 0.2 
+				unemployment = 0.2
 			}
 		}
 		modifier = {
 			factor = 1.25
 			state_scope = {
-				unemployment = 0.3 
+				unemployment = 0.3
 			}
 		}
 		modifier = {
 			factor = 1.25
 			state_scope = {
-				unemployment = 0.4 
+				unemployment = 0.4
 			}
 		}
 		modifier = {
@@ -4399,7 +4410,7 @@ issues =
 		modifier = {
 			factor = 1.25
 			consciousness = 7
-		}	
+		}
 		modifier = {
 			factor = 1.25
 			consciousness = 8
@@ -4409,27 +4420,27 @@ issues =
 			consciousness = 9
 		}
 	}
-	acceptable_subsidies = { 
+	acceptable_subsidies = {
 		factor = 1
 		modifier = {
-			factor = 0 
+			factor = 0
 			OR = {
-				poor_strata_luxury_needs = 1.0 
+				poor_strata_luxury_needs = 1.0
 				state_scope = { NOT = { unemployment = 0.01 } }
 				NOT = { consciousness = 6 }
 				NOT = { is_next_reform = acceptable_subsidies }
 				NOT = { is_ideology_enabled = socialist }
 				country = { civilized = no }
-			}	
+			}
 		}
-		modifier = {	
+		modifier = {
 			factor = 1.25
 			state_scope = {
 				not = { poor_strata_life_needs = 1 }
 			}
-		}		
-		modifier = {	
-			factor = 1.25	
+		}
+		modifier = {
+			factor = 1.25
 			state_scope = {
 				not = { poor_strata_life_needs = 0.75 }
 			}
@@ -4442,33 +4453,33 @@ issues =
 		}
 		modifier = {
 			factor = 1.25
-			state_scope = { 
+			state_scope = {
 				not = { poor_strata_life_needs = 0.25 }
 			}
-		}		
-		
+		}
+
 		modifier = {
 			factor = 1.25
 			state_scope = {
-				unemployment = 0.1 
+				unemployment = 0.1
 			}
 		}
 		modifier = {
 			factor = 1.25
 			state_scope = {
-				unemployment = 0.2 
+				unemployment = 0.2
 			}
 		}
 		modifier = {
 			factor = 1.25
 			state_scope = {
-				unemployment = 0.3 
+				unemployment = 0.3
 			}
 		}
 		modifier = {
 			factor = 1.25
 			state_scope = {
-				unemployment = 0.4 
+				unemployment = 0.4
 			}
 		}
 		modifier = {
@@ -4480,7 +4491,7 @@ issues =
 		modifier = {
 			factor = 1.25
 			consciousness = 7
-		}	
+		}
 		modifier = {
 			factor = 1.25
 			consciousness = 8
@@ -4490,26 +4501,26 @@ issues =
 			consciousness = 9
 		}
 	}
-	good_subsidies = { 
+	good_subsidies = {
 		factor = 1
 		modifier = {
-			factor = 0 
+			factor = 0
 			OR = {
-				poor_strata_luxury_needs = 1.0 
+				poor_strata_luxury_needs = 1.0
 				state_scope = { NOT = { unemployment = 0.01 } }
 				NOT = { consciousness = 6 }
 				NOT = { is_next_reform = good_subsidies }
 				NOT = { is_ideology_enabled = socialist }
 				country = { civilized = no }
-			}	
+			}
 		}
-		modifier = {	
+		modifier = {
 			factor = 1.25
 			state_scope = {
 				not = { poor_strata_life_needs = 1 }
 			}
-		}		
-		modifier = {	
+		}
+		modifier = {
 			factor = 1.25
 			state_scope = {
 				not = { poor_strata_life_needs = 0.75 }
@@ -4523,33 +4534,33 @@ issues =
 		}
 		modifier = {
 			factor = 1.25
-			state_scope = { 
+			state_scope = {
 				not = { poor_strata_life_needs = 0.25 }
 			}
-		}		
-		
+		}
+
 		modifier = {
 			factor = 1.25
 			state_scope = {
-				unemployment = 0.1 
+				unemployment = 0.1
 			}
 		}
 		modifier = {
 			factor = 1.25
 			state_scope = {
-				unemployment = 0.2 
+				unemployment = 0.2
 			}
 		}
 		modifier = {
 			factor = 1.25
 			state_scope = {
-				unemployment = 0.3 
+				unemployment = 0.3
 			}
 		}
 		modifier = {
 			factor = 1.25
 			state_scope = {
-				unemployment = 0.4 
+				unemployment = 0.4
 			}
 		}
 		modifier = {
@@ -4561,7 +4572,7 @@ issues =
 		modifier = {
 			factor = 1.25
 			consciousness = 7
-		}	
+		}
 		modifier = {
 			factor = 1.25
 			consciousness = 8
@@ -4571,21 +4582,21 @@ issues =
 			consciousness = 9
 		}
 	}
-	trinket_pensions = { 
+	trinket_pensions = {
 		factor = 1
 		modifier = {
-			factor = 0 
+			factor = 0
 			OR = {
 				NOT = { consciousness = 6 }
 				NOT = { is_next_reform = trinket_pensions }
 				NOT = { is_ideology_enabled = socialist }
 				country = { civilized = no }
-			}	
+			}
 		}
 		modifier = {
 			factor = 1.25
 			consciousness = 7
-		}	
+		}
 		modifier = {
 			factor = 1.25
 			consciousness = 8
@@ -4597,7 +4608,7 @@ issues =
 		modifier = {
 			factor = 0.25
 			not = { life_needs = 0.25 }
-		}	
+		}
 		modifier = {
 			factor = 0.25
 			not = { life_needs = 0.50 }
@@ -4613,7 +4624,7 @@ issues =
 		modifier = {
 			factor = 1.25
 			everyday_needs = 0.25
-		}	
+		}
 		modifier = {
 			factor = 1.25
 			everyday_needs = 0.50
@@ -4629,7 +4640,7 @@ issues =
 		modifier = {
 			factor = 1.25
 			luxury_needs = 0.25
-		}	
+		}
 		modifier = {
 			factor = 1.25
 			luxury_needs = 0.50
@@ -4643,22 +4654,22 @@ issues =
 			luxury_needs = 1
 		}
 	}
-	low_pensions = { 
+	low_pensions = {
 		factor = 1
 		modifier = {
-			factor = 0 
+			factor = 0
 			OR = {
 				NOT = { consciousness = 6 }
 				NOT = { is_next_reform = low_pensions }
 				NOT = { is_ideology_enabled = socialist }
 				country = { civilized = no }
-			}	
+			}
 		}
 
 		modifier = {
 			factor = 1.25
 			consciousness = 7
-		}	
+		}
 		modifier = {
 			factor = 1.25
 			consciousness = 8
@@ -4670,7 +4681,7 @@ issues =
 		modifier = {
 			factor = 0.25
 			not = { life_needs = 0.25 }
-		}	
+		}
 		modifier = {
 			factor = 0.25
 			not = { life_needs = 0.50 }
@@ -4686,7 +4697,7 @@ issues =
 		modifier = {
 			factor = 1.25
 			everyday_needs = 0.25
-		}	
+		}
 		modifier = {
 			factor = 1.25
 			everyday_needs = 0.50
@@ -4702,7 +4713,7 @@ issues =
 		modifier = {
 			factor = 1.25
 			luxury_needs = 0.25
-		}	
+		}
 		modifier = {
 			factor = 1.25
 			luxury_needs = 0.50
@@ -4716,22 +4727,22 @@ issues =
 			luxury_needs = 1
 		}
 	}
-	acceptable_pensions = { 
+	acceptable_pensions = {
 		factor = 1
 		modifier = {
-			factor = 0 
+			factor = 0
 			OR = {
 				NOT = { consciousness = 6 }
 				NOT = { is_next_reform = acceptable_pensions }
 				NOT = { is_ideology_enabled = socialist }
 				country = { civilized = no }
-			}	
+			}
 		}
 
 		modifier = {
 			factor = 1.25
 			consciousness = 7
-		}	
+		}
 		modifier = {
 			factor = 1.25
 			consciousness = 8
@@ -4743,7 +4754,7 @@ issues =
 		modifier = {
 			factor = 0.25
 			not = { life_needs = 0.25 }
-		}	
+		}
 		modifier = {
 			factor = 0.25
 			not = { life_needs = 0.50 }
@@ -4759,7 +4770,7 @@ issues =
 		modifier = {
 			factor = 1.25
 			everyday_needs = 0.25
-		}	
+		}
 		modifier = {
 			factor = 1.25
 			everyday_needs = 0.50
@@ -4775,7 +4786,7 @@ issues =
 		modifier = {
 			factor = 1.25
 			luxury_needs = 0.25
-		}	
+		}
 		modifier = {
 			factor = 1.25
 			luxury_needs = 0.50
@@ -4789,22 +4800,22 @@ issues =
 			luxury_needs = 1
 		}
 	}
-	good_pensions = { 
+	good_pensions = {
 		factor = 1
 		modifier = {
-			factor = 0 
+			factor = 0
 			OR = {
 				NOT = { consciousness = 6 }
 				NOT = { is_next_reform = good_pensions }
 				NOT = { is_ideology_enabled = socialist }
 				country = { civilized = no }
-			}	
+			}
 		}
 
 		modifier = {
 			factor = 1.25
 			consciousness = 7
-		}	
+		}
 		modifier = {
 			factor = 1.25
 			consciousness = 8
@@ -4816,7 +4827,7 @@ issues =
 		modifier = {
 			factor = 0.25
 			not = { life_needs = 0.25 }
-		}	
+		}
 		modifier = {
 			factor = 0.25
 			not = { life_needs = 0.50 }
@@ -4832,7 +4843,7 @@ issues =
 		modifier = {
 			factor = 1.25
 			everyday_needs = 0.25
-		}	
+		}
 		modifier = {
 			factor = 1.25
 			everyday_needs = 0.50
@@ -4848,7 +4859,7 @@ issues =
 		modifier = {
 			factor = 1.25
 			luxury_needs = 0.25
-		}	
+		}
 		modifier = {
 			factor = 1.25
 			luxury_needs = 0.50
@@ -4862,10 +4873,10 @@ issues =
 			luxury_needs = 1
 		}
 	}
-	trinket_health_care = { 
+	trinket_health_care = {
 		factor = 1
 		modifier = {
-			factor = 0 
+			factor = 0
 			OR = {
 				NOT = { country = { has_country_flag = medicine_invented } }
 				NOT = { consciousness = 7 }
@@ -4890,7 +4901,7 @@ issues =
 		modifier = {
 			factor = 1.25
 			not = { life_needs = 0.25 }
-		}	
+		}
 		modifier = {
 			factor = 1.25
 			not = { life_needs = 0.5 }
@@ -4903,14 +4914,14 @@ issues =
 			factor = 1.25
 			not = { life_needs = 1 }
 		}
-		modifier = {	
-			factor = 1.25		
+		modifier = {
+			factor = 1.25
 			state_scope = {
 				not = { poor_strata_life_needs = 1 }
 			}
-		}		
-		modifier = {	
-			factor = 1.25	
+		}
+		modifier = {
+			factor = 1.25
 			state_scope = {
 				not = { poor_strata_life_needs = 0.75 }
 			}
@@ -4923,15 +4934,15 @@ issues =
 		}
 		modifier = {
 			factor = 1.25
-			state_scope = { 
+			state_scope = {
 				not = { poor_strata_life_needs = 0.25 }
 			}
 		}
 	}
-	low_health_care = { 
+	low_health_care = {
 		factor = 1
 		modifier = {
-			factor = 0 
+			factor = 0
 			OR = {
 				luxury_needs = 1.0
 				NOT = { country = { has_country_flag = germs_invented } }
@@ -4939,7 +4950,7 @@ issues =
 				NOT = { is_next_reform = low_health_care }
 				NOT = { is_ideology_enabled = socialist }
 				country = { civilized = no }
-			}	
+			}
 		}
 		modifier = {
 			factor = 1.25
@@ -4956,7 +4967,7 @@ issues =
 		modifier = {
 			factor = 1.25
 			not = { life_needs = 0.25 }
-		}	
+		}
 		modifier = {
 			factor = 1.25
 			not = { life_needs = 0.5 }
@@ -4969,14 +4980,14 @@ issues =
 			factor = 1.25
 			not = { life_needs = 1 }
 		}
-		modifier = {	
-			factor = 1.25	
+		modifier = {
+			factor = 1.25
 			state_scope = {
 				not = { poor_strata_life_needs = 1 }
 			}
-		}		
-		modifier = {	
-			factor = 1.25	
+		}
+		modifier = {
+			factor = 1.25
 			state_scope = {
 				not = { poor_strata_life_needs = 0.75 }
 			}
@@ -4989,15 +5000,15 @@ issues =
 		}
 		modifier = {
 			factor = 1.25
-			state_scope = { 
+			state_scope = {
 				not = { poor_strata_life_needs = 0.25 }
 			}
 		}
 	}
-	acceptable_health_care = { 
+	acceptable_health_care = {
 		factor = 1
 		modifier = {
-			factor = 0 
+			factor = 0
 			OR = {
 				luxury_needs = 1.0
 				NOT = { country = { has_country_flag = gaslights_invented } }
@@ -5005,7 +5016,7 @@ issues =
 				NOT = { is_next_reform = acceptable_health_care }
 				NOT = { is_ideology_enabled = socialist }
 				country = { civilized = no }
-			}	
+			}
 		}
 
 		modifier = {
@@ -5023,7 +5034,7 @@ issues =
 		modifier = {
 			factor = 1.25
 			not = { life_needs = 0.25 }
-		}	
+		}
 		modifier = {
 			factor = 1.25
 			not = { life_needs = 0.5 }
@@ -5036,13 +5047,13 @@ issues =
 			factor = 1.25
 			not = { life_needs = 1 }
 		}
-		modifier = {	
-			factor = 1.25	
+		modifier = {
+			factor = 1.25
 			state_scope = {
 				not = { poor_strata_life_needs = 1 }
 			}
-		}		
-		modifier = {	
+		}
+		modifier = {
 			factor = 1.25
 			state_scope = {
 				not = { poor_strata_life_needs = 0.75 }
@@ -5056,15 +5067,15 @@ issues =
 		}
 		modifier = {
 			factor = 1.25
-			state_scope = { 
+			state_scope = {
 				not = { poor_strata_life_needs = 0.25 }
 			}
 		}
 	}
-	good_health_care = { 
+	good_health_care = {
 		factor = 1
 		modifier = {
-			factor = 0 
+			factor = 0
 			OR = {
 				luxury_needs = 1.0
 				NOT = { consciousness = 7 }
@@ -5072,7 +5083,7 @@ issues =
 				NOT = { is_next_reform = good_health_care }
 				NOT = { is_ideology_enabled = socialist }
 				country = { civilized = no }
-			}	
+			}
 		}
 
 		modifier = {
@@ -5090,7 +5101,7 @@ issues =
 		modifier = {
 			factor = 1.25
 			not = { life_needs = 0.25 }
-		}	
+		}
 		modifier = {
 			factor = 1.25
 			not = { life_needs = 0.5 }
@@ -5103,14 +5114,14 @@ issues =
 			factor = 1.25
 			not = { life_needs = 1 }
 		}
-		modifier = {	
-			factor = 1.25	
+		modifier = {
+			factor = 1.25
 			state_scope = {
 				not = { poor_strata_life_needs = 1 }
 			}
-		}		
-		modifier = {	
-			factor = 1.25	
+		}
+		modifier = {
+			factor = 1.25
 			state_scope = {
 				not = { poor_strata_life_needs = 0.75 }
 			}
@@ -5123,22 +5134,22 @@ issues =
 		}
 		modifier = {
 			factor = 1.25
-			state_scope = { 
+			state_scope = {
 				not = { poor_strata_life_needs = 0.25 }
 			}
 		}
 	}
-	fourteen_hours = { 
+	fourteen_hours = {
 		factor = 1
 		modifier = {
-			factor = 0 
+			factor = 0
 			OR = {
 				NOT = { life_needs = 1 }
 				NOT = { consciousness = 6 }
 				NOT = { is_next_reform = fourteen_hours }
 				NOT = { is_ideology_enabled = socialist }
 				country = { civilized = no }
-			}	
+			}
 		}
 
 		modifier = {
@@ -5148,7 +5159,7 @@ issues =
 		modifier = {
 			factor = 1.25
 			luxury_needs = 0.25
-		}	
+		}
 		modifier = {
 			factor = 1.25
 			luxury_needs = 0.50
@@ -5206,23 +5217,23 @@ issues =
 			}
 		}
 	}
-	twelve_hours = { 
+	twelve_hours = {
 		factor = 1
 		modifier = {
-			factor = 0 
+			factor = 0
 			OR = {
 				NOT = { life_needs = 1 }
 				NOT = { consciousness = 6 }
 				NOT = { is_next_reform = twelve_hours }
 				NOT = { is_ideology_enabled = socialist }
 				country = { civilized = no }
-			}	
+			}
 		}
 
 		modifier = {
 			factor = 1.25
 			luxury_needs = 0.25
-		}	
+		}
 		modifier = {
 			factor = 1.25
 			luxury_needs = 0.50
@@ -5284,17 +5295,17 @@ issues =
 			}
 		}
 	}
-	ten_hours = { 
+	ten_hours = {
 		factor = 1
 		modifier = {
-			factor = 0 
+			factor = 0
 			OR = {
 				NOT = { life_needs = 1 }
 				NOT = { consciousness = 6 }
 				NOT = { is_next_reform = ten_hours }
 				NOT = { is_ideology_enabled = socialist }
 				country = { civilized = no }
-			}	
+			}
 		}
 
 		modifier = {
@@ -5308,7 +5319,7 @@ issues =
 		modifier = {
 			factor = 1.25
 			luxury_needs = 0.25
-		}	
+		}
 		modifier = {
 			factor = 1.25
 			luxury_needs = 0.50
@@ -5364,23 +5375,23 @@ issues =
 		}
 
 	}
-	eight_hours = { 
+	eight_hours = {
 		factor = 1
 		modifier = {
-			factor = 0 
+			factor = 0
 			OR = {
 				NOT = { life_needs = 1 }
 				NOT = { consciousness = 6 }
 				NOT = { is_next_reform = eight_hours }
 				NOT = { is_ideology_enabled = socialist }
 				country = { civilized = no }
-			}	
+			}
 		}
 
 		modifier = {
 			factor = 1.25
 			luxury_needs = 0.25
-		}	
+		}
 		modifier = {
 			factor = 1.25
 			luxury_needs = 0.50
@@ -5442,11 +5453,11 @@ issues =
 			}
 		}
 	}
-	
+
 	low_schools = {
 		factor = 1
 		modifier = {
-			factor = 0 
+			factor = 0
 			OR = {
 				NOT = { consciousness = 5 }
 				NOT = { is_next_reform = low_schools }
@@ -5466,7 +5477,7 @@ issues =
 		modifier = {
 			factor = 1.25
 			consciousness = 7
-		}  
+		}
 		modifier = {
 			factor = 1.25
 			consciousness = 8
@@ -5495,13 +5506,13 @@ issues =
 	acceptable_schools = {
 		factor = 1
 		modifier = {
-			factor = 0 
+			factor = 0
 			OR = {
 				NOT = { consciousness = 3 }
 				NOT = { is_next_reform = acceptable_schools }
 				NOT = { is_ideology_enabled = socialist }
 				country = { civilized = no }
-			}	
+			}
 		}
 
 		modifier = {
@@ -5515,7 +5526,7 @@ issues =
 		modifier = {
 			factor = 1.25
 			consciousness = 7
-		}  
+		}
 		modifier = {
 			factor = 1.25
 			consciousness = 8
@@ -5544,13 +5555,13 @@ issues =
 	good_schools = {
 		factor = 1
 		modifier = {
-			factor = 0 
+			factor = 0
 			OR = {
 				NOT = { consciousness = 3 }
 				NOT = { is_next_reform = good_schools }
 				NOT = { is_ideology_enabled = socialist }
 				country = { civilized = no }
-			}	
+			}
 		}
 
 		modifier = {
@@ -5564,7 +5575,7 @@ issues =
 		modifier = {
 			factor = 1.25
 			consciousness = 7
-		}  
+		}
 		modifier = {
 			factor = 1.25
 			consciousness = 8
@@ -5590,12 +5601,12 @@ issues =
 			NOT = { literacy = 0.25 }
 		}
 	}
-	
+
 #######################################Child Labor
 	child_labor_restricted = {
 		factor = 1
 		modifier = {
-			factor = 0 
+			factor = 0
 			OR = {
 				NOT = { is_next_reform = child_labor_restricted }
 				country = {	civilized = no }
@@ -5605,22 +5616,22 @@ issues =
 				NOT = { consciousness = 3 }
 			}
 		}
-		
+
 		modifier = {
 			factor = 1.25
 			literacy = 0.30
 		}
-		
+
 		modifier = {
 			factor = 1.25
 			literacy = 0.40
 		}
-		
+
 		modifier = {
 			factor = 1.25
 			literacy = 0.50
 		}
-		
+
 		modifier = {
 			factor = 1.25
 			consciousness = 4
@@ -5638,11 +5649,11 @@ issues =
 			consciousness = 7
 		}
 	}
-	
-	child_labor_illegal = { 
+
+	child_labor_illegal = {
 		factor = 1
 		modifier = {
-			factor = 0 
+			factor = 0
 			OR = {
 				NOT = { is_next_reform = child_labor_illegal }
 				NOT = { is_ideology_enabled = socialist }
@@ -5661,23 +5672,23 @@ issues =
 				upper_house_composition = party_appointed
 			}
 		}
-		
-		
+
+
 		modifier = {
 			factor = 1.25
 			literacy = 0.60
 		}
-		
+
 		modifier = {
 			factor = 1.25
 			literacy = 0.70
 		}
-		
+
 		modifier = {
 			factor = 1.25
 			literacy = 0.80
 		}
-		
+
 		modifier = {
 			factor = 1.25
 			consciousness = 6
@@ -5694,23 +5705,23 @@ issues =
 			factor = 1.25
 			consciousness = 9
 		}
-	}	
+	}
 #######################################Conscription
 #	four_year_draft = {
 #		}
-#		
+#
 #	two_year_draft = {
 #		}
-#		
+#
 #	one_year_draft = {
 #		}
-#		
+#
 #	no_draft = {
 #	}
 #######################################Debt Law
 peonage = {
 	factor = 1
-	
+
 	modifier = {
 		factor = 0
 		OR = {
@@ -5720,7 +5731,7 @@ peonage = {
 			NOT = { consciousness = 7 }
 		}
 	}
-	
+
 	modifier = {
 			factor = 0.95
 			OR = { is_accepted_culture = yes is_primary_culture = yes }
@@ -5729,7 +5740,7 @@ peonage = {
 				nationalvalue = nv_tradition
 			}
 		}
-	
+
 	modifier = {
 		factor = 1.2
 		OR = {
@@ -5737,7 +5748,7 @@ peonage = {
 			pop_majority_ideology = socialist
 		}
 	}
-		
+
 	modifier = {
 			factor = 1.25
 			consciousness = 8
@@ -5769,10 +5780,10 @@ peonage = {
 			literacy = 0.8
 		}
 	}
-	
+
 debtors_prisons = {
 	factor = 1
-	
+
 	modifier = {
 		factor = 0
 		OR = {
@@ -5783,7 +5794,7 @@ debtors_prisons = {
 			NOT = { consciousness = 6 }
 		}
 	}
-	
+
 	modifier = {
 		factor = 1.25
 		OR = {
@@ -5791,7 +5802,7 @@ debtors_prisons = {
 			pop_majority_ideology = socialist
 		}
 	}
-		
+
 
 	modifier = {
 		factor = 1.25
@@ -5802,7 +5813,7 @@ debtors_prisons = {
 		factor = 1.25
 		consciousness = 9
 	}
-	
+
 	modifier = {
 		factor = 1.25
 		OR = { is_accepted_culture = yes is_primary_culture = yes }
@@ -5824,10 +5835,10 @@ debtors_prisons = {
 		literacy = 0.8
 	}
 }
-	
+
 bankruptcy = {
 	factor = 1
-	
+
 	modifier = {
 		factor = 0
 		OR = {
@@ -5856,12 +5867,12 @@ bankruptcy = {
 			NOT = { literacy = 0.7 }
 		}
 	}
-	
+
 	modifier = {
 		factor = 1.25
 		pop_majority_ideology = liberal
 	}
-		
+
 	modifier = {
 		factor = 1.25
 		consciousness = 7
@@ -5891,9 +5902,9 @@ bankruptcy = {
 #######################################Penal System
 colonial_transportation = {
 	factor = 1
-	
+
 	modifier = {
-		factor = 0 
+		factor = 0
 			OR = {
 				NOT = { is_next_reform = colonial_transportation }
 				country = {	civilized = no }
@@ -5910,7 +5921,7 @@ colonial_transportation = {
 				NOT = { is_ideology_enabled = socialist }
 		}
 	}
-	
+
 	modifier = {
 		factor = 1.25
 		OR = {
@@ -5918,7 +5929,7 @@ colonial_transportation = {
 			pop_majority_ideology = socialist
 		}
 	}
-		
+
 	modifier = {
 		factor = 1.2
 		consciousness = 7
@@ -5933,7 +5944,7 @@ colonial_transportation = {
 		factor = 1.3
 		consciousness = 9
 	}
-		
+
 	modifier = {
 		factor = 1.25
 		OR = { is_accepted_culture = yes is_primary_culture = yes }
@@ -5942,7 +5953,7 @@ colonial_transportation = {
 			nationalvalue = nv_liberty
 		}
 	}
-	
+
 	modifier = {
 		factor = 1.2
 		literacy = 0.6
@@ -5956,12 +5967,12 @@ colonial_transportation = {
 		literacy = 0.8
 	}
 }
-	
+
 incarceration = {
 	factor = 1
-	
+
 	modifier = {
-		factor = 0 
+		factor = 0
 			OR = {
 				NOT = { is_next_reform = incarceration }
 				country = {	civilized = no }
@@ -5980,7 +5991,7 @@ incarceration = {
 				NOT = { child_labor = child_labor_illegal }
 		}
 	}
-	
+
 	modifier = {
 		factor = 1.2
 		OR = {
@@ -5988,13 +5999,13 @@ incarceration = {
 			pop_majority_ideology = socialist
 		}
 	}
-		
+
 	modifier = {
 		factor = 1.2
 		consciousness = 7
 		location = { is_colonial = no }
 	}
-	
+
 	modifier = {
 		factor = 1.2
 		consciousness = 8
@@ -6006,18 +6017,18 @@ incarceration = {
 		consciousness = 7
 		location = { is_colonial = yes }
 	}
-	
+
 	modifier = {
 		factor = 1.4
 		consciousness = 8
 		location = { is_colonial = yes }
 	}
-	
+
 	modifier = {
 		factor = 1.2
 		consciousness = 9
 	}
-	
+
 	modifier = {
 		factor = 1.3
 		location = { is_colonial = yes }
@@ -6031,30 +6042,30 @@ incarceration = {
 				nationalvalue = nv_liberty
 			}
 		}
-	
+
 	modifier = {
 		factor = 1.3
 		literacy = 0.6
 		location = { is_colonial = yes }
 	}
-	
+
 	modifier = {
 		factor = 1.5
 		literacy = 0.7
 		location = { is_colonial = yes }
 	}
-	
+
 	modifier = {
 		factor = 1.6
 		literacy = 0.8
 	}
 }
-	
+
 rehabilitation = {
 	factor = 1
-	
+
 	modifier = {
-		factor = 0 
+		factor = 0
 			OR = {
 				NOT = { is_next_reform = rehabilitation }
 				country = {	civilized = no }
@@ -6079,7 +6090,7 @@ rehabilitation = {
 				NOT = { everyday_needs = 0.4 }
 		}
 	}
-	
+
 	modifier = {
 		factor = 1.2
 		OR = {
@@ -6087,7 +6098,7 @@ rehabilitation = {
 			pop_majority_ideology = socialist
 		}
 	}
-		
+
 	modifier = {
 		factor = 1.2
 		consciousness = 7
@@ -6102,7 +6113,7 @@ rehabilitation = {
 		factor = 1.2
 		consciousness = 9
 	}
-		
+
 	modifier = {
 		factor = 1.2
 		OR = { is_accepted_culture = yes is_primary_culture = yes }
@@ -6137,13 +6148,13 @@ culture_voting_only = {
 			country = { citizenship_policy = residency }
 		}
 	}
-	
+
 	modifier = {
 		factor = 1.2
 		nationalvalue = nv_equality
 		OR = { is_accepted_culture = yes is_primary_culture = yes }
 	}
-	
+
 	modifier = {
 		factor = 1.25
 		country = { government = democracy }
@@ -6156,7 +6167,7 @@ culture_voting_only = {
 			country = { citizenship_policy = full_citizenship }
 		}
 	}
-	
+
 	modifier = {
 		factor = 1.25
 		literacy = 0.5
@@ -6175,7 +6186,7 @@ culture_voting_only = {
 		factor = 1.30
 		literacy = 0.8
 		}
-	
+
 	modifier = {
 		factor = 1.1
 		consciousness = 5
@@ -6191,7 +6202,7 @@ culture_voting_only = {
 		consciousness = 7
 		is_primary_culture = no
 		}
-		
+
 	modifier = {
 		factor = 1.2
 		consciousness = 8
@@ -6200,7 +6211,7 @@ culture_voting_only = {
 		factor = 1.2
 		consciousness = 9
 		}
-	
+
 	modifier = {
 		factor = 1.2
 		militancy = 7
@@ -6246,13 +6257,13 @@ all_voting_pops = {
 			country = { citizenship_policy = residency }
 		}
 	}
-	
+
 	modifier = {
 		factor = 1.2
 		nationalvalue = nv_equality
 		OR = { is_accepted_culture = yes is_primary_culture = yes }
 	}
-	
+
 	modifier = {
 		factor = 1.3
 		country = { government = democracy }
@@ -6262,7 +6273,7 @@ all_voting_pops = {
 		factor = 1.25
 		country = { citizenship_policy = full_citizenship }
 	}
-	
+
 	modifier = {
 		factor = 1.1
 		literacy = 0.5
@@ -6281,7 +6292,7 @@ all_voting_pops = {
 		factor = 1.15
 		literacy = 0.8
 		}
-	
+
 	modifier = {
 		factor = 1.1
 		consciousness = 5
@@ -6335,7 +6346,7 @@ all_voting_pops = {
 				}
 			}
 		}
-		
+
 		modifier = {
 			factor = 2.0
 			country = { government = democracy }
@@ -6374,18 +6385,18 @@ all_voting_pops = {
 			factor = 1.6
 			consciousness = 9
 		}
-		
+
 		modifier = {
 			factor = 1.25
 			unemployment = 0.25
 		}
-		
+
 		modifier = {
 			factor = 1.3
 			pop_majority_ideology = liberal
 		}
 	}
-	
+
 	state_equal_weight = {
 		factor = 1
 		modifier = {
@@ -6416,12 +6427,12 @@ all_voting_pops = {
 			factor = 0.5
 			country = { government = hms_government }
 		}
-		
+
 		modifier = {
 			factor = 2.0
 			country = { government = democracy }
 		}
-		
+
 		modifier = {
 			factor = 1.25
 			NOT = { agree_with_ruling_party = 1 }
@@ -6434,7 +6445,7 @@ all_voting_pops = {
 			factor = 1.25
 			NOT = { agree_with_ruling_party = 0.80 }
 		}
-		
+
 		modifier = {
 			factor = 1.25
 			consciousness = 8
@@ -6444,12 +6455,12 @@ all_voting_pops = {
 			factor = 1.25
 			consciousness = 9
 		}
-		
+
 		modifier = {
 			factor = 1.25
 			pop_majority_ideology = liberal
 		}
-		
+
 		modifier = {
 			factor = 1.25
 			unemployment = 0.25
@@ -6486,14 +6497,14 @@ all_voting_pops = {
 			factor = 0.5
 			country = { government = hms_government }
 		}
-		
+
 		modifier = {
 			factor = 2.0
 			country = { government = democracy }
 			NOT = { country = { primary_culture = yankee } }
 			NOT = { country = { primary_culture = dixie } }
 		}
-		
+
 		modifier = {
 			factor = 0.5
 			OR = {
@@ -6501,7 +6512,7 @@ all_voting_pops = {
 				country = { primary_culture = dixie }
 			}
 		}
-		
+
 		modifier = {
 			factor = 1.2
 			NOT = { agree_with_ruling_party = 1 }
@@ -6514,7 +6525,7 @@ all_voting_pops = {
 			factor = 1.2
 			NOT = { agree_with_ruling_party = 0.80 }
 		}
-		
+
 		modifier = {
 			factor = 1.1
 			consciousness = 8
@@ -6524,12 +6535,12 @@ all_voting_pops = {
 			factor = 1.2
 			consciousness = 9
 		}
-		
+
 		modifier = {
 			factor = 1.2
 			pop_majority_ideology = liberal
 		}
-		
+
 		modifier = {
 			factor = 1.25
 			unemployment = 0.25

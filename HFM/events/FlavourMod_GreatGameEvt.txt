@@ -1,10 +1,10 @@
 #The First Anglo-Afghan War
 country_event = {
 	id = 99100
-	title = "EVTNAME99100" 
+	title = "EVTNAME99100"
 	desc = "EVTDESC99100"
 	picture = "anglo_afghan_war"
-	
+
 	is_triggered_only = yes
 
 	option = {
@@ -38,12 +38,12 @@ country_event = {
 			}
 		}
 		set_global_flag = afghan_1
-		
+
 		ai_chance = {
 			factor = 100
 		}
 	}
-	
+
 	option = {
 		name = "EVTOPTB99100"
 		set_country_flag = anglo_afghan_war
@@ -68,14 +68,14 @@ country_event = {
 #Destruction of Elphinstone's Army
 country_event = {
 	id = 99101
-	title = "EVTNAME99101" 
+	title = "EVTNAME99101"
 	desc = "EVTDESC99101"
 	picture = "graveyard_of_empires"
 	news = yes
 	news_desc_long = "EVTDESC99101_NEWS_LONG"
 	news_desc_medium = "EVTDESC99101_NEWS_MEDIUM"
 	news_desc_short = "EVTDESC99101_NEWS_SHORT"
-	
+
 	trigger = {
 		tag = ENG
 		AFG = {
@@ -84,7 +84,7 @@ country_event = {
 		}
 		NOT = { has_global_flag = graveyard_of_empires }
 	}
-	
+
 	mean_time_to_happen = {
 		months = 12
 		modifier = {
@@ -96,7 +96,7 @@ country_event = {
 			year = 1842
 		}
 	}
-	
+
 	option = {
 		name = "EVTOPTA99101"
 		prestige = -55
@@ -108,7 +108,7 @@ country_event = {
 		any_pop = {
 			limit = {
 				location = { is_core = THIS }
-				OR = { 
+				OR = {
 					is_primary_culture = yes
 					is_accepted_culture = yes
 				}
@@ -125,10 +125,10 @@ country_event = {
 #Second Anglo-Sikh War
 country_event = {
 	id = 99102
-	title = "EVTNAME99102" 
+	title = "EVTNAME99102"
 	desc = "EVTDESC99102"
 	picture = "2nd_anglo_sikh_war"
-	
+
 	trigger = {
 		tag = ENG
 		is_greater_power = yes
@@ -143,7 +143,7 @@ country_event = {
 		year = 1842
 		NOT = { has_global_flag = 2_anglo_sikh_war }
 	}
-	
+
 	mean_time_to_happen = {
 		months = 60
 		modifier = {
@@ -163,7 +163,7 @@ country_event = {
 			year = 1849
 		}
 	}
-	
+
 	option = {
 		name = "EVTOPTA99102"
 		prestige = -5
@@ -174,7 +174,7 @@ country_event = {
 		release = PNJ
 		war = {
 			target = PNJ
-			attacker_goal = { 
+			attacker_goal = {
 				casus_belli = great_game_cb
 			}
 			defender_goal = { casus_belli = status_quo }
@@ -187,12 +187,12 @@ country_event = {
 #Anglo-Russian Convention over Afghanistan
 country_event = {
 	id = 99103
-	title = "EVTNAME99103" 
+	title = "EVTNAME99103"
 	desc = "EVTDESC99103"
 	major = yes
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "EVTOPTA99103"
 		prestige = 5
@@ -201,7 +201,7 @@ country_event = {
 		relation = { who = AFG value = -200 }
 		diplomatic_influence = { who = AFG value = -200 }
 		relation = { who = FROM value = 200 }
-		any_owned = { 
+		any_owned = {
 			limit = { is_core = AFG }
 			secede_province = AFG
 		}
@@ -235,10 +235,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "EVTOPTB99103"
-		
+
 		prestige = 25
 		badboy = 2
 		relation = { who = FROM value = -200 }
@@ -251,11 +251,11 @@ country_event = {
 			}
 			war = {
 				target = RUS
-				attacker_goal = { 
+				attacker_goal = {
 					casus_belli = liberate_country
 					country = AFG
 				}
-				attacker_goal = { 
+				attacker_goal = {
 					casus_belli = release_puppet
 					country = AFG
 				}
@@ -263,10 +263,10 @@ country_event = {
 				call_ally = yes
 			}
 		}
-		
+
 		ai_chance = {
 			factor = 20
-			
+
 			modifier = {
 				factor = 0
 				has_recently_lost_war = yes
@@ -294,12 +294,12 @@ country_event = {
 #Anglo-Russian Convention over Persia
 country_event = {
 	id = 99104
-	title = "EVTNAME99104" 
+	title = "EVTNAME99104"
 	desc = "EVTDESC99104"
 	major = yes
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "EVTOPTA99103"
 		prestige = 5
@@ -310,7 +310,7 @@ country_event = {
 		relation = { who = FROM value = 100 }
 		any_owned = {
 			limit = {
-				is_core = PER 
+				is_core = PER
 				NOT = { province_id = 1204 }
 			}
 			secede_province = PER
@@ -344,10 +344,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "EVTOPTB99103"
-		
+
 		prestige = 25
 		badboy = 2
 		relation = { who = FROM value = -200 }
@@ -360,11 +360,11 @@ country_event = {
 			}
 			war = {
 				target = RUS
-				attacker_goal = { 
+				attacker_goal = {
 					casus_belli = liberate_country
 					country = PER
 				}
-				attacker_goal = { 
+				attacker_goal = {
 					casus_belli = release_puppet
 					country = PER
 				}
@@ -372,10 +372,10 @@ country_event = {
 				call_ally = yes
 			}
 		}
-		
+
 		ai_chance = {
 			factor = 20
-			
+
 			modifier = {
 				factor = 0
 				has_recently_lost_war = yes
@@ -403,19 +403,19 @@ country_event = {
 #The Siege of Herat
 country_event = {
 	id = 99200
-	title = "EVTNAME99200" 
+	title = "EVTNAME99200"
 	desc = "EVTDESC99200"
 	picture = "siege_of_herat"
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "EVTOPTA99200"
 		prestige = 5
 		PER = { country_event = 99201 }
 		ai_chance = { factor = 100 }
 	}
-	
+
 	option = {
 		name = "EVTOPTB99200"
 		prestige = -25
@@ -427,9 +427,9 @@ country_event = {
 	title = "EVTNAME99201" #Siege of Herat - Persian response
 	desc = "EVTDESC99201"
 	picture = "PDA_Blockade"
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "EVTOPTA99201"
 		prestige = -5
@@ -437,7 +437,7 @@ country_event = {
 		ENG = { country_event = 99203 }
 		ai_chance = { factor = 100 }
 	}
-	
+
 	option = {
 		name = "EVTOPTB99201"
 		prestige = 5
@@ -450,10 +450,10 @@ country_event = {
 #Persia Refuses
 country_event = {
 	id = 99202
-	title = "EVTNAME99202" 
+	title = "EVTNAME99202"
 	desc = "EVTDESC99202"
 	picture = "anglo_persian_war"
-	
+
 	trigger = {
 		tag = ENG
 		is_greater_power = yes
@@ -467,7 +467,7 @@ country_event = {
 		1212 = { owned_by = PER }
 		NOT = { has_global_flag = anglo_persian_war }
 	}
-	
+
 	option = {
 		name = "EVTOPTA99200"
 		set_global_flag = anglo_persian_war
@@ -480,7 +480,7 @@ country_event = {
 		war = {
 			target = PER
 			attacker_goal = { casus_belli = treaty_port_casus_belli }
-			attacker_goal = { 
+			attacker_goal = {
 				casus_belli = free_peoples
 				country = PER
 				state_province_id = 1212
@@ -499,7 +499,7 @@ country_event = {
 			}
 			war = {
 				target = PER
-				attacker_goal = { 
+				attacker_goal = {
 					casus_belli = acquire_core_state
 					state_province_id = 1212
 				}
@@ -511,10 +511,11 @@ country_event = {
 		diplomatic_influence = { who = AFG value = 400 }
 		ai_chance = { factor = 100  }
 	}
-	
+
 	option = {
 		name = "EVTOPTB99200"
 		prestige = -25
+		set_global_flag = anglo_persian_war
 	}
 }
 
@@ -524,15 +525,15 @@ country_event = {
 	title = "EVTNAME99203"
 	desc = "EVTDESC99203"
 	picture = "treaty"
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "EVTOPT99910"
 		prestige = 5
 		1212 = { remove_core = PER }
-		FROM = { 
-			war_exhaustion = 5 
+		FROM = {
+			war_exhaustion = 5
 			any_pop = {
 				limit = {
 					is_primary_culture = yes
@@ -543,7 +544,7 @@ country_event = {
 			}
 		}
 		RUS = { prestige = -5 }
-		
+
 		ai_chance = { factor = 100 }
 	}
 }
@@ -554,9 +555,9 @@ country_event = {
 	title = "EVTNAME99204"
 	desc = "EVTDESC99204"
 	picture = "treaty"
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "EVTOPTA99204"
 		prestige = -20
@@ -591,7 +592,7 @@ country_event = {
 			remove_core = PER
 			secede_province = AFG
 		}
-		
+
 		ai_chance = { factor = 100 }
 	}
 }

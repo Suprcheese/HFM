@@ -5,16 +5,16 @@ country_event = {
 	title = "EVTNAME955182"
 	desc = "EVTDESC955182"
 	picture = "partition_of_africa"
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "EVT955182OPTA" #Vote for them
 		relation = { who = FROM value = 25 }
 		diplomatic_influence = { who = FROM value = 25 }
 		FROM = { change_variable = { which = yes_to_congo value = 1 } }
 		set_country_flag = yes_to_congo
-		
+
 		ai_chance = {
 			factor = 0.75
 			modifier = { factor = 2 OR = { FROM = { in_sphere = THIS } relation = { who = FROM value = 150 } } }
@@ -24,13 +24,13 @@ country_event = {
 			modifier = { factor = 0.4 NOT = { relation = { who = FROM value = -100 } } }
 		}
 	}
-	
+
 	option = {
 		name = "EVT955182OPTB" #Don't vote for them
 		relation = { who = FROM value = -25 }
 		diplomatic_influence = { who = FROM value = -25 }
 		FROM = { change_variable = { which = no_to_congo value = 1 } }
-		
+
 		ai_chance = {
 			factor = 0.2
 			modifier = { factor = 0.1 OR = { FROM = { in_sphere = THIS } relation = { who = FROM value = 150 } } }
@@ -38,11 +38,11 @@ country_event = {
 			modifier = { factor = 1.5 NOT = { relation = { who = FROM value = -100 } } }
 		}
 	}
-	
+
 	option = {
 		name = "EVT955182OPTC" #Abstain
 		FROM = { change_variable = { which = abstained_to_congo value = 1 } }
-		
+
 		ai_chance = { factor = 0.05 }
 	}
 }
@@ -53,7 +53,7 @@ country_event = {
 	title = "EVTNAME955183"
 	desc = "EVTDESC955183"
 	major = yes
-	
+
 	trigger = {
 		OR = {
 			check_variable = { which = yes_to_congo value = 3.99 }
@@ -63,11 +63,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	fire_only_once = yes
-	
+
 	mean_time_to_happen = { days = 1 }
-	
+
 	option = {
 		name = "EVT955183OPTA"
 		set_country_flag = congo_master
@@ -80,13 +80,13 @@ country_event = {
 		BEL_1990 = { add_core = CNG secede_province = THIS any_pop = { literacy = -0.99 } }
 		BEL_1992 = { add_core = CNG secede_province = THIS any_pop = { literacy = -0.99 } }
 		BEL_1996 = { add_core = CNG secede_province = THIS any_pop = { literacy = -0.99 } }
-		
+
 		any_country = {
 			limit = { has_country_flag = yes_to_congo any_owned_province = { is_core = CNG } }
 			any_owned = { limit = { is_core = CNG } secede_province = THIS }
 		}
-		any_country = { 
-			limit = { NOT = { has_country_flag = yes_to_congo } any_owned_province = { is_core = CNG } } 
+		any_country = {
+			limit = { NOT = { has_country_flag = yes_to_congo } any_owned_province = { is_core = CNG } }
 			country_event = { id = 955185 days = 0 }
 		}
 		political_reform = exploitation
@@ -94,7 +94,7 @@ country_event = {
 		create_vassal = CNG
 		CNG = {
 			government = absolute_monarchy
-			military_reform = yes_foreign_training 
+			military_reform = yes_foreign_training
 			military_reform = yes_foreign_weapons
 			activate_technology = flintlock_rifles
 			military_reform = yes_foreign_officers
@@ -117,7 +117,7 @@ country_event = {
 	title = "EVTNAME955184"
 	desc = "EVTDESC955184"
 	major = yes
-	
+
 	trigger = {
 		OR = {
 			check_variable = { which = no_to_congo value = 3.99 }
@@ -128,11 +128,11 @@ country_event = {
 			check_variable = { which = abstained_to_congo value = 3.99 }
 		}
 	}
-	
+
 	fire_only_once = yes
-	
+
 	mean_time_to_happen = { days = 1 }
-	
+
 	option = {
 		name = "EVT955184OPTA"
 		set_global_flag = congo_failed
@@ -141,7 +141,7 @@ country_event = {
 		1820 = { life_rating = 5 }
 		1822 = { life_rating = 5 }
 		1823 = { life_rating = 5 }
-		
+
 		1965 = { life_rating = 5 }
 		1966 = { life_rating = 5 }
 		1967 = { life_rating = 5 }
@@ -158,9 +158,9 @@ country_event = {
 	title = "EVTNAME955185"
 	desc = "EVTDESC955185"
 	picture = "partition_of_africa"
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "EVT955185OPTA" #We will abide
 		any_owned = { limit = { is_core = CNG } secede_province = CNG }
@@ -168,7 +168,7 @@ country_event = {
 		any_country = { limit = { is_greater_power = yes } relation = { who = FROM value = 15 } }
 		treasury = 50000
 		badboy = -1
-		
+
 		ai_chance = {
 			factor = 0.8
 			modifier = { factor = 1.8 is_greater_power = no is_secondary_power = no }
@@ -180,18 +180,18 @@ country_event = {
 			modifier = { factor = 1.9 capital_scope = { continent = central_africa } is_greater_power = no }
 		}
 	}
-	
+
 	option = {
 		name = "EVT955185OPTB" #We refuse
 		set_country_flag = refused_to_cede_congo
 		badboy = 5
 		relation = { who = FROM value = -200 }
-		any_country = { limit = { is_greater_power = yes capital_scope = { continent = europe } NOT = { tag = THIS } } 
+		any_country = { limit = { is_greater_power = yes capital_scope = { continent = europe } NOT = { tag = THIS } }
 			relation = { who = THIS value = -225 }
 			casus_belli = { target = THIS type = cut_down_to_size months = 72 }
 		}
 		FROM = { casus_belli = { target = THIS type = cut_down_to_size months = 72 } }
-		
+
 		ai_chance = {
 			factor = 0.2
 			modifier = { factor = 1.4 is_greater_power = yes }
@@ -213,22 +213,22 @@ country_event = {
 	title = "EVTNAME955186"
 	desc = "EVTDESC955186"
 	picture = "partition_of_africa"
-	
+
 	trigger = {
 		has_country_flag = congo_master
 		CNG = { exists = yes vassal_of = THIS }
 		NOT = { has_global_flag = congo_free_state_over }
 		year = 1891
 	}
-	
+
 	mean_time_to_happen = {
 		months = 200
 		modifier = { factor = 8 NOT = { CNG = { all_core = { owned_by = CNG } } } }
 		modifier = { factor = 0.01 CNG = { all_core = { owned_by = CNG } } }
 	}
-	
+
 	fire_only_once = yes
-		
+
 	option = {
 		name = "EVT955186OPTA" #Leopold Option
 		set_country_flag = historical_congo
@@ -244,28 +244,28 @@ country_event = {
 			1983 = { state_scope = { any_pop = { limit = { OR = { type = officers type = aristocrats } } pop_type = labourers } } }
 			random_owned = { limit = { is_capital = yes NOT = { has_building = fort } } fort = 1 }
 		}
-		capital_scope = { 
-			any_pop = { limit = { type = officers OR = { is_primary_culture = yes is_accepted_culture = yes } } move_pop = 1983 } 
+		capital_scope = {
+			any_pop = { limit = { type = officers OR = { is_primary_culture = yes is_accepted_culture = yes } } move_pop = 1983 }
 		}
-		
+
 		ai_chance = { factor = 0.9 }
 	}
-	
+
 	option = {
 		name = "EVT955186OPTB" #Reveal that we are lying and annex it
 		random_country = { limit = { tag = CNG ai = yes } annex_to = THIS }
 		random_country = { limit = { tag = CNG ai = no } release = CNG add_casus_belli = { target = THIS type = make_puppet months = 50 } }
 		badboy = 5
 		any_country = { limit = { is_greater_power = yes } relation = { who = THIS value = -50 } }
-		any_country = { 
+		any_country = {
 			limit = { is_greater_power = yes has_country_flag = yes_to_congo }
 			relation = { who = THIS value = -50 } clr_country_flag = yes_to_congo
 		}
-		any_country = { 
+		any_country = {
 			limit = { is_greater_power = yes NOT = { is_sphere_leader_of = THIS } }
 			casus_belli = { target = THIS type = place_in_the_sun months = 50 }
 		}
-		any_country = { 
+		any_country = {
 			limit = { is_greater_power = yes NOT = { is_sphere_leader_of = THIS } }
 			casus_belli = { target = THIS type = cut_down_to_size months = 50 }
 		}
@@ -294,10 +294,10 @@ country_event = {
 		clr_country_flag = historical_congo
 		clr_country_flag = congo_master
 		any_country = { clr_country_flag = yes_to_congo clr_country_flag = historical_congo clr_country_flag = congo_master }
-		
+
 		ai_chance = { factor = 0.08 }
 	}
-	
+
 	option = {
 		name = "EVT955186OPTC" #Run it as an philanthropic endeavor
 		set_global_flag = congo_free_state_over
@@ -306,7 +306,7 @@ country_event = {
 		any_country = { limit = { has_country_flag = yes_to_congo } clr_country_flag = yes_to_congo }
 		set_country_flag = not_congo_primary_culture
 		CNG = {
-			clr_country_flag = congo_free_state_born 
+			clr_country_flag = congo_free_state_born
 			add_country_modifier = { name = philantropic_work duration = 1095 }
 			any_owned = { limit = { is_capital = no } add_province_modifier = { name = congo_exploitation duration = 2555 } }
 			any_pop = { limit = { NOT = { is_primary_culture = yes } } reduce_pop = 0.5 }
@@ -325,10 +325,10 @@ country_event = {
 		clr_country_flag = historical_congo
 		clr_country_flag = congo_master
 		any_country = { clr_country_flag = yes_to_congo clr_country_flag = historical_congo clr_country_flag = congo_master }
-		
+
 		ai_chance = { factor = 0.02 }
 	}
-	
+
 	option = {
 		name = "EVT955186OPTD" #Play as the congo, using the countrie's primary culture
 		set_global_flag = congo_free_state_over
@@ -362,14 +362,14 @@ country_event = {
 		change_tag_no_core_switch = CNG
 		ai_chance = { factor = 0 }
 	}
-	
+
 	option = {
 		name = "EVT955186OPTE" #Play as the congo, using the congo's primary culture
 		set_global_flag = congo_free_state_over
 		any_country = { limit = { has_country_flag = yes_to_congo } clr_country_flag = yes_to_congo }
 		CNG = {
 			random_owned = { limit = { is_capital = yes NOT = { has_building = fort } } fort = 1 }
-			clr_country_flag = congo_free_state_born 
+			clr_country_flag = congo_free_state_born
 			any_owned = { limit = { is_capital = no } add_province_modifier = { name = congo_exploitation duration = 2555 } }
 			any_pop = { limit = { NOT = { is_primary_culture = yes } } reduce_pop = 0.5 }
 			add_country_modifier = { name = philantropic_work duration = 1095 }
@@ -400,7 +400,7 @@ country_event = {
 	title = "EVTNAME955187"
 	desc = "EVTDESC955187"
 	picture = "boma_congo"
-	
+
 	trigger = {
 		has_country_flag = historical_congo
 		CNG = {
@@ -415,16 +415,16 @@ country_event = {
 		NOT = { check_variable = { which = philantropic_congo value = 7.99 } }
 		NOT = { check_variable = { which = congo_destiny value = 5.99 } }
 	}
-	
+
 	mean_time_to_happen = { months = 2 }
-	
+
 	immediate = { change_variable = { which = congo_destiny value = 1 } }
 
 	option = {
 		name = "EVT955187OPTA" #Full exploitation
 		random_country = {
 			limit = { has_country_flag = turn_officers_in_aristocrats }
-				clr_country_flag = turn_officers_in_aristocrats 
+				clr_country_flag = turn_officers_in_aristocrats
 				any_pop = { limit = { is_primary_culture = yes type = officers } pop_type = aristocrats }
 		}
 		random_owned = {
@@ -432,38 +432,38 @@ country_event = {
 				owner = { check_variable = { which = congo_destiny value = 0.99 }
 				NOT = { check_variable = { which = congo_destiny value = 1.99 } }
 					}
-				} 
+				}
 			treasury = 20000
 		}
 		random_owned = {
-			limit = { 
+			limit = {
 				owner = { check_variable = { which = congo_destiny value = 1.99 }
 				NOT = { check_variable = { which = congo_destiny value = 2.99 } }
 					}
-				} 
+				}
 			treasury = 40000
 		}
 		random_owned = {
-			limit = { 
+			limit = {
 				owner = { check_variable = { which = congo_destiny value = 2.99 }
 				NOT = { check_variable = { which = congo_destiny value = 3.99 } }
 					}
-				} 
+				}
 			treasury = 80000
 		}
 		random_owned = {
-			limit = { 
+			limit = {
 				owner = { check_variable = { which = congo_destiny value = 3.99 }
 				NOT = { check_variable = { which = congo_destiny value = 4.99 } }
 					}
-				} 
+				}
 			treasury = 120000
 		}
 		add_country_modifier = { name = the_congo_reform_association duration = 1095 }
 		CNG = {
 			any_owned = { limit = { is_capital = no } add_province_modifier = { name = congo_exploitation duration = 1460 } }
 			capital_scope = {
-					add_province_modifier = { name = congo_company duration = 1095 } 
+					add_province_modifier = { name = congo_company duration = 1095 }
 					any_pop = { limit = { NOT = { OR = { type = aristocrats type = officers } is_primary_culture = yes } } reduce_pop = 0.5 }
 				}
 				any_owned = { any_pop = { limit = { is_primary_culture = yes type = aristocrats } money = 100 militancy = -2 } }
@@ -476,16 +476,16 @@ country_event = {
 		}
 		ai_chance = { factor = 0.45	}
 	}
-	
+
 	option = {
 		name = "EVT955187OPTB" #Minor exploitation
 		random_country = {
 			limit = { has_country_flag = turn_officers_in_aristocrats }
-				clr_country_flag = turn_officers_in_aristocrats 
+				clr_country_flag = turn_officers_in_aristocrats
 				any_pop = { limit = { is_primary_culture = yes type = officers } pop_type = aristocrats }
 		}
 		random_owned = {
-			limit = { 
+			limit = {
 				owner = { check_variable = { which = congo_destiny value = 0.99 }
 				NOT = { check_variable = { which = congo_destiny value = 1.99 } }
 					}
@@ -493,27 +493,27 @@ country_event = {
 			treasury = -10000
 		}
 		random_owned = {
-			limit = { 
+			limit = {
 				owner = { ai = no check_variable = { which = congo_destiny value = 1.99 }
 				NOT = { check_variable = { which = congo_destiny value = 2.99 } }
 					}
-				} 
+				}
 			treasury = -20000
 		}
 		random_owned = {
-			limit = { 
+			limit = {
 				owner = { check_variable = { which = congo_destiny value = 2.99 }
 				NOT = { check_variable = { which = congo_destiny value = 3.99 } }
 					}
-				} 
+				}
 			treasury = -40000
 		}
 		random_owned = {
-			limit = { 
+			limit = {
 				owner = { check_variable = { which = congo_destiny value = 3.99 }
 				NOT = { check_variable = { which = congo_destiny value = 4.99 } }
 					}
-				} 
+				}
 			treasury = -80000
 		}
 		add_country_modifier = { name = the_congo_reform_association duration = 1095 }
@@ -529,27 +529,27 @@ country_event = {
 			30 = {change_variable = { which = exploited_congo value = 2 } }
 			50 = {change_variable = { which = exploited_congo value = 1 } }
 		}
-		ai_chance = { 
+		ai_chance = {
 			factor = 0.50
-			modifier = { 
+			modifier = {
 				factor = 0
 					check_variable = { which = congo_destiny value = 0.99 }
 					NOT = { check_variable = { which = congo_destiny value = 1.99 } }
 					NOT = { money = 11000 }
 				}
-			modifier = { 
+			modifier = {
 				factor = 0
 					check_variable = { which = congo_destiny value = 1.99 }
 					NOT = { check_variable = { which = congo_destiny value = 2.99 } }
 					NOT = { money = 21000 }
 				}
-			modifier = { 
+			modifier = {
 				factor = 0
 					check_variable = { which = congo_destiny value = 2.99 }
 					NOT = { check_variable = { which = congo_destiny value = 3.99 } }
 					NOT = { money = 41000 }
 				}
-			modifier = { 
+			modifier = {
 				factor = 0
 					check_variable = { which = congo_destiny value = 3.99 }
 					NOT = { check_variable = { which = congo_destiny value = 4.99 } }
@@ -562,10 +562,10 @@ country_event = {
 		name = "EVT955187OPTC" #Philanthropic work
 		random_country = {
 			limit = { has_country_flag = turn_officers_in_aristocrats }
-				clr_country_flag = turn_officers_in_aristocrats 
+				clr_country_flag = turn_officers_in_aristocrats
 				any_pop = { limit = { is_primary_culture = yes type = officers } pop_type = aristocrats }
 		}
-		CNG = { 
+		CNG = {
 			add_country_modifier = { name = philantropic_work duration = 1095 }
 			any_owned = { limit = { is_capital = no } add_province_modifier = { name = congo_exploitation duration = 730 } }
 			any_pop = { limit = { NOT = { OR = { type = aristocrats type = officers } is_primary_culture = yes } } reduce_pop = 0.8 }
@@ -586,7 +586,7 @@ country_event = {
 	title = "EVTNAME14670"
 	desc = "EVTDESC955188"
 	picture = "congo_atrocities"
-	
+
 	trigger = {
 		has_country_flag = historical_congo
 		NOT = { has_global_flag = congo_free_state_over }
@@ -602,7 +602,7 @@ country_event = {
 
 	fire_only_once = yes
 	mean_time_to_happen = { months = 1 }
-	
+
 	option = {
 		name = "EVTOPTA14670"
 		badboy = 10
@@ -640,7 +640,7 @@ country_event = {
 			modifier = { factor = 0 badboy = 0.5 }
 		}
 	}
-	
+
 	option = {
 		name = "EVTOPTB14670"
 		badboy = 5
@@ -686,7 +686,7 @@ country_event = {
 	title = "EVTNAME955189"
 	desc = "EVTDESC955189"
 	picture = "congo_station"
-	
+
 	trigger = {
 		has_country_flag = historical_congo
 		NOT = { has_global_flag = congo_free_state_over }
@@ -704,7 +704,7 @@ country_event = {
 
 	fire_only_once = yes
 	mean_time_to_happen = { months = 1 }
-	
+
 	option = {
 		name = "EVT955189OPTA"
 		set_global_flag = congo_free_state_over
@@ -738,12 +738,10 @@ country_event = {
 	title = "EVTNAME955190"
 	desc = "EVTDESC955190"
 	picture = "congo_ship"
-	
+
 	trigger = {
 		has_country_flag = historical_congo
 		NOT = { has_global_flag = historical_congo }
-		NOT = { has_country_flag = historical_congo }
-		NOT = { has_country_flag = congo_master }
 		CNG = {
 			NOT = { has_country_flag = philantropic_congo }
 			exists = yes
@@ -756,7 +754,7 @@ country_event = {
 
 	fire_only_once = yes
 	mean_time_to_happen = { months = 1 }
-	
+
 	option = {
 		name = "EVT955190OPTA"
 		prestige_factor = 0.3
@@ -787,7 +785,7 @@ country_event = {
 	title = "EVTNAME955191"
 	desc = "EVTDESC955191"
 	picture = "congo_station"
-	
+
 	trigger = {
 		OR = {
 			has_country_flag = historical_congo
@@ -803,7 +801,7 @@ country_event = {
 
 	fire_only_once = yes
 	mean_time_to_happen = { days = 1 }
-	
+
 	option = {
 		name = "EVT955191OPTA" #Inherit the congo
 		set_global_flag = congo_free_state_over
@@ -823,7 +821,7 @@ country_event = {
 		inherit = CNG
 		ai_chance = { factor = 0.9 }
 	}
-	
+
 	option = {
 		name = "EVT955191OPTB" #Leave it as is
 		set_global_flag = congo_free_state_over
@@ -840,9 +838,9 @@ country_event = {
 			all_core = { remove_core = MNG }
 		}
 		random_country = { limit = { tag = KON ai = yes } all_core = { remove_core = KON } }
-		random_owned = { 
+		random_owned = {
 			limit = { owner = { government = proletarian_dictatorship } }
-			CNG = { government = proletarian_dictatorship political_reform = no_slavery } 
+			CNG = { government = proletarian_dictatorship political_reform = no_slavery }
 		}
 		ai_chance = {
 			factor = 0.1
@@ -850,7 +848,7 @@ country_event = {
 			modifier = { factor = 5 government = proletarian_dictatorship }
 		}
 	}
-	
+
 	option = {
 		name = "EVT955191OPTC" #Set them free
 		set_global_flag = congo_free_state_over
@@ -868,9 +866,9 @@ country_event = {
 		}
 		random_country = { limit = { tag = KON ai = yes } all_core = { remove_core = KON } }
 		release_vassal = CNG
-		random_owned = { 
+		random_owned = {
 			limit = { owner = { government = proletarian_dictatorship } }
-			CNG = { government = proletarian_dictatorship political_reform = no_slavery } 
+			CNG = { government = proletarian_dictatorship political_reform = no_slavery }
 		}
 		ai_chance = {
 			factor = 0.01

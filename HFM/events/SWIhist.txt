@@ -4,7 +4,7 @@ country_event = {
 	desc = "EVTDESC500058"
 	picture = "bad_badboy"
 	major = yes
-	
+
 	trigger = {
 		ai = no
 		badboy = 2
@@ -13,7 +13,7 @@ country_event = {
 		NOT = { has_country_modifier = bad_badboy }
 		NOT = { has_country_modifier = uncivilized_isolationism }
 	}
-		
+
 	mean_time_to_happen = { months = 4 }
 
 	option = {
@@ -46,19 +46,19 @@ country_event = {
 	title = "EVTNAME500059" #Infamy too high
 	desc = "EVTDESC500059"
 	picture = "bad_badboy"
-	
+
 	trigger = {
 		NOT = { has_country_modifier = uncivilized_isolationism }
 		ai = no
 		badboy = 1.3
 		NOT = {
 			OR = {
-				has_country_modifier = kinda_bad_badboy 
-				has_country_modifier = bad_badboy 
+				has_country_modifier = kinda_bad_badboy
+				has_country_modifier = bad_badboy
 			}
 		}
 	}
-		
+
 	mean_time_to_happen = { months = 1 }
 
 	option = {
@@ -91,7 +91,7 @@ country_event = {
 	title = "EVTNAME500059" #Swiss Partition
 	desc = "EVTDESC500059"
 	picture = "bad_badboy"
-	
+
 	is_triggered_only = yes
 
 	option = {
@@ -103,7 +103,7 @@ country_event = {
 			}
 			FROM = {
 				any_owned = {
-					limit = { 
+					limit = {
 						is_core = SWI
 						region = SWI_607
 					}
@@ -117,7 +117,7 @@ country_event = {
 			}
 			owner = { add_accepted_culture = swiss_french }
 		}
-		
+
 		random_owned = {
 			limit = {
 				owner = { is_culture_group = italian }
@@ -136,19 +136,19 @@ country_event = {
 				}
 				country_event = 500061
 			}
-			owner = { 
+			owner = {
 				add_accepted_culture = swiss_italian
 				add_accepted_culture = romansh
 			}
 		}
-		
+
 		random_owned = {
 			limit = {
 				owner = { is_culture_group = germanic }
 			}
 			FROM = {
 				any_owned = {
-					limit = { 
+					limit = {
 						is_core = SWI
 						region = SWI_603
 					}
@@ -160,29 +160,29 @@ country_event = {
 				}
 				country_event = 500061
 			}
-			owner = { 
+			owner = {
 				add_accepted_culture = swiss_german
 			}
 		}
-		
+
 		ai_chance = {
-			factor = 80
-			modifier = {
-				factor = 1.5
-				truce_with = FROM
-				has_recently_lost_war = yes
-			}
-			modifier = {
-				factor = 0.1
-				NOT = { truce_with = FROM }
-			}
-			modifier = {
-				factor = 2.0
-				is_greater_power = no
-			}
+			factor = 90
+			# modifier = {
+				# factor = 1.5
+				# truce_with = FROM
+				# has_recently_lost_war = yes
+			# }
+			# modifier = {
+				# factor = 0.1
+				# NOT = { truce_with = FROM }
+			# }
+			# modifier = {
+				# factor = 2.0
+				# is_greater_power = no
+			# }
 		}
 	}
-	
+
 	option = {
 		name = "EVTOPTB500059"
 		random_owned = {
@@ -191,7 +191,7 @@ country_event = {
 			}
 			FROM = {
 				any_owned = {
-					limit = { 
+					limit = {
 						is_core = SWI
 						region = SWI_603
 					}
@@ -203,7 +203,7 @@ country_event = {
 				country_event = 500062
 			}
 		}
-		
+
 		random_owned = {
 			limit = {
 				owner = { is_culture_group = italian }
@@ -222,14 +222,14 @@ country_event = {
 				country_event = 500062
 			}
 		}
-		
+
 		random_owned = {
 			limit = {
 				owner = { is_culture_group = french }
 			}
 			FROM = {
 				any_owned = {
-					limit = { 
+					limit = {
 						is_core = SWI
 						region = SWI_607
 					}
@@ -240,19 +240,19 @@ country_event = {
 				}
 			}
 		}
-		
+
 		prestige = 15
 		badboy = -3.5
 		ai_chance = {
-			factor = 20
-			modifier = {
-				factor = 4.0
-				NOT = { truce_with = FROM }
-			}
-			modifier = {
-				factor = 1.5
-				is_greater_power = no
-			}
+			factor = 10
+			# modifier = {
+				# factor = 4.0
+				# NOT = { truce_with = FROM }
+			# }
+			# modifier = {
+				# factor = 1.5
+				# is_greater_power = no
+			# }
 		}
 	}
 }
@@ -263,12 +263,12 @@ country_event = {
 	title = "EVTNAME500061"
 	desc = "EVTDESC500061"
 	picture = "bad_badboy"
-	
+
 	is_triggered_only = yes
 
 	option = {
 		name = "EVTOPT500059A"
-		relation = { 
+		relation = {
 			who = FROM
 			value = 100
 		}
@@ -282,12 +282,12 @@ country_event = {
 	title = "EVTNAME500062"
 	desc = "EVTDESC500062"
 	picture = "bad_badboy"
-	
+
 	is_triggered_only = yes
 
 	option = {
 		name = "EVTOPT500059A"
-		relation = { 
+		relation = {
 			who = FROM
 			value = -100
 		}

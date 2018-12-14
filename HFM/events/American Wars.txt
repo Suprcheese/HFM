@@ -10,7 +10,7 @@ country_event = {
 	picture = "treaty"
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "EVT44122OPTA"
 		prestige = 10
@@ -120,7 +120,7 @@ country_event = {
 		}
 		MEX = { money = 100000 }
 		country_event = 44128
-		
+
 		ai_chance = {
 			factor = 10
 			modifier = {
@@ -213,14 +213,14 @@ country_event = {
 		name = "EVT44147OPTA"
 		set_country_flag = treaty_of_guadalupe_hidalgo
 		prestige = 20
-		
+
 		random_owned = { limit = { owner = { ai = no } } owner = { treasury = -100000 } }
 		random_owned = {
 			limit = { owner = { ai = yes } }
-			owner = { set_variable = { which = owed_cash_money value = 100 } } 
+			owner = { set_variable = { which = owed_cash_money value = 100 } }
 		}
-		
-		
+
+
 		relation = {
 			who = FROM
 			value = 200
@@ -238,9 +238,9 @@ country_event = {
 	title = "EVTNAME44140" #The Northern Alaska Purchase
 	desc = "EVTDESC44140"
 	picture = "treaty"
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "EVT44145OPTA"
 		FROM = { country_event = 44142 }
@@ -271,7 +271,7 @@ country_event = {
 				factor = 0.5
 				alliance_with = FROM
 			}
-		}		
+		}
 	}
 }
 
@@ -281,9 +281,9 @@ country_event = {
 	title = "EVTNAME44141" #Refused
 	desc = "EVTDESC44141"
 	picture = "treaty"
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "EVT44146OPTA"
 		relation = {
@@ -301,14 +301,14 @@ country_event = {
 }
 
 country_event = {
-	
+
 	id = 44142
 	title = "EVTNAME44142" #Agreed
 	desc = "EVTDESC44142"
 	picture = "treaty"
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "EVT44147OPTA"
 		money = -50000
@@ -331,9 +331,9 @@ country_event = {
 	title = "EVTNAME44145" #The Hawaiian Islands Purchase
 	desc = "EVTDESC44145"
 	picture = "treaty"
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "EVT44145OPTA"
 		FROM = { country_event = 44147 }
@@ -364,7 +364,7 @@ country_event = {
 				factor = 0.5
 				alliance_with = FROM
 			}
-		}		
+		}
 	}
 }
 
@@ -374,9 +374,9 @@ country_event = {
 	title = "EVTNAME44141" #Refused
 	desc = "EVTDESC44146"
 	picture = "treaty"
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "EVT44146OPTA"
 		relation = {
@@ -394,14 +394,14 @@ country_event = {
 }
 
 country_event = {
-	
+
 	id = 44147
 	title = "EVTNAME44142"
 	desc = "EVTDESC44147"
 	picture = "treaty"
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "EVT44147OPTA"
 		money = -50000
@@ -424,17 +424,18 @@ country_event = {
 	title = "EVTNAME44150" #54-40 or Fight!
 	desc = "EVTDESC44150"
 	picture = "boer_war"
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = USA
+		RPL = { exists = yes }
 		79 = {
 			empty = no
 			OR = {
 				owned_by = USA
 				owned_by = ENG
-				AND = { 
+				AND = {
 					owned_by = RPL
 					RPL = {
 						vassal_of = ENG
@@ -447,7 +448,7 @@ country_event = {
 			OR = {
 				owned_by = USA
 				owned_by = ENG
-				AND = { 
+				AND = {
 					owned_by = RPL
 					RPL = {
 						vassal_of = ENG
@@ -466,7 +467,7 @@ country_event = {
 		}
 		COL = { exists = no }
 	}
-	
+
 	mean_time_to_happen = {
 		months = 1
 		modifier = {
@@ -474,7 +475,7 @@ country_event = {
 			year = 1850
 		}
 	}
-	
+
 	option = {
 		name = "EVT44150OPTA"
 		set_country_flag = oregon_treaty
@@ -529,7 +530,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "EVT44150OPTB"
 		set_country_flag = oregon_treaty
@@ -564,7 +565,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "EVT44150OPTC"
 		set_country_flag = oregon_treaty
@@ -602,15 +603,15 @@ country_event = {
 	title = "EVTNAME44151" #The Columbia District
 	desc = "EVTDESC44151"
 	picture = "treaty"
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "EVT44151OPTA"
 		badboy = -2
 		prestige = -10
 		USA = { country_event = 44152 }
-		CAN_13 = { 
+		CAN_13 = {
 			limit = {
 				empty = no
 			}
@@ -692,7 +693,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "EVT44151OPTB"
 		badboy = 5
@@ -739,9 +740,9 @@ country_event = {
 	news_desc_short = "EVTDESC44152_NEWS_SHORT"
 	picture = "treaty"
 	major = yes
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "EVT44152OPTA"
 		prestige = 10
@@ -758,33 +759,33 @@ country_event = {
 			secede_province = ENG
 		}
 		RPL = {
-			any_pop = { 
+			any_pop = {
 				limit = {
-					location = { 
+					location = {
 						province_id = 78
 					}
-					culture = native_american_minor 
+					culture = native_american_minor
 				}
-				reduce_pop = 0.1 
+				reduce_pop = 0.1
 			}
-			any_pop = { 
+			any_pop = {
 				limit = {
-					location = { 
+					location = {
 						province_id = 79
 					}
-					culture = native_american_minor 
+					culture = native_american_minor
 				}
-				reduce_pop = 0.4 
+				reduce_pop = 0.4
 			}
-			any_pop = { 
+			any_pop = {
 				limit = {
-					location = { 
+					location = {
 						province_id = 78
 					}
-					culture = yankee 
+					culture = yankee
 				}
 				reduce_pop = 2.5
-			}	
+			}
 			any_owned = {
 				limit = {
 					region = USA_78
@@ -816,9 +817,9 @@ country_event = {
 	news_desc_medium = "EVTDESC44153_NEWS_MEDIUM"
 	news_desc_short = "EVTDESC44153_NEWS_SHORT"
 	picture = "treaty"
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "EVT44153OPTA"
 		prestige = -20
@@ -851,7 +852,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "EVT44153OPTB"
 		prestige = 5
@@ -878,7 +879,7 @@ country_event = {
 				country = USA
 			}
 			defender_goal = {
-				casus_belli = acquire_all_cores 
+				casus_belli = acquire_all_cores
 				country = ENG
 			}
 		}
@@ -913,19 +914,19 @@ country_event = {
 	news_desc_medium = "EVTDESC44154_NEWS_MEDIUM"
 	news_desc_short = "EVTDESC44154_NEWS_SHORT"
 	picture = "administration"
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "EVT44154OPTA"
 		prestige = -20
 		USA = { country_event = 44155 }
 		relation = { who = USA value = 50 }
 		any_owned = {
-			limit = { 
-				OR = { 
-					is_core = COL 
-					is_core = USA 
+			limit = {
+				OR = {
+					is_core = COL
+					is_core = USA
 				}
 			}
 			secede_province = USA
@@ -934,10 +935,10 @@ country_event = {
 		}
 		RPL = {
 			any_owned = {
-				limit = { 
+				limit = {
 					OR = {
-						is_core = COL 
-						is_core = USA 
+						is_core = COL
+						is_core = USA
 					}
 				}
 				secede_province = USA
@@ -965,7 +966,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "EVT44154OPTB"
 		set_country_flag = oregon_war
@@ -985,7 +986,7 @@ country_event = {
 				country = ENG
 			}
 			defender_goal = {
-				casus_belli = acquire_all_cores 
+				casus_belli = acquire_all_cores
 				country = USA
 			}
 		}
@@ -1020,17 +1021,17 @@ country_event = {
 	title = "EVTNAME44155" #Oregon Country is Ours
 	desc = "EVTDESC44155"
 	picture = "treaty"
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "EVT44155OPTA"
 		prestige = 25
 		RPL = {
 			any_owned = {
-				limit = { 
-					is_core = COL 
-					NOT = { 
+				limit = {
+					is_core = COL
+					NOT = {
 						province_id = 17
 						province_id = 2629
 						province_id = 18
@@ -1076,9 +1077,9 @@ country_event = {
 	title = "EVTNAME44156" #Oregon Country is Split Along Columbia River
 	desc = "EVTDESC44156"
 	picture = "treaty"
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "EVT44156OPTA"
 		prestige = 15
@@ -1131,7 +1132,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "EVT44156OPTB"
 		badboy = 5
@@ -1180,9 +1181,9 @@ country_event = {
 	title = "EVTNAME44157" #UK Gets Colombia from HBC
 	desc = "EVTDESC44157"
 	picture = "treaty"
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "EVT6044157OPTA"
 		RPL = {

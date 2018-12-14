@@ -1557,7 +1557,7 @@ country_event = {
 			country_event = 32527
 		}
 		ai_chance = {
-			factor = 40
+			factor = 90
 			modifier = {
 				factor = 0.5
 				war_policy = jingoism
@@ -1589,7 +1589,7 @@ country_event = {
 			country_event = 32526
 		}
 		ai_chance = {
-			factor = 60
+			factor = 10
 			modifier = {
 				factor = 2
 				war_policy = jingoism

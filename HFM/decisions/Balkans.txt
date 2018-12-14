@@ -105,7 +105,7 @@ political_decisions = {
 				is_sphere_leader_of = WAL
 				is_sphere_leader_of = MOL
 				is_sphere_leader_of = SIE
-			}	
+			}
 		}
 		allow = {
 			war = no
@@ -128,7 +128,7 @@ political_decisions = {
 			badboy = 2
 			any_country = {
 				limit = {
-					OR = { 
+					OR = {
 						is_our_vassal = WAL
 						is_our_vassal = MOL
 						is_our_vassal = SIE
@@ -140,7 +140,7 @@ political_decisions = {
 					type = humiliate
 					months = 12
 				}
-			}		
+			}
 			any_country = {
 				limit = {
 					OR = {
@@ -367,7 +367,7 @@ political_decisions = {
 				}
 				annex_to = THIS
 			}
-			random_country = { 
+			random_country = {
 				limit = { is_culture_group = czecho_slovak_culture_group part_of_sphere = no is_vassal = no }
 				country_event = 98650
 				}
@@ -377,7 +377,7 @@ political_decisions = {
 			factor = 1
 		}
 	}
-	
+
 	end_of_czechoslovakia_bohemia = {
 		picture = form_czechoslovakia
 		potential = {
@@ -449,7 +449,7 @@ political_decisions = {
 			factor = 1
 		}
 	}
-	
+
 	unite_with_croatia = {
 		picture = gtfo
 		potential = {
@@ -501,7 +501,7 @@ political_decisions = {
 						owner = { capital = 771 }
 					}
 					change_tag = CRO
-				}	
+				}
 			}
 		}
 
@@ -609,7 +609,7 @@ political_decisions = {
 					NOT = { truce_with = THIS }
 					war = no
 				}
-			}			
+			}
 			771 = {
 				owner = {
 					OR = {
@@ -708,7 +708,7 @@ political_decisions = {
 				is_sphere_leader_of = SLO
 				is_sphere_leader_of = ALB
 				is_sphere_leader_of = BUL
-			}	
+			}
 		}
 		allow = {
 			war = no
@@ -852,7 +852,7 @@ political_decisions = {
 			}
 			NOT = { has_global_flag = albania_in_yugoslavia }
 		}
-		
+
 		allow = {
 			war = no
 			OR = {
@@ -860,7 +860,7 @@ political_decisions = {
 				ALB = { all_core = { OR = { owned_by = THIS owner = { in_sphere = THIS war = no } } } }
 			}
 		}
-		
+
 		effect = {
 			set_global_flag = albania_in_yugoslavia
 			prestige = 5
@@ -893,7 +893,7 @@ political_decisions = {
 			}
 		}
 	}
-	
+
 	invite_slovenia_to_YUG = {
 		picture = form_yugoslavia
 		potential = {
@@ -904,7 +904,7 @@ political_decisions = {
 			}
 			NOT = { has_country_flag = invited_slovenes_to_YUG }
 		}
-		
+
 		allow = {
 			war = no
 			NOT = { government = theocracy }
@@ -924,14 +924,14 @@ political_decisions = {
 					in_sphere = THIS
 					sphere_owner = { is_sphere_leader_of = THIS }
 				}
-			}	
+			}
 		}
-		
+
 		effect = {
 			set_country_flag = invited_slovenes_to_YUG
 			SLO = { country_event = 11120 }
 		}
-		
+
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -955,7 +955,7 @@ political_decisions = {
 			}
 		}
 	}
-	
+
 	invite_bosnia_to_YUG = {
 		picture = form_yugoslavia
 		potential = {
@@ -966,7 +966,7 @@ political_decisions = {
 			}
 			NOT = { has_country_flag = invited_bosniaks_to_YUG }
 		}
-		
+
 		allow = {
 			war = no
 			NOT = { government = theocracy }
@@ -986,14 +986,14 @@ political_decisions = {
 					in_sphere = THIS
 					sphere_owner = { is_sphere_leader_of = THIS }
 				}
-			}	
+			}
 		}
-		
+
 		effect = {
 			set_country_flag = invited_bosniaks_to_YUG
 			BOS = { country_event = 11120 }
 		}
-		
+
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -1017,7 +1017,7 @@ political_decisions = {
 			}
 		}
 	}
-	
+
 	invite_croatia_to_YUG = {
 		picture = form_yugoslavia
 		potential = {
@@ -1028,7 +1028,7 @@ political_decisions = {
 			}
 			NOT = { has_country_flag = invited_croats_to_YUG }
 		}
-		
+
 		allow = {
 			war = no
 			NOT = { government = theocracy }
@@ -1048,14 +1048,14 @@ political_decisions = {
 					in_sphere = THIS
 					sphere_owner = { is_sphere_leader_of = THIS }
 				}
-			}	
+			}
 		}
-		
+
 		effect = {
 			set_country_flag = invited_croats_to_YUG
 			CRO = { country_event = 11120 }
 		}
-		
+
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -1079,7 +1079,7 @@ political_decisions = {
 			}
 		}
 	}
-	
+
 	invite_montenegro_to_YUG = {
 		picture = form_yugoslavia
 		potential = {
@@ -1090,7 +1090,7 @@ political_decisions = {
 			}
 			NOT = { has_country_flag = invited_montenegrins_to_YUG }
 		}
-		
+
 		allow = {
 			war = no
 			MON = {
@@ -1109,14 +1109,14 @@ political_decisions = {
 					in_sphere = THIS
 					sphere_owner = { is_sphere_leader_of = THIS }
 				}
-			}	
+			}
 		}
-		
+
 		effect = {
 			set_country_flag = invited_montenegrins_to_YUG
 			MON = { country_event = 11120 }
 		}
-		
+
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -1140,7 +1140,7 @@ political_decisions = {
 			}
 		}
 	}
-	
+
 	invite_serbia_to_YUG = {
 		picture = form_yugoslavia
 		potential = {
@@ -1151,7 +1151,7 @@ political_decisions = {
 			}
 			NOT = { has_country_flag = invited_serbians_to_YUG }
 		}
-		
+
 		allow = {
 			war = no
 			SER = {
@@ -1170,14 +1170,14 @@ political_decisions = {
 					in_sphere = THIS
 					sphere_owner = { is_sphere_leader_of = THIS }
 				}
-			}	
+			}
 		}
-		
+
 		effect = {
 			set_country_flag = invited_serbians_to_YUG
 			SER = { country_event = 11120 }
 		}
-		
+
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -1201,7 +1201,7 @@ political_decisions = {
 			}
 		}
 	}
-	
+
 	invite_bulgaria_to_YUG = {
 		picture = form_yugoslavia
 		potential = {
@@ -1212,7 +1212,7 @@ political_decisions = {
 			}
 			NOT = { has_country_flag = invited_bulgarians_to_YUG }
 		}
-		
+
 		allow = {
 			war = no
 			revolution_n_counterrevolution = 1
@@ -1229,12 +1229,12 @@ political_decisions = {
 				}
 			}
 		}
-		
+
 		effect = {
 			set_country_flag = invited_bulgarians_to_YUG
 			BUL = { country_event = 11120 }
 		}
-		
+
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -1257,7 +1257,7 @@ political_decisions = {
 			}
 		}
 	}
-	
+
 	invite_macedonia_to_YUG = {
 		picture = form_yugoslavia
 		potential = {
@@ -1268,7 +1268,7 @@ political_decisions = {
 			}
 			NOT = { has_country_flag = invited_macedonians_to_YUG }
 		}
-		
+
 		allow = {
 			war = no
 			revolution_n_counterrevolution = 1
@@ -1287,14 +1287,14 @@ political_decisions = {
 					}
 					in_sphere = THIS
 				}
-			}	
+			}
 		}
-		
+
 		effect = {
 			set_country_flag = invited_macedonians_to_YUG
 			MCD = { country_event = 11120 }
 		}
-		
+
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -1318,7 +1318,7 @@ political_decisions = {
 		}
 	}
 
-	
+
 	#invite_greece_to_YUG = {
 		#picture = form_yugoslavia
 		#potential = {
@@ -1333,7 +1333,7 @@ political_decisions = {
 			#}
 			#NOT = { has_country_flag = invited_greeks_to_YUG }
 		#}
-		
+
 		#allow = {
 			#war = no
 			#is_greater_power = yes
@@ -1347,19 +1347,19 @@ political_decisions = {
 					#vassal_of = THIS
 				#}
 				#in_sphere = THIS
-			#}	
+			#}
 		#}
-		
+
 		#effect = {
 			#set_country_flag = invited_greeks_to_YUG
 			#GRE = { country_event = 11120 }
 		#}
-		
+
 		#ai_will_do = {
 			#factor = 1
 		#}
 	#}
-	
+
 	embrace_bosnians_YUG = {
 		picture = embrace_minority
 		potential = {
@@ -1370,7 +1370,7 @@ political_decisions = {
 				accepted_culture = bosniak
 			}
 		}
-		
+
 		allow = {
 			prestige = 50
 			nationalism_n_imperialism = 1
@@ -1381,7 +1381,7 @@ political_decisions = {
 				}
 			}
 		}
-		
+
 		effect = {
 			add_accepted_culture = bosniak
 			prestige = -25
@@ -1400,7 +1400,7 @@ political_decisions = {
 			}
 		}
 	}
-	
+
 	embrace_bulgarians_YUG = {
 		picture = embrace_minority
 		potential = {
@@ -1411,7 +1411,7 @@ political_decisions = {
 				accepted_culture = bulgarian
 			}
 		}
-		
+
 		allow = {
 			NOT = { government = theocracy }
 			citizenship_policy = full_citizenship
@@ -1426,7 +1426,7 @@ political_decisions = {
 				}
 			}
 		}
-		
+
 		effect = {
 			add_accepted_culture = bulgarian
 			prestige = -25
@@ -1445,7 +1445,7 @@ political_decisions = {
 			}
 		}
 	}
-	
+
 	#embrace_greeks_YUG = {
 		#picture = embrace_minority
 		#potential = {
@@ -1456,7 +1456,7 @@ political_decisions = {
 				#accepted_culture = greek
 			#}
 		#}
-		
+
 		#allow = {
 			#prestige = 50
 			#revolution_n_counterrevolution = 1
@@ -1469,7 +1469,7 @@ political_decisions = {
 				#}
 			#}
 		#}
-		
+
 		#effect = {
 			#add_accepted_culture = greek
 			#prestige = -25
@@ -1488,7 +1488,7 @@ political_decisions = {
 			#}
 		#}
 	#}
-	
+
 	embrace_albanians_YUG = {
 		picture = embrace_minority
 		potential = {
@@ -1499,7 +1499,7 @@ political_decisions = {
 				accepted_culture = albanian
 			}
 		}
-		
+
 		allow = {
 			prestige = 50
 			NOT = { government = theocracy }
@@ -1515,7 +1515,7 @@ political_decisions = {
 				}
 			}
 		}
-		
+
 		effect = {
 			add_accepted_culture = albanian
 			prestige = -25
@@ -1534,7 +1534,7 @@ political_decisions = {
 			}
 		}
 	}
-	
+
 	end_of_yugoslavia_serbia = {
 		picture = form_yugoslavia
 		potential = {
@@ -1834,7 +1834,7 @@ political_decisions = {
 			factor = 1
 		}
 	}
-	
+
 	end_of_yugoslavia_bulgaria = {
 		picture = form_yugoslavia
 		potential = {
@@ -1884,7 +1884,7 @@ political_decisions = {
 			factor = 1
 		}
 	}
-	
+
 	#end_of_yugoslavia_greece = {
 		#picture = form_yugoslavia
 		#potential = {
@@ -1922,7 +1922,7 @@ political_decisions = {
 			#factor = 1
 		#}
 	#}
-	
+
 	bulgaria_in_yugoslavia = {
 		picture = map_balkans
 		potential = {
@@ -1974,7 +1974,7 @@ political_decisions = {
 			}
 		}
 	}
-		
+
 	croatian_independence = {
 		picture = croatian_independence
 		potential = {
@@ -1982,7 +1982,7 @@ political_decisions = {
 			any_neighbor_country = { have_core_in = CRO }
 			NOT = { has_country_flag = first_croat_independence }
 		}
-		
+
 		allow = {
 			war = no
 			is_vassal = no
@@ -1992,7 +1992,7 @@ political_decisions = {
 			 AUS_777 = { owned_by = THIS }
 			}
 		}
-		
+
 		effect = {
 			set_country_flag = first_croat_independence
 			any_country = { limit = { exists = yes any_core = { owned_by = CRO } }
@@ -2007,7 +2007,7 @@ political_decisions = {
 			CRO = { all_core = { remove_core = KUK } }
 		}
 	}
-	
+
 	abolish_wallachia_moldavia = {
 		picture = create_romania
 		potential = {
@@ -2023,20 +2023,20 @@ political_decisions = {
 				any_owned_province = { is_core = MOL }
 			}
 		}
-		
+
 		allow = {
 			war = no
 		}
-		
+
 		effect = {
 			WAL = { all_core = { remove_core = WAL } }
 			MOL = { all_core = { remove_core = MOL } }
 			MOL_676 = { remove_core = WAL remove_core = MOL }
 		}
-		
+
 		ai_will_do = { factor = 1 }
 	}
-	
+
 #	abolish_transylvania = {
 #		picture = create_romania
 #		potential = {
@@ -2045,17 +2045,17 @@ political_decisions = {
 #			exists = yes
 #			any_owned_province = { is_core = SIE }
 #		}
-#		
+#
 #		allow = {
 #			SIE = { all_core = { owned_by = THIS } }
 #			war = no
 #		}
-#		
+#
 #		effect = {
 #			badboy = 2
 #			SIE = { all_core = { remove_core = SIE } }
 #		}
-#		
+#
 #		ai_will_do = {
 #			factor = 1
 #			modifier = { factor = 0 badboy = 0.82 }
@@ -2070,19 +2070,19 @@ political_decisions = {
 			778 = { NOT = { is_core = HUN } }
 			773 = { is_core = HUN }
 		}
-		
+
 		allow = {
 			war = no
 			nationalism_n_imperialism = 1
 		}
-		
+
 		effect = {
 			778 = { add_core = HUN }
 			badboy = 1
 		}
 		ai_will_do = { factor = 1 }
 	}
-	
+
 	austro_hungarian_border_treaty = {
 		picture = croatian_independence
 		potential = {
@@ -2124,11 +2124,11 @@ political_decisions = {
 				}
 			}
 		}
-		
+
 		allow = {
 			war = no
 			state_n_government = 1
-			OR = { 
+			OR = {
 				AND = {
 					tag = AUS
 					NOT = { AUS_619 = { NOT = { owned_by = THIS } } }
@@ -2143,7 +2143,7 @@ political_decisions = {
 				}
 			}
 		}
-		
+
 		effect = {
 			set_country_flag = austro_hungarian_border_treaty_tried
 			random_country = {
@@ -2155,12 +2155,12 @@ political_decisions = {
 					exists = yes
 					neighbour = THIS
 				}
-			country_event = 60055559	
+			country_event = 60055559
 			}
 		}
 		ai_will_do = { factor = 1 }
 	}
-	
+
 	bulgarian_miracle = {
 		picture = bulgarian_miracle
 		potential = {
@@ -2169,11 +2169,11 @@ political_decisions = {
 			owns = 816
 			NOT = { has_country_flag = the_bulgarian_miracle }
 		}
-		
+
 		allow = {
 			war = no
 			invention = manifest_destiny
-			OR = { 
+			OR = {
 				private_bank_money_bill_printing = 1
 				stock_exchange = 1
 				nationalism_n_imperialism = 1
@@ -2181,7 +2181,7 @@ political_decisions = {
 			809 = { has_building = railroad }
 			money = 10001
 		}
-		
+
 		effect = {
 			treasury = -10000
 			set_country_flag = the_bulgarian_miracle
@@ -2193,12 +2193,11 @@ political_decisions = {
 				add_province_modifier = { name = recently_built_city duration = 1825 }
 			}
 			random_owned = {
-				limit = { owner = { ai = yes } }
-				owner = { 
+				owner = {
 					activate_technology = muzzle_loaded_rifles
 					activate_technology = military_staff_system
 					activate_technology = iron_muzzle_loaded_artillery
-					activate_technology = army_professionalism 
+					activate_technology = army_professionalism
 					activate_technology = military_plans
 					activate_technology = breech_loaded_rifles
 				}
@@ -2206,7 +2205,7 @@ political_decisions = {
 		}
 		ai_will_do = { factor = 1 }
 	}
-	
+
 	montenegro_borders = {
 		picture = montenegro_map
 		potential = {
@@ -2216,13 +2215,13 @@ political_decisions = {
 			NOT = { has_global_flag = montenegro_organized }
 			year = 1870
 		}
-		
+
 		allow = {
 			war = no
 			MON = { all_core = { owned_by = THIS } }
 			nationalism_n_imperialism = 1
 		}
-		
+
 		effect = {
 			set_global_flag = montenegro_organized
 			MON = { all_core = { remove_core = BOS } }
