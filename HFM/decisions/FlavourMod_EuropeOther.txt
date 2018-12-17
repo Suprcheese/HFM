@@ -2,7 +2,11 @@ political_decisions = {
 	slovene_rename_slo = {
 		picture = gtfo
 		potential = {
-			tag = SLO
+			OR = {
+				primary_culture = slovene
+				tag = SLO
+				tag = YUG
+			}
 			owns = 767
 			owns = 768
 			NOT = { has_global_flag = slovene_renamed_slo }
@@ -1891,7 +1895,7 @@ political_decisions = {
 			clr_global_flag = croatia_rename_hun
 			clr_global_flag = croatia_rename_cro
 			771 = {
-				change_province_name = "Agram "
+				change_province_name = "Agram"
 				state_scope = { change_region_name = "Kroatien" }
 			}
 			772 = { change_province_name = "Sissek" }

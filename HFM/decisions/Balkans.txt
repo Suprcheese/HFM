@@ -838,6 +838,7 @@ political_decisions = {
 					tag = TUR
 					tag = AUS
 					tag = KUK
+					SER = { ai = no }
 				}
 			}
 		}
