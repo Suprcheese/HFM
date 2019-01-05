@@ -36,25 +36,6 @@ political_decisions = {
 
 	}
 
-	infamy_cheat = {
-		alert = no
-		potential = {
-			ai = no
-		}
-
-		allow = {
-			ai = no
-		}
-
-		effect = {
-			badboy = -1
-		}
-
-		ai_will_do = {
-			factor = 0
-		}
-	}
-
 	annex_canada = {
 		picture = treaty_signing
 		potential = {
@@ -419,6 +400,7 @@ political_decisions = {
 
 	encourage_assimilation_start = {
 		picture = preacher
+		alert = no
 		potential = {
 			ai = no
 			NOT = { has_country_modifier = encourage_assimilation }
@@ -442,6 +424,7 @@ political_decisions = {
 
 	encourage_assimilation_end = {
 		picture = national_value
+		alert = no
 		potential = {
 			ai = no
 			has_country_modifier = encourage_assimilation
@@ -456,6 +439,157 @@ political_decisions = {
 			factor = 0
 		}
 	}
+
+	enable_cheats = {
+		alert = no
+		potential = {
+			ai = no
+			NOT = { has_country_flag = cheats_yo }
+		}
+
+		allow = {
+			ai = no
+		}
+
+		effect = {
+			set_country_flag = cheats_yo
+		}
+	}
+
+	disable_cheats= {
+		alert = no
+		potential = {
+			ai = no
+			has_country_flag = cheats_yo
+		}
+
+		allow = {
+			ai = no
+		}
+
+		effect = {
+			clr_country_flag = cheats_yo
+		}
+	}
+
+	infamy_cheat = {
+		alert = no
+		potential = {
+			ai = no
+			has_country_flag = cheats_yo
+		}
+
+		allow = {
+			ai = no
+		}
+
+		effect = {
+			badboy = -1
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	more_conservatives = {
+		picture = national_value
+		alert = no
+		potential = {
+			ai = no
+			has_country_flag = cheats_yo
+		}
+		allow = {
+			ai = no
+		}
+		effect = {
+			any_pop = {
+				ideology = { factor = 0.1 value = conservative }
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	more_liberals = {
+		picture = national_value
+		alert = no
+		potential = {
+			ai = no
+			has_country_flag = cheats_yo
+		}
+		allow = {
+			ai = no
+		}
+		effect = {
+			any_pop = {
+				ideology = { factor = 0.1 value = liberal }
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	more_socialists = {
+		picture = national_value
+		alert = no
+		potential = {
+			ai = no
+			is_ideology_enabled = socialist
+			has_country_flag = cheats_yo
+		}
+		allow = {
+			ai = no
+		}
+		effect = {
+			any_pop = {
+				ideology = { factor = 0.1 value = socialist }
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	more_reactionaries = {
+		picture = national_value
+		alert = no
+		potential = {
+			ai = no
+			has_country_flag = cheats_yo
+		}
+		allow = {
+			ai = no
+		}
+		effect = {
+			any_pop = {
+				ideology = { factor = 0.1 value = reactionary }
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	more_fascists = {
+		picture = national_value
+		alert = no
+		potential = {
+			ai = no
+			is_ideology_enabled = fascist
+			has_country_flag = cheats_yo
+		}
+		allow = {
+			ai = no
+		}
+		effect = {
+			any_pop = {
+				ideology = { factor = 0.1 value = fascist }
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
 }
 
 # integrate_galicia = {
