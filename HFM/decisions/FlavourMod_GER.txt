@@ -1,7 +1,7 @@
 political_decisions = {
 	build_reichstag = {
 		picture = "reichstag"
-		potential = { 
+		potential = {
 			OR = {
 				tag = GER
 				tag = GCF
@@ -33,13 +33,13 @@ political_decisions = {
 			}
 			set_country_flag = built_reichstag
 		}
-		
+
 		ai_will_do = { factor = 1 }
 	}
-	
+
 	berlin_baghdad_railway = {
 		picture = "berlin_baghdad"
-		potential = { 
+		potential = {
 			OR = {
 				tag = GER
 				tag = GCF
@@ -72,10 +72,10 @@ political_decisions = {
 		effect = {
 			country_event = 33005
 		}
-		
+
 		ai_will_do = { factor = 1 }
 	}
-	
+
 	franco_prussian_war_memorial = {
 		picture = "franco_prussian_memorial"
 		potential = {
@@ -90,7 +90,7 @@ political_decisions = {
 					has_global_flag = franco_prussian_memorial2
 				}
 			}
-			412 = { 
+			412 = {
 				OR = {
 					owned_by = THIS
 					owner = { vassal_of = THIS }
@@ -99,12 +99,12 @@ political_decisions = {
 		}
 		allow = {
 			war = no
-			OR = { 
-				AND = { 
+			OR = {
+				AND = {
 					truce_with = FRA
 					FRA = { has_recently_lost_war = yes }
 				}
-				AND = { 
+				AND = {
 					truce_with = BOR
 					BOR = { has_recently_lost_war = yes }
 				}
@@ -121,18 +121,18 @@ political_decisions = {
 					primary_culture = french
 					is_greater_power = yes
 					capital = 425
-				}	
+				}
 				country_event = 99932
 			}
 			set_global_flag = franco_prussian_memorial
 		}
-		
+
 		ai_will_do = { factor = 1 }
 	}
-	
+
 	franco_prussian_war_memorial2 = {  #Alternate Non-EMS Dispatch Unification Through an AI Freeing ALS, Allows AUS/BAV to use as well
 		picture = "franco_prussian_memorial"
-		potential = { 
+		potential = {
 			is_greater_power = yes
 			is_culture_group = germanic
 			ALS = { exists = yes }
@@ -146,9 +146,9 @@ political_decisions = {
 						is_vassal = no
 						vassal_of = THIS
 					}
-					NOT = { 
-						vassal_of = FRA 
-						vassal_of = BOR 
+					NOT = {
+						vassal_of = FRA
+						vassal_of = BOR
 					}
 					war = no
 					is_greater_power = no
@@ -159,7 +159,7 @@ political_decisions = {
 				BOR = { exists = yes truce_with = THIS }
 			}
 		}
-		
+
 		effect = {
 			badboy = -1
 			any_pop = {
@@ -171,9 +171,9 @@ political_decisions = {
 					primary_culture = french
 					is_greater_power = yes
 					capital = 425
-				}	
+				}
 				country_event = 99933
-			}			
+			}
 			diplomatic_influence = { who = ALS value = 400 }
 			ALS = {
 				any_pop = {
@@ -190,22 +190,22 @@ political_decisions = {
 							strata = middle
 							strata = rich
 							type = soldiers
-						}					
+						}
 					}
 					move_pop = 406
 				}
-				create_alliance = THIS				
+				create_alliance = THIS
 			}
 			set_global_flag = franco_prussian_memorial
 		}
-		
+
 		ai_will_do = { factor = 1 }
 	}
-	
+
 	treaty_of_vienna = {
 		picture = "form_germany"
-		potential = { 
-			OR = { 
+		potential = {
+			OR = {
 				tag = GER
 				AND = {
 					tag = GCF
@@ -289,13 +289,13 @@ political_decisions = {
 			}
 			set_global_flag = treaty_of_vienna
 		}
-		
+
 		ai_will_do = { factor = 1 }
 	}
-	
+
 	bohemian_question = {
 		picture = "czech_autonomy"
-		potential = { 
+		potential = {
 			OR = {
 				tag = GER
 				tag = GCF
@@ -350,7 +350,7 @@ political_decisions = {
 			relation = { who = BOH value = 50 }
 			diplomatic_influence = { who = BOH value = 400 }
 		}
-		
+
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -361,14 +361,14 @@ political_decisions = {
 			}
 		}
 	}
-	
+
 	greater_germany_hungarian_border_treaty = {
 		picture = gtfo
 		potential = {
 			NOT = { has_country_flag = greater_germany_hungarian_border_treaty_tried }
-			OR = { 
+			OR = {
 				tag = GER
-				tag = GCF 
+				tag = GCF
 			}
 			HUN = { is_vassal = no }
 			OR = {
@@ -384,15 +384,15 @@ political_decisions = {
 				AND = {
 					is_greater_power = yes
 					state_n_government = 1
-					HUN = { 
+					HUN = {
 						in_sphere = THIS
-						is_greater_power = no 
+						is_greater_power = no
 					}
 				}
 			}
 			NOT = { has_global_flag = german_confederation_austrian }
-			NOT = { 
-				exists = AUS 
+			NOT = {
+				exists = AUS
 				exists = KUK
 			}
 			exists = HUN
@@ -415,11 +415,11 @@ political_decisions = {
 				}
 			}
 		}
-		
+
 		allow = {
 			war = no
 			state_n_government = 1
-			OR = { 
+			OR = {
 				AND = {
 					tag = GER
 					AUS_619 = { owned_by = THIS }
@@ -446,7 +446,7 @@ political_decisions = {
 				}
 			}
 		}
-		
+
 		effect = {
 			set_country_flag = greater_germany_hungarian_border_treaty_tried
 			random_country = {
@@ -458,16 +458,16 @@ political_decisions = {
 					exists = yes
 					neighbour = THIS
 				}
-				country_event = 60055559	
+				country_event = 60055559
 			}
 			624 = { add_core = THIS }
 		}
 		ai_will_do = { factor = 1 }
 	}
-	
+
 	ger_ai_banat = {
 		picture = "treaty_signing"
-		potential = { 
+		potential = {
 			OR = {
 				government = absolute_monarchy
 				government = prussian_constitutionalism
@@ -507,9 +507,9 @@ political_decisions = {
 			war = no
 			has_recently_lost_war = no
 		}
-		
+
 		effect = {
-			badboy = 5
+			badboy = 3
 			create_vassal = BAN
 			792 = {	add_core = BAN	secede_province = THIS	}
 			2538 = { secede_province = THIS	}
@@ -523,13 +523,13 @@ political_decisions = {
 			791 = {	secede_province = BAN }
 			set_country_flag = ger_ai_banat
 		}
-		
+
 		ai_will_do = { factor = 1 }
 	}
-	
+
 	dutch_prussian_alliance = {
 		picture = "treaty_signing"
-		potential = { 
+		potential = {
 			is_greater_power = yes
 			primary_culture = north_german
 			387 = { is_core = NET }
@@ -537,13 +537,13 @@ political_decisions = {
 			NOT = { has_global_flag = dutch_prussian_alliance }
 		}
 		allow = {
-			OR = {	
+			OR = {
 				war_with = BEL
 				truce_with = BEL
 			}
 			NET = { war_with = BEL }
 		}
-		
+
 		effect = {
 			badboy = 3
 			prestige = 10
@@ -551,7 +551,7 @@ political_decisions = {
 			set_global_flag = dutch_prussian_alliance
 		}
 	}
-	
+
 	treaty_of_amsterdamn = {
 		picture = "treaty_signing"
 		potential = {
@@ -567,17 +567,17 @@ political_decisions = {
 			NOT = { exists = BEL }
 			387 = { owned_by = NET }
 		}
-		
+
 		effect = {
 			badboy = 3
 			prestige = 10
 			NET = { country_event = 99958 }
 			set_global_flag = treaty_of_amsterdamn
 		}
-		
+
 		ai_will_do = { factor = 1 }
 	}
-	
+
 	the_jade_purchase = {
 		picture = "wilhelmshaven"
 		potential = {
@@ -585,7 +585,7 @@ political_decisions = {
 			NOT = { has_country_flag = has_asked_for_jade }
 			NOT = { owns = 3259 }
 		}
-		
+
 		allow = {
 			is_greater_power = yes
 			money = 15000
@@ -596,7 +596,7 @@ political_decisions = {
 				year = 1853
 			}
 		}
-		
+
 		effect = {
 			set_country_flag = has_asked_for_jade
 			random_owned = {
@@ -610,10 +610,10 @@ political_decisions = {
 			}
 			OLD = { country_event = 40001 }
 		}
-		
+
 		ai_will_do = { factor = 1 }
 	}
-	
+
 	rhineland_reacquire = {
 		picture = "rhineland"
 		potential = {
@@ -627,7 +627,7 @@ political_decisions = {
 			}
 			NOT = { has_country_flag = rhineland_reacquired }
 		}
-		
+
 		allow = {
 			war = no
 			OR = {
@@ -642,20 +642,20 @@ political_decisions = {
 			}
 			OR = { truce_with = FRA truce_with = BOR }
 		}
-		
+
 		effect = {
 			set_country_flag = rhineland_reacquired
 			inherit = RHI
 			badboy = -3
 		}
-		
+
 		ai_will_do = { factor = 1 }
 	}
-	
+
 	claim_liechenstein = {
 	picture = form_germany
 		potential = {
-			OR = { 
+			OR = {
 				tag = GER
 				tag = GCF
 			}
@@ -670,7 +670,7 @@ political_decisions = {
 			}
 			NOT = { has_country_flag = claim_liechenstein }
 		}
-		
+
 		allow = {
 			war = no
 			LIE = {
@@ -682,7 +682,7 @@ political_decisions = {
 				}
 			}
 		}
-		
+
 		effect = {
 			set_country_flag = claim_liechenstein
 			LIE = {
@@ -693,7 +693,7 @@ political_decisions = {
 
 		ai_will_do = { factor = 1 }
 	}
-	
+
 	become_schleswig = {
 		picture = gtfo
 		potential = {
@@ -701,13 +701,13 @@ political_decisions = {
 			any_owned_province = { is_core = HOL }
 			exists = HOL
 		}
-		
+
 		allow = {
 			owns = 369
 			owns = 370
 			NOT = { owns = 529 }
 		}
-		
+
 		effect = {
 			capital = 370
 			prestige = -5
@@ -732,7 +732,7 @@ political_decisions = {
 				capital = 369
 			}
 		}
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -753,14 +753,14 @@ political_decisions = {
 			NOT = { has_country_flag = begin_austro_prussian_war }
 			NOT = { has_country_flag = prussian_italian_alliance }
 		}
-		
+
 		allow = {
 			war = no
 			AUS = { war = no }
 			military_score = 100
 			has_recently_lost_war = no
 		}
-		
+
 		effect = {
 			set_country_flag = begin_austro_prussian_war
 			war = {
@@ -770,13 +770,13 @@ political_decisions = {
 				call_ally = yes
 			}
 		}
-		
+
 		ai_will_do = {
 			factor = 1
 			modifier = {
 				factor = 0
 				OR = {
-					AND = { 
+					AND = {
 						NOT = { year = 1866 }
 						NOT = { exists = ITA }
 					}
@@ -788,7 +788,7 @@ political_decisions = {
 			}
 		}
 	}
-	
+
 	duchy_of_lorraine = {
 		picture = duchy_of_lorraine
 		potential = {
@@ -804,7 +804,7 @@ political_decisions = {
 			411 = { province_control_days = 365 }
 			NOT = { has_country_flag = duchy_of_lorraine }
 		}
-		
+
 		allow = {
 			war = no
 			413 = { OR = { has_pop_culture = north_german has_pop_culture = south_german } }
@@ -815,12 +815,12 @@ political_decisions = {
 				411 = { OR = { culture = south_german culture = north_german } }
 				414 = { OR = { culture = south_german culture = north_german } }
 			}
-			OR = {
-				colonial_policy = settlement
-				has_country_flag = prussian_settlement_commission
-			}
+			# OR = {
+				# colonial_policy = settlement
+				# has_country_flag = prussian_settlement_commission
+			# }
 		}
-		
+
 		effect = {
 			set_country_flag = duchy_of_lorraine
 			FRA_411 = { add_core = LOR }
@@ -845,10 +845,10 @@ political_decisions = {
 				LOR = { government = prussian_constitutionalism }
 			}
 		}
-		
+
 		ai_will_do = { factor = 1 }
 	}
-	
+
 	wilhelmshaven_imperial_shipyard = {
 		picture = wilhelmshaven_imperial_shipyard
 		potential = {
@@ -859,14 +859,14 @@ political_decisions = {
 			year = 1870
 			NOT = { 3259 = { state_scope = { has_building = steamer_shipyard } } }
 		}
-		
+
 		allow = {
 			is_greater_power = yes
 			invention = steamer_shipyard_construction
 			steamers = 1
 			money = 51000
 		}
-		
+
 		effect = {
 			set_global_flag = wilhelmshaven_imperial_shipyard_built
 			treasury = -50000
@@ -877,8 +877,8 @@ political_decisions = {
 					province_id = 3259 #Wilhelmshaven
 					state_scope = { NOT = { has_building = steamer_shipyard } }
 				}
-				
-				owner = { 
+
+				owner = {
 					capital = 3259
 					build_factory_in_capital_state = steamer_shipyard
 				}
@@ -921,10 +921,10 @@ political_decisions = {
 				GCF = { capital = 619 }
 			}
 		}
-		
+
 		ai_will_do = { factor = 1 }
 	}
-	
+
 	danzig_imperial_shipyard = {
 		picture = danzig_imperial_shipyard
 		potential = {
@@ -940,13 +940,13 @@ political_decisions = {
 			battleship_column_doctrine = 1
 			NOT = { 690 = { state_scope = { has_building = steamer_shipyard } } }
 		}
-		
+
 		allow = {
 			is_greater_power = yes
 			invention = steamer_shipyard_construction
 			money = 41000
 		}
-		
+
 		effect = {
 			set_global_flag = danzig_imperial_shipyard_built
 			treasury = -50000
@@ -959,8 +959,8 @@ political_decisions = {
 						NOT = { has_building = steamer_shipyard }
 					}
 				}
-				
-				owner = { 
+
+				owner = {
 					capital = 690
 					build_factory_in_capital_state = steamer_shipyard
 				}
@@ -1003,11 +1003,11 @@ political_decisions = {
 				owner = { capital = 619 }
 			}
 		}
-		
+
 		ai_will_do = { factor = 1 }
 	}
-	
-		
+
+
 	prussian_settlement_commission = {
 		picture = prussian_settlement_commission
 		potential = {
@@ -1022,7 +1022,7 @@ political_decisions = {
 			year = 1880
 			NOT = { has_country_flag = prussian_settlement_commission }
 		}
-		
+
 		allow = {
 			revolution_n_counterrevolution = 1
 			war = no
@@ -1038,7 +1038,7 @@ political_decisions = {
 			}
 			NOT = { accepted_culture = polish }
 		}
-		
+
 		effect = {
 			set_country_flag = prussian_settlement_commission
 			set_global_flag = germanization
@@ -1060,7 +1060,7 @@ political_decisions = {
 						region = PRU_682 #Lower Silesia
 						region = PRU_701 #Posen
 						region = PRU_690 #Westpreußen
-						
+
 					}
 				}
 				add_province_modifier = {
@@ -1070,10 +1070,10 @@ political_decisions = {
 				add_province_modifier = {
 					name = minority_building_restrictions
 					duration = 3650
-				}				
+				}
 			}
 		}
-		
+
 		ai_will_do = { factor = 1 }
 	}
 }

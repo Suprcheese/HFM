@@ -1044,7 +1044,7 @@ province_event = {
 
 	option = {
 		name = "EVT2600OPTA"
-		owner = { badboy = 2 }
+		owner = { badboy = 1 }
 		state_scope = {
 			any_owned = {
 				limit = {
