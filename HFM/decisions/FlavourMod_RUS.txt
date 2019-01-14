@@ -181,6 +181,7 @@ political_decisions = {
 		}
 		effect = {
 			set_country_flag = abolish_volga_region
+			remove_accepted_culture = volga_german
 			VLG = { all_core = { remove_core = VLG } }
 			war_exhaustion = -5
 		}

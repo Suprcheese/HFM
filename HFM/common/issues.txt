@@ -20,7 +20,7 @@ party_issues = {
 			import_cost = -0.25
 
 			rules = {
-				build_factory = yes
+				build_factory = no
 				expand_factory = yes
 				open_factory = yes
 				destroy_factory = yes
@@ -316,7 +316,7 @@ political_reforms = {
 		population_equal_weight = {
 			rules = { population_vote = yes }
 			allow = { NOT = { vote_franschise = none_voting } }
-			global_immigrant_attract = 0.03
+			global_immigrant_attract = 0.02
 		}
 	}
 
